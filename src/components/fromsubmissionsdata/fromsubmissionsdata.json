@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_fromsubmissionsdata_fromsubmissionsdata",
+  "info": {
+    "displayName": "fromsubmissionsdata"
+  },
+  "options": {},
+  "attributes": {
+    "Key": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_service_section_service_sections",
+  "info": {
+    "displayName": "service_section",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "enable_section": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "service_block": {
+      "displayName": "service_block",
+      "type": "component",
+      "repeatable": true,
+      "component": "service-block.service-block"
+    }
+  }
+}

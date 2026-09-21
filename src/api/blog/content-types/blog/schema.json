@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "string",
+      "maxLength": 170
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "IsFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "customField",
+      "customField": "plugin::tinymce.tinymce"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "RelatedBlog": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "audioVariants": {
+      "type": "json",
+      "pluginOptions": {
+        "content-manager": { "visible": false }
+      }
+    },
+    "ttsStatus": {
+      "type": "string",
+      "default": "idle",
+      "pluginOptions": {
+        "content-manager": { "visible": false }
+      }
+    },
+    "ttsProgress": {
+      "type": "json",
+      "pluginOptions": {
+        "content-manager": { "visible": false }
+      }
+    },
+    "aiSummary": {
+      "type": "text"
+    }
+  }
+}

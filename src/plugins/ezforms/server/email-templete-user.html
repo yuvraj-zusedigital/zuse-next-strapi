@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {width: 600px;margin: 0 auto;}
+        table {border-collapse: collapse;}
+        table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+        img {-ms-interpolation-mode: bicubic;}
+      </style>
+      <![endif]-->
+  <style type="text/css">
+    body,
+    p,
+    div {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    body {
+      color: #000000;
+      margin: 0;
+    }
+
+    body a {
+      color: #1188E6;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .has_ptag p,
+    .has_ptag span {
+      color: #000000 !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 16px !important;
+      letter-spacing: 0 !important;
+      line-height: 26px !important;
+      background: transparent !important;
+      font-weight: normal !important;
+    }
+
+    table.wrapper {
+      width: 100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    .td-width {
+      width: 100px !important;
+    }
+
+    img.max-width {
+      max-width: 100% !important;
+    }
+
+    .column.of-2 {
+      width: 50%;
+    }
+
+    .column.of-3 {
+      width: 33.333%;
+    }
+
+    .column.of-4 {
+      width: 25%;
+    }
+
+    .ql-editor .ql-align-right {
+      text-align: right;
+    }
+
+    @media screen and (max-width:480px) {
+
+      *,
+      .has_ptag p,
+      .has_ptag span {
+        font-size: 16px !important;
+        line-height: 24px !important;
+      }
+
+      .wrapper {
+        padding: 0 !important;
+      }
+
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent {
+        text-align: left !important;
+      }
+
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span {
+        text-align: left !important;
+      }
+
+      .preheader .rightColumnContent,
+      .preheader .leftColumnContent {
+        font-size: 80% !important;
+        padding: 5px 0;
+      }
+
+      table.wrapper-mobile {
+        width: 100% !important;
+        table-layout: fixed;
+      }
+
+      img.max-width {
+        height: auto !important;
+        max-width: 480px !important;
+      }
+
+      a.bulletproof-button {
+        display: block !important;
+        width: auto !important;
+        font-size: 80%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .columns {
+        width: 100% !important;
+      }
+
+      .column {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      .no_padding {
+        padding: 0 !important;
+      }
+
+      .add_foot_padding {
+        padding-bottom: 30px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .mob_padding {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .sep-on-mobi {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+      }
+
+      .no-pad-on-mobi {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .hide-on-mobi {
+        display: none !important;
+      }
+
+      th.add-pad-on-mobi {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        white-space: nowrap;
+      }
+
+      td.add-pad-on-mobi {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 10px !important;
+        padding-bottom: 0 !important;
+        vertical-align: top;
+      }
+
+      .add-pad-head {
+        padding-bottom: 10px !important;
+      }
+
+      .awards-img-mobi {
+        height: auto;
+      }
+
+      .case-mobi-img {
+        max-width: 100%;
+        height: 90px;
+        width: auto;
+      }
+
+      td.case-mobi-td {
+        text-align: center !important;
+      }
+
+      .mob-vertical-pad {
+        padding-top: 12px !important;
+      }
+
+      .z-intro-mob {
+        padding-bottom: 27px !important;
+      }
+
+      .pt-27 {
+        padding-top: 27px !important;
+      }
+
+      .test-row-mobi-1 {
+        padding-top: 15px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      td.test-row-mobi-2 {
+        padding: 15px !important;
+        font-size: 15px !important;
+        line-height: normal !important;
+      }
+
+
+      img.testim-avatar {
+        width: 30px;
+        height: auto;
+      }
+
+      td.testim-avatar-title {
+        font-size: 14px !important;
+        line-height: normal !important;
+      }
+
+      td.testim-avatar-subtitle {
+        opacity: 0.5;
+        font-size: 12px !important;
+        line-height: normal !important;
+      }
+
+      img.testim-avatar-logo {
+        width: 60px;
+        height: auto;
+      }
+
+      img.testim-avatar-star {
+        width: 14px;
+        height: auto;
+        margin-left: -2px;
+      }
+
+      span.testim-avatar-star-label {
+        padding-left: 0px !important;
+        font-size: 17px !important;
+      }
+
+
+      td.testim-avatar-td {
+        padding-right: 5px !important;
+      }
+
+      .case-mobi-text {
+        font-size: 12px !important;
+        padding-top: 0 !important;
+      }
+
+      .hfimg {
+        height: auto !important;
+      }
+
+      .hfimg.hfimg-logo {
+        height: 35px !important;
+        width: auto !important;
+      }
+
+      .respimg img {
+        max-width: 80% !important;
+        height: auto !important;
+      }
+
+      .resphei {
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <center class="wrapper" data-link-color="#1188E6"
+    data-body-style="font-size:14px;font-family: Arial, Helvetica, sans-serif;color:#000000;background-color:#FFFFFF;font-weight: normal">
+    <div class="webkit">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#F3F4F6"
+        style="padding: 60px 15px; padding-top:0; padding-bottom: 0; width: 100%; background: #F3F4F6">
+        <tbody>
+          <tr>
+            <td valign="top" width="100%">
+              <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0"
+                border="0">
+                <tbody>
+                  <tr>
+                    <td width="100%">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if mso]>
+                            <center>
+                              <table>
+                                <tr>
+                                  <td width="600">
+                                    <![endif]-->
+                              <table width="100%"
+                                style="width:100%; max-width: 600px; border-collapse: collapse; margin: 0 auto;"
+                                cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="padding-top:13px; padding-bottom:13px; padding-left:0px; padding-right:0px;">
+                                              <a href="https://zusedigital.com/" target="_blank">
+                                              <img class="hfimg hfimg-logo" alt="ZuseDigital" border="0"
+                                                src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zusedigital_logo_horizontal_4f4453527c.png"
+                                                style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; clear: both; height: auto; float: none; border: none; display: block; height: 38px; width: 149px;"
+                                                height="38" width="149" title="ZuseDigital" />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#FFFFFF"
+        style="padding: 60px 15px; padding-top:0; padding-bottom: 0; width: 100%; background: #FFFFFF">
+        <tbody>
+          <tr>
+            <td valign="top" width="100%">
+              <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0"
+                border="0">
+                <tbody>
+                  <tr>
+                    <td width="100%">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if mso]>
+                            <center>
+                              <table>
+                                <tr>
+                                  <td width="600">
+                                    <![endif]-->
+                              <table width="100%"
+                                style="width:100%; max-width: 600px; border-collapse: collapse; margin: 0 auto;"
+                                cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 22px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              Hello {{firstName}},
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob-vertical-pad mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 26px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              Thank you for reaching out to Zuse Digital! We’ve received your enquiry
+                                              about your project, and we’re excited to learn more about your vision.
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob-vertical-pad mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 28px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              We will reach out to you within one business day to discuss your project
+                                              in detail.
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob-vertical-pad mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 31px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              Many Thanks,
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding z-intro-mob"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 27px; padding-bottom: 38px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <table style="border-collapse: collapse;">
+                                                <tr>
+                                                  <td
+                                                    style="padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 19px;">
+                                                    <div style="line-height: 0 !important">
+                                                      <img
+                                                        src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zanyar_outhman_56045eec6f.png"
+                                                        alt="Zanyar Outhman" width="73" height="73" />
+                                                    </div>
+                                                  </td>
+                                                  <td>
+                                                    <table style="border-collapse: collapse;">
+                                                      <tr>
+                                                        <td
+                                                          style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 16px; letter-spacing: 0; line-height: 25px; font-weight: 700;">
+                                                          Zanyar Outhman
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 16px; letter-spacing: 0; line-height: 25px; font-weight: 400;">
+                                                          Founder of Zuse Digital
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td
+                                                          style="font-family: Arial, Helvetica, sans-serif;padding-top: 3px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #333333; font-size: 16px; letter-spacing: 0; line-height: 26px; font-weight: 400;">
+                                                          Connect with me on <a href="https://www.linkedin.com/in/zanyar/" target="_blank" style="color: #333333; font-weight: 700;">Linkedin</a>.
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#F3F4F6"
+        style="padding: 60px 15px; padding-top:0; padding-bottom: 0; width: 100%; background: #F3F4F6">
+        <tbody>
+          <tr>
+            <td valign="top" width="100%">
+              <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0"
+                border="0">
+                <tbody>
+                  <tr>
+                    <td width="100%">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if mso]>
+                            <center>
+                              <table>
+                                <tr>
+                                  <td width="600">
+                                    <![endif]-->
+                              <table width="100%"
+                                style="width:100%; max-width: 600px; border-collapse: collapse; margin: 0 auto;"
+                                cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mob_padding pt-27"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 36px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 700;">
+                                              Awards and Recognition:
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              We are proud to have been recognised for our excellence in digital
+                                              solutions:
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 29px; padding-bottom: 0px; padding-left: 36px; padding-right: 36px;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <img
+                                                src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/awards_and_recognition_zusedigital_84d3eb9e7c.png"
+                                                alt="awards_and_recognition_zusedigital" style="max-width: 100%;"
+                                                width="528" height="205" class="awards-img-mobi" />
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding pt-27"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 47px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <span
+                                                style="padding-left: 10px; padding-right: 10px;">&#8226;</span>Awarded
+                                              "Best Web Design Company 2023" by ABC Magazine
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <span
+                                                style="padding-left: 10px; padding-right: 10px;">&#8226;</span>Recognised
+                                              as "Top Mobile App Development Firm" by XYZ Awards
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <span
+                                                style="padding-left: 10px; padding-right: 10px;">&#8226;</span>Recognised
+                                              as "Top Mobile App Development Firm" by XYZ Awards
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 40px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <div
+                                                style="background-image: url(https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_emial_border_66d381af78.png);background-size: 100% 100%; background-position: center; background-repeat: no-repeat;">
+                                                <table style="border-collapse: collapse;">
+                                                  <tr>
+                                                    <td class="test-row-mobi-1"
+                                                      style="padding-top: 27px; padding-left: 30px; padding-right: 30px;">
+                                                      <table style="width: 100%;border-collapse: collapse;">
+                                                        <td>
+                                                          <table style="border-collapse: collapse;">
+                                                            <td class="testim-avatar-td"
+                                                              style="padding-right: 15px;text-align: left;"
+                                                              align="left">
+                                                              <div style="line-height: 0 !important">
+                                                                <img
+                                                                  src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/harry_sanders_86a09486f9.png"
+                                                                  alt="harry_sanders" width="50" height="50"
+                                                                  class="testim-avatar" />
+                                                              </div>
+                                                            </td>
+                                                            <td>
+                                                              <table style="border-collapse: collapse;">
+                                                                <tr>
+                                                                  <td class="testim-avatar-title"
+                                                                    style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0;  color: #313131; font-size: 16px; letter-spacing: 0; line-height: 22px; font-weight: 400;">
+                                                                    Harry Sanders</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td class="testim-avatar-subtitle"
+                                                                    style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0;  color: #313131; font-size: 14px; letter-spacing: 0; line-height: 22px; font-weight: 400;">
+                                                                    Studio Hawk</td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </table>
+                                                        </td>
+                                                        <td style="text-align: center;" align="center">
+                                                          <img class="testim-avatar-logo"
+                                                            src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/studio_hawk_logo_d7ea934ebf.png"
+                                                            alt="studio_hawk" width="81" height="48" />
+                                                        </td>
+                                                        <td style="text-align: right;" align="right">
+                                                          <span>
+                                                            <img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_star_761eabe040.png"
+                                                              alt="zuse_email_star" width="24" height="24"
+                                                              class="testim-avatar-star" />
+                                                            <img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_star_761eabe040.png"
+                                                              alt="zuse_email_star" width="24" height="24"
+                                                              class="testim-avatar-star" />
+                                                            <img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_star_761eabe040.png"
+                                                              alt="zuse_email_star" width="24" height="24"
+                                                              class="testim-avatar-star" />
+                                                            <img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_star_761eabe040.png"
+                                                              alt="zuse_email_star" width="24" height="24"
+                                                              class="testim-avatar-star" />
+                                                            <img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_star_761eabe040.png"
+                                                              alt="zuse_email_star" width="24" height="24"
+                                                              class="testim-avatar-star" />
+                                                          </span>
+                                                          <span class="testim-avatar-star-label"
+                                                            style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 0;  color: #313131; font-size: 28px; letter-spacing: 0; line-height: normal; font-weight: 500;">5.0</span>
+                                                        </td>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="test-row-mobi-2"
+                                                      style="font-family: Arial, Helvetica, sans-serif;padding-top: 30px; padding-bottom: 25px; padding-left: 30px; padding-right: 30px;  color: #313131; font-size: 20px; letter-spacing: 0; line-height: 30px; font-weight: 400;">
+                                                      "I have worked with Zuse Digital several times over the past year
+                                                      and have seen nothing but outstanding results come out of their
+                                                      work. They put an immense level of work into everything they build
+                                                      which gives it the finish that the job requires."
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="center" class="mob_padding"
+                                              style="text-align: center; font-family: Arial, Helvetica, sans-serif;padding-top: 28px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <a href="#">
+                                                <span
+                                                  style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 5px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: normal; font-weight: 400;border-bottom: 2px solid #D2D3D4;">
+                                                  View All Testimonials
+                                                </span>
+                                                <img
+                                                  src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_arro_a79b3fb908.png"
+                                                  alt="zuse_email_arro" width="6" height="12" />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 40px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 700;">
+                                              Our Work
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 6px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              Take a look at some of our recent projects to see how we’ve helped other
+                                              businesses:
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding" style="padding-top: 32px;">
+                                              <table style="border-collapse: collapse;width: 100%;">
+                                                <td style="text-align: left;" align="left" class="case-mobi-td">
+                                                  <a href="#"
+                                                    style="display: inline-block;line-height: 0;text-align: left;">
+                                                    <img
+                                                      src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/komodo_casestudy_by_zusedigital_1d1adf30ae.png"
+                                                      alt="komodo_casestudy_by_zusedigital" width="183" height="183"
+                                                      class="case-mobi-img" />
+                                                    <div
+                                                      style="font-family: Arial, Helvetica, sans-serif;padding-top: 13px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 14px; letter-spacing: 0; line-height: normal; font-weight: 700;"
+                                                      class="case-mobi-text">Komodo</div>
+                                                  </a>
+                                                </td>
+                                                <td style="text-align: center;" align="center" class="case-mobi-td">
+                                                  <a href="#"
+                                                    style="display: inline-block;line-height: 0;text-align: left;">
+                                                    <img
+                                                      src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/simonwest_casestudy_by_zusedigital_bf803f330d.png"
+                                                      alt="simonwest_casestudy_by_zusedigital" width="183" height="183"
+                                                      class="case-mobi-img" />
+                                                    <div
+                                                      style="font-family: Arial, Helvetica, sans-serif;padding-top: 13px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 14px; letter-spacing: 0; line-height: normal; font-weight: 700;"
+                                                      class="case-mobi-text">Simon West</div>
+                                                  </a>
+                                                </td>
+                                                <td style="text-align: right;" align="right" class="case-mobi-td">
+                                                  <a href="#"
+                                                    style="display: inline-block;line-height: 0;text-align: left;">
+                                                    <img
+                                                      src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/natural_aesthetique_casestudy_by_zusedigital_9da4ffdd60.png"
+                                                      alt="natural_aesthetique_casestudy_by_zusedigital" width="183"
+                                                      height="183" class="case-mobi-img" />
+                                                    <div
+                                                      style="font-family: Arial, Helvetica, sans-serif;padding-top: 13px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 14px; letter-spacing: 0; line-height: normal; font-weight: 700;"
+                                                      class="case-mobi-text">Natural Aesthetique</div>
+                                                  </a>
+                                                </td>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="center" class="mob_padding"
+                                              style="text-align: center; font-family: Arial, Helvetica, sans-serif;padding-top: 36px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              <a href="#">
+                                                <span
+                                                  style="font-family: Arial, Helvetica, sans-serif;padding-top: 0px; padding-bottom: 5px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: normal; font-weight: 400;border-bottom: 2px solid #D2D3D4;">
+                                                  View All Our Work
+                                                </span>
+                                                <img
+                                                  src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_email_arro_a79b3fb908.png"
+                                                  alt="zuse_email_arro" width="6" height="12" />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 40px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 700;">
+                                              Stay Connected
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="font-family: Arial, Helvetica, sans-serif;padding-top: 6px; padding-bottom: 0px; padding-left: 0; padding-right: 0;  color: #313131; font-size: 18px; letter-spacing: 0; line-height: 28px; font-weight: 400;">
+                                              Follow us on social media to stay updated with our latest projects and
+                                              industry insights:
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="padding-top: 31px; padding-bottom: 0px; padding-left: 0; padding-right: 0;">
+                                              <table style="border-collapse: collapse;">
+                                                <tr>
+                                                  <td
+                                                    style="padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;">
+                                                    <table style="border-collapse: collapse;">
+                                                      <tr>
+                                                        <td style="padding-right: 11px;">
+                                                          <a href="https://www.linkedin.com/company/zuse-digital/posts/?feedView=all" target="_blank" style="display: block;">
+                                                          <span style="width: 20px;display: inline-block; text-align: center;"><img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/social_linkedin_4ae6467d36.png"
+                                                              alt="social_linkedin" width="20" height="20" /></span>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                          <a href="https://www.linkedin.com/company/zuse-digital/posts/?feedView=all" target="_blank">
+                                                          <span
+                                                            style="font-family: Arial, Helvetica, sans-serif; color: #313131; font-size: 18px; letter-spacing: 0; line-height: 34px; font-weight: 400;">Linkedin</span>
+                                                            </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    style="padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;">
+                                                    <table style="border-collapse: collapse;">
+                                                      <tr>
+                                                        <td style="padding-right: 11px;">
+                                                          <a href="https://www.instagram.com/zusedigital/" target="_blank" style="display: block;">
+                                                          <span style="width: 20px;display: inline-block; text-align: center;"><img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/social_instagram_a67488990a.png"
+                                                              alt="social_instagram" width="20" height="20" /></span>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                          <a href="https://www.instagram.com/zusedigital/" target="_blank">
+                                                          <span
+                                                            style="font-family: Arial, Helvetica, sans-serif; color: #313131; font-size: 18px; letter-spacing: 0; line-height: 34px; font-weight: 400;">Instagram</span>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    style="padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;">
+                                                    <table style="border-collapse: collapse;">
+                                                      <tr>
+                                                        <td style="padding-right: 11px;">
+                                                          <a href="https://dribbble.com/ZuseDigital" target="_blank" style="display: block;">
+                                                          <span style="width: 20px;display: inline-block; text-align: center;"><img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/social_dribbble_01613cc859.png"
+                                                              alt="social_dribbble" width="20" height="20" /></span>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                          <a href="https://dribbble.com/ZuseDigital" target="_blank">
+                                                          <span
+                                                            style="font-family: Arial, Helvetica, sans-serif; color: #313131; font-size: 18px; letter-spacing: 0; line-height: 34px; font-weight: 400;">Dribbble</span>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td
+                                                    style="padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding-right: 0;">
+                                                    <table style="border-collapse: collapse;">
+                                                      <tr>
+                                                        <td style="padding-right: 11px;">
+                                                          <a href="https://www.facebook.com/ZuseDigital/" target="_blank" style="display: block;">
+                                                          <span style="width: 20px;display: inline-block; text-align: center;"><img
+                                                              src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/social_facebook_6b2c7ffbed.png"
+                                                              alt="social_facebook" width="13" height="20" /></span>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                          <a href="https://www.facebook.com/ZuseDigital/" target="_blank">
+                                                          <span
+                                                            style="font-family: Arial, Helvetica, sans-serif; color: #313131; font-size: 18px; letter-spacing: 0; line-height: 34px; font-weight: 400;">Facebook</span>
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="mob_padding"
+                                              style="padding-top: 40px; padding-bottom: 30px; padding-left: 0; padding-right: 0;">
+                                              <a href="https://zusedigital.com/" target="_blank">
+                                                <img
+                                                  src="https://strapi-demo-1.s3.ap-southeast-2.amazonaws.com/zuse_digital_footer_icon_dc0ddaac06.png"
+                                                  alt="zuse-digital-footer-icon" style="max-width: 100%;" />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="center" class="mob_padding"
+                                              style="text-align: center; padding-top: 0px; padding-bottom: 93px; padding-left: 18px; padding-right: 18px; font-family: Arial, Helvetica, sans-serif; color: #000; font-size: 16px; letter-spacing: 0; line-height: 26px; font-weight: 400; opacity: 0.6;">
+                                              If you’d like to learn more, please visit our website at <a
+                                                href="https://zusedigital.com/" target="_blank"
+                                                style="text-decoration: underline; color: #000;">www.zusedigital.com</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </center>
+</body>
+
+</html>

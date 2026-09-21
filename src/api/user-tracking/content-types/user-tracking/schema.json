@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_trackings",
+  "info": {
+    "singularName": "user-tracking",
+    "pluralName": "user-trackings",
+    "displayName": "User Tracking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "data": {
+      "type": "json"
+    },
+    "form_submission": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::ezforms.submission",
+      "inversedBy": "user_trackings"
+    }
+  }
+}

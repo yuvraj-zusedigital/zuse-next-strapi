@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_windows_images_windows_images",
+  "info": {
+    "displayName": "Windows Images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "browserType": {
+      "type": "enumeration",
+      "enum": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+      ]
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

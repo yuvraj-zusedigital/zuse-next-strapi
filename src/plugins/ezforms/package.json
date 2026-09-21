@@ -1,0 +1,13 @@
+{
+  "name": "ezforms",
+  "version": "1.0.0",
+  "description": "Local Strapi v5 form submissions plugin (replaces strapi-plugin-ezforms).",
+  "strapi": {
+    "name": "ezforms",
+    "displayName": "EZ Forms",
+    "description": "Form submissions and notifications",
+    "kind": "plugin"
+  },
+  "main": "./strapi-server.js",
+  "private": true
+}

@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "sub_title": {
+      "type": "string",
+      "required": true
+    },
+    "Slider": {
+      "type": "dynamiczone",
+      "components": [
+        "slider.slider"
+      ],
+      "required": true
+    },
+    "project_details_path": {
+      "type": "string",
+      "default": "/"
+    },
+    "project_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project-category.project-category",
+      "mappedBy": "projects"
+    },
+    "rank": {
+      "type": "integer",
+      "unique": true
+    },
+    "select_type": {
+      "type": "enumeration",
+      "enum": [
+        "Image",
+        "Video"
+      ],
+      "required": true,
+      "default": "Image"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "is_coming_soon": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ProjectContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project-content.project-content"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "FeatureProject": {
+      "type": "boolean",
+      "default": false
+    },
+    "GirdStyle": {
+      "type": "enumeration",
+      "enum": [
+        "FullWidth",
+        "HalfWidth"
+      ],
+      "required": true,
+      "default": "FullWidth"
+    },
+    "FeaturedRank": {
+      "required": false,
+      "unique": false,
+      "type": "integer"
+    }
+  }
+}

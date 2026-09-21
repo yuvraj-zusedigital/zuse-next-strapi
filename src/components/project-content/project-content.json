@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_project_content_project_contents",
+  "info": {
+    "displayName": "ProjectContent",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "BannerTitle": {
+      "type": "string"
+    },
+    "Image": {
+      "displayName": "Image",
+      "type": "component",
+      "repeatable": false,
+      "component": "image.image"
+    },
+    "BelowBannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "BelowBannerDescription": {
+      "type": "text",
+      "required": true
+    },
+    "RepetableMedia": {
+      "displayName": "RepetableMedia",
+      "type": "component",
+      "repeatable": true,
+      "component": "repetable-media.repetable-media"
+    },
+    "BannerDescription": {
+      "type": "text"
+    },
+    "BannerColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

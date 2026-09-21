@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ul_block_ul_blocks",
+  "info": {
+    "displayName": "ul_block",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "enable_section": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

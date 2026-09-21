@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_service_banner_banner_sections",
+  "info": {
+    "displayName": "Banner section",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "enable_section": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "block": {
+      "displayName": "Blocks",
+      "type": "component",
+      "repeatable": true,
+      "component": "banner-block.blocks"
+    }
+  }
+}

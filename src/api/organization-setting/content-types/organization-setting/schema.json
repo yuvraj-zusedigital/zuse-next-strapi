@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "organization_settings",
+  "info": {
+    "singularName": "organization-setting",
+    "pluralName": "organization-settings",
+    "displayName": "Organization Settings",
+    "description": "Brand and schema defaults for SEO automation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orgName": {
+      "type": "string",
+      "required": true,
+      "default": "My Organization"
+    },
+    "orgDescription": {
+      "type": "text"
+    },
+    "orgLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "orgLogoUrl": {
+      "type": "string",
+      "regex": "^https?://.+"
+    },
+    "siteUrl": {
+      "type": "string",
+      "required": true,
+      "regex": "^https?://.+"
+    },
+    "blogBasePath": {
+      "type": "string",
+      "required": true,
+      "default": "/blog"
+    },
+    "orgLanguage": {
+      "type": "string",
+      "default": "en"
+    },
+    "orgSameAs": {
+      "type": "json"
+    },
+    "defaultAuthorName": {
+      "type": "string"
+    },
+    "defaultAuthorUrl": {
+      "type": "string",
+      "regex": "^https?://.+"
+    },
+    "searchActionUrlTemplate": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_banner_block_blocks",
+  "info": {
+    "displayName": "Blocks",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "image_jpg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "image_webp": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "enable_section": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
