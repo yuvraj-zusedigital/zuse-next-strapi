@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Black.woff2') format('woff2'),
+        url('DegularDemo-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Bold.woff2') format('woff2'),
+        url('DegularDemo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Light.woff2') format('woff2'),
+        url('DegularDemo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Medium.woff2') format('woff2'),
+        url('DegularDemo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Regular.woff2') format('woff2'),
+        url('DegularDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Semibold.woff2') format('woff2'),
+        url('DegularDemo-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Degular Demo';
+    src: url('DegularDemo-Thin.woff2') format('woff2'),
+        url('DegularDemo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

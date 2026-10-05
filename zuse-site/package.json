@@ -1,0 +1,38 @@
+{
+  "name": "zusedigitalwebsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run tailwind:watch\" \"npm run next:dev\"",
+    "next:dev": "next dev --port 7000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "tailwind:build": "npx @tailwindcss/cli -i ./app/styles/globals.css -o ./app/styles/out.css --minify",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./app/styles/globals.css -o ./app/styles/out.css --watch",
+    "dev:local": "concurrently \"npm run tailwind:watch\" \"next dev --port 7100\"",
+    "cdn:mirror": "node scripts/mirror-cdn.mjs"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "swiper": "^14.2.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.185.4",
+    "concurrently": "^9.2.4",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,267 @@
+@reference "../globals.css";
+
+/* Work page — mirrors zusedigital.com work layout classes */
+
+.page-title.work-page-title {
+  @apply relative;
+}
+
+.work-page-heading {
+  @apply text-ink-900 font-display font-medium text-[32px] md:text-[48px] lg:text-[60px] not-italic leading-[1.1] lg:leading-[1.05] mb-4 tracking-[-0.02em] lg:tracking-[-0.03em];
+}
+
+.work-page-lead {
+  @apply text-ink-500 font-sans font-normal text-[17px] md:text-[20px] lg:text-[23.1px] not-italic leading-[25px] md:leading-[28px] lg:leading-[32px] max-w-[588px];
+}
+
+.work-hero-blob-1 {
+  @apply hidden md:block absolute rounded-[633159px] pointer-events-none;
+  width: 442.12px;
+  height: 448.5px;
+  right: -141.12px;
+  top: 300px;
+  background: var(--background-image-gradient-work-blob-1);
+  filter: blur(85.4765px);
+  transform: rotate(-54.74deg);
+}
+
+.work-hero-blob-2 {
+  @apply hidden md:block absolute rounded-[633159px] pointer-events-none;
+  width: 442.12px;
+  height: 448.5px;
+  left: calc(50% - 442.12px/2 - 498.34px);
+  top: -59.57px;
+  background: var(--background-image-gradient-work-blob-2);
+  filter: blur(85.4765px);
+  transform: rotate(-54.74deg);
+}
+
+.anime-grid-links {
+  @apply relative;
+}
+
+.anime-grid-links-wrap {
+  @apply flex overflow-hidden;
+  scroll-behavior: smooth;
+}
+
+.links-container {
+  @apply flex flex-nowrap items-center overflow-x-auto overflow-y-hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.links-container::-webkit-scrollbar {
+  display: none;
+}
+
+.anime-grid-links a,
+.anime-grid-links button {
+  @apply block shrink-0 opacity-40 text-ink-900 font-sans text-[16px] md:text-[19px] tracking-normal text-center h-[35px] md:h-10 leading-[33px] md:leading-[38px] px-2.5 md:px-[15px] mr-2.5 md:mr-[15px] bg-transparent rounded-[10px] border-[0.1rem] border-transparent whitespace-nowrap transition-[border-color,background-color,color] duration-200;
+}
+
+.anime-grid-links button {
+  @apply cursor-pointer border-0;
+}
+
+.anime-grid-links a:hover,
+.anime-grid-links a.tbx,
+.anime-grid-links button:hover,
+.anime-grid-links button.tbx {
+  @apply opacity-100 bg-[#f3f3f4];
+}
+
+.anime-grid-links a:hover {
+  @apply border-ink-900;
+}
+
+.anime-grid-links.anime-grid-links-metal a {
+  @apply opacity-100 rounded-[6px] border-[1px] border-transparent bg-surface-filter font-display font-semibold text-[16px] leading-[38px] text-ink-500 h-10 transition-[border-color,background-color,color] duration-200;
+}
+
+.anime-grid-links.anime-grid-links-metal a:hover,
+.anime-grid-links.anime-grid-links-metal a.tbx {
+  @apply border-[1px] border-brand-600 text-brand-500 font-display font-semibold text-[16px] leading-[38px] rounded-[6px] bg-transparent;
+}
+
+.anime-grid-links button.btn-scr-com {
+  @apply absolute top-[-5px] m-0 p-0 w-10 h-10 opacity-100 hidden md:hidden;
+}
+
+.anime-grid-links button.btn-scr-com.btn-scr-left {
+  @apply left-0;
+  transform: rotate(180deg);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+}
+
+.anime-grid-links button.btn-scr-com.btn-scr-right {
+  @apply right-0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+}
+
+@media (max-width: 767px) {
+  .anime-grid-links-wrap {
+    @apply relative -mx-4;
+  }
+
+  .links-container {
+    @apply px-5 pb-2.5;
+  }
+
+  .anime-grid-links-wrap::after {
+    content: "";
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+  .anime-grid-links-wrap.scrolling::after {
+    opacity: 0;
+  }
+}
+
+.has-video-init.anime-grid-parent img,
+.has-video-init.anime-grid-parent video {
+  @apply object-cover;
+}
+
+.has-video-init.anime-grid-parent img {
+  @apply h-full w-full;
+}
+
+.has-video-init.anime-grid-parent video {
+  @apply relative z-0 w-full h-full max-w-full rounded-lg;
+}
+
+.work-projects-grid .block.img-wrapper {
+  @apply relative overflow-hidden rounded-lg z-[1] bg-surface-100;
+}
+
+.work-projects-grid .block.img-wrapper img,
+.work-projects-grid .block.img-wrapper video {
+  @apply max-h-[499px];
+}
+
+.work-projects-grid .block.img-wrapper video {
+  @apply absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200;
+}
+
+.work-projects-grid .block.img-wrapper img {
+  @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-200;
+}
+
+.work-projects-grid .block.img-wrapper.is-playing video {
+  @apply opacity-100;
+}
+
+.work-projects-grid .block.img-wrapper.is-playing img {
+  @apply opacity-0;
+}
+
+.work-tile-fallback {
+  @apply absolute inset-0 bg-surface-100;
+}
+
+.work-tile-link {
+  @apply block no-underline text-inherit;
+}
+
+.home-projects-grid-coming-soon {
+  @apply absolute top-[2px] right-2 rounded bg-[rgba(52,137,236,0.10)] h-[30px] px-2.5 leading-[30px] text-[rgba(52,137,236,0.9)] text-right text-sm font-sans not-italic font-normal;
+}
+
+.home-projects-grid-title {
+  @apply mt-[9px] md:mt-5 lg:mt-6 text-ink-800 font-display font-semibold text-[20px] md:text-[26px] lg:text-[30px] not-italic leading-normal lg:leading-[0.96] tracking-[-0.02em];
+}
+
+.home-projects-grid-title span {
+  position: relative;
+  display: inline-block;
+}
+
+.home-projects-grid-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-ink-950, #111111);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-projects-grid-title span:hover::after,
+.home-projects-grid-item:hover .home-projects-grid-title span::after {
+  transform: scaleX(1);
+}
+
+.home-projects-grid-label {
+  @apply mt-[3px] md:mt-[5px] lg:mt-3 text-ink-500 font-sans text-base lg:text-[17.7px] not-italic font-normal leading-5 lg:leading-[23px] opacity-80 md:opacity-100;
+}
+
+.work-empty-copy {
+  @apply w-full text-ink-600 font-sans text-base md:text-lg py-10;
+}
+
+.work-section-title {
+  @apply relative flex items-center gap-4 mt-[10px] mb-10 md:mb-[70px] font-display font-medium text-[24px] leading-normal text-ink-800;
+}
+
+.work-section-title::after {
+  content: "";
+  @apply h-px flex-1 bg-black/30;
+}
+
+.comm-video-wrap {
+  @apply relative overflow-hidden;
+}
+
+/* ── Gradient Hover Border (from testimonials) ── */
+.work-card-border {
+  @apply absolute inset-0 z-[1] rounded-[8px] p-[1px] pointer-events-none overflow-hidden;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.work-card-border-glow {
+  @apply hidden md:block absolute top-1/2 left-1/2 w-[200%] h-auto aspect-square opacity-0 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-250 ease-linear;
+}
+
+.work-card-border-gradient {
+  @apply absolute inset-0 opacity-75;
+  background: radial-gradient(circle, rgba(35, 74, 232, 0.95), rgba(131, 179, 249, 0.55) 33%, #d4e8f8 66%, transparent 100%);
+  transform: translate3d(var(--card-mouse-x), var(--card-mouse-y), 0);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+@media (min-width: 768px) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home-projects-grid-item:hover .work-card-border-glow {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card-border-gradient {
+    transition: none;
+  }
+
+  .home-projects-grid-item:hover .work-card-border-glow {
+    opacity: 0.6;
+  }
+}

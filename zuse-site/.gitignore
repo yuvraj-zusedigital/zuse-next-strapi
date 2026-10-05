@@ -1,0 +1,39 @@
+# Node / create-next-app defaults
+node_modules
+.next
+out
+build
+*.tsbuildinfo
+next-env.d.ts
+
+# Env — never commit secrets (same idea as Website/.env*)
+.env
+.env*.local
+.env.development
+.env.production
+.env.local
+
+# OS / IDE
+.DS_Store
+*.pem
+.vscode
+.idea
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Local archives / scratch
+zusenextsetup.zip
+.agent
+
+# Compiled CSS
+/app/styles/out.css
+
+# Local SEO audit report (kept as a reference, not part of the app)
+seo-rendering-audit.md
+
+# Local mirror of CDN assets (npm run cdn:mirror)
+/public/cdn/

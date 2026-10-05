@@ -1,0 +1,125 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse HERO COMPONENT CSS (Tailwind @apply format) ── */
+
+/* ── HERO GLOBAL BACKGROUND WASH & ACCENT GRAPHIC ── */
+.zuse-global-bg-wrapper {
+  @apply absolute top-0 left-0 w-full h-[130vh] z-0 pointer-events-none overflow-hidden bg-surface-hero-bg;
+}
+
+.zuse-global-bg-inner {
+  @apply relative w-full max-w-[1440px] h-screen mx-auto;
+
+  @variant max-lg {
+    @apply absolute w-[130%] h-auto -right-[20%] -left-[22%] -top-2 max-w-none m-0;
+  }
+}
+
+.zuse-global-bg-fade {
+  @apply absolute w-full h-[2500px] left-0 top-[638px];
+  background: var(--background-image-gradient-hero-fade);
+}
+
+.zuse-hero-bg {
+  @apply pointer-events-none absolute z-0 object-cover opacity-100 mix-blend-multiply w-[590px] h-auto right-0 left-auto -top-[162px] rotate-[34deg] max-w-none m-0;
+
+  @variant max-sm {
+    @apply relative h-[752px] w-[700px] -top-[220px] rotate-[32deg] object-contain;
+  }
+
+  @variant sm {
+    @apply relative h-[1052px] w-[1000px] -top-[450px] rotate-[34deg] object-contain;
+  }
+
+  @variant md {
+    @apply absolute w-[900px] h-auto -top-[140px] -right-[250px] rotate-0 object-contain;
+  }
+
+  @variant lg {
+    @apply w-[1224px] -top-[200px] -right-[22%];
+  }
+
+  @variant 3xl {
+    @apply -top-[250px] -right-[24%];
+  }
+}
+
+/* ── HERO SECTION LAYOUT & CONTAINER ── */
+.zuse-hero-section {
+  @apply relative z-10 mx-auto w-full px-[15px] pb-12 pt-[380px] bg-transparent;
+
+  @variant max-md {
+    @apply pt-[360px];
+  }
+
+  @variant md {
+    @apply pt-[160px] pb-6 min-h-0 flex items-center;
+  }
+
+  @variant lg {
+    @apply pt-[280px] pb-20 min-h-[620px];
+  }
+}
+
+.max-w-zuse {
+  @apply max-w-[1144px] w-full mx-auto;
+
+  @variant max-[1366px] {
+    @apply box-border;
+  }
+}
+
+.max-w-hero-title {
+  @apply max-w-hero-title;
+}
+
+.max-w-hero-desc {
+  @apply max-w-hero-desc;
+}
+
+/* ── HERO BADGE LABEL ── */
+.zuse-hero-label {
+  @apply flex items-start gap-1 font-sans font-bold text-[10px] md:text-caption tracking-[0.01em] uppercase text-ink-hero-label mb-[5px];
+}
+
+.zuse-hero-label-flag {
+  @apply w-5 h-auto block shrink-0 object-contain;
+}
+
+/* ── HERO HEADINGS & PARAGRAPH ── */
+.zuse-hero-h1 {
+  @apply font-display font-medium text-display-mob leading-[42px] tracking-[-0.03em] text-ink-900 mb-3.5;
+
+  @variant max-sm {
+    @apply leading-none;
+  }
+
+  @variant md {
+    @apply text-display-tablet leading-[52px] max-w-[480px];
+  }
+
+  @variant lg {
+    @apply text-display leading-[63px] max-w-hero-title;
+  }
+}
+
+.zuse-hero-p {
+  @apply font-sans font-normal text-[15px] leading-[22px] md:text-body-md md:leading-6 text-ink-600 mb-[26px] max-w-hero-desc;
+
+  @variant lg {
+    @apply text-body-lg leading-[25px] mb-[50px];
+  }
+}
+
+/* ── HERO CTA BUTTONS ── */
+.zuse-hero-buttons {
+  @apply flex w-full flex-row items-center gap-[13px];
+
+  @variant lg {
+    @apply w-auto gap-[18px];
+  }
+
+  >:first-child {
+    @apply w-100 max-w-[210px] shrink-0;
+  }
+}

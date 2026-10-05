@@ -1,0 +1,95 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse LOGOS COMPONENT CSS (Tailwind @apply format) ── */
+
+.zuse-logos-section {
+  @apply relative z-10 w-full pt-8 pb-8 px-6 bg-transparent;
+
+  @variant max-md {
+    @apply pt-0;
+  }
+
+  @variant md {
+    @apply py-[50px];
+  }
+
+  @variant lg {
+    @apply pt-12 pb-0 px-0;
+  }
+}
+
+.zuse-logos-heading-wrap {
+  @apply mb-8 lg:mb-8 flex flex-wrap items-center justify-center text-center max-w-full;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  @variant md {
+    @apply justify-start text-left flex-nowrap overflow-x-auto mb-4;
+  }
+}
+
+.zuse-logos-text-1 {
+  @apply order-1 mr-[6px];
+
+  @variant md {
+    @apply order-none mr-1;
+  }
+}
+
+.zuse-logos-text-2 {
+  @apply order-3;
+
+  @variant md {
+    @apply order-none mr-2;
+  }
+}
+
+.zuse-logos-text-3 {
+  @apply order-4 basis-full mt-0 md:mt-2;
+
+  @variant md {
+    @apply order-none basis-auto mt-0;
+  }
+}
+
+.zuse-logos-heading-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.zuse-logos-heading {
+  @apply font-sans font-extrabold text-caption leading-[22px] tracking-[0.01em] uppercase text-ink-hero-label whitespace-nowrap;
+
+  @variant lg {
+    @apply leading-[46px];
+  }
+}
+
+.zuse-logos-heading-wrap>img,
+.zuse-logos-avatar-group {
+  @apply order-2 block w-[46px] h-auto shrink-0 object-contain mr-[6px];
+
+  @variant md {
+    @apply order-none mr-2;
+  }
+}
+
+.zuse-logos-grid {
+  @apply grid grid-cols-4 max-w-[452px] items-center justify-items-center gap-6 md:gap-12 md:gap-[clamp(20px,5vw,48px)];
+
+  @variant md {
+    @apply flex flex-row flex-nowrap justify-between gap-[clamp(16px,3vw,40px)] overflow-visible;
+  }
+
+  @variant xl {
+    @apply gap-[35px];
+  }
+}
+
+.zuse-logos-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.zuse-logo-img {
+  @apply shrink-0 max-w-none max-h-[clamp(22px,6vw,30px)] sm:max-h-[clamp(24px,3vw,30px)] xl:max-h-[30px] w-auto h-auto object-contain block;
+  filter: brightness(0) saturate(100%) invert(58%) sepia(12%) saturate(900%) hue-rotate(175deg) brightness(92%) contrast(88%);
+}

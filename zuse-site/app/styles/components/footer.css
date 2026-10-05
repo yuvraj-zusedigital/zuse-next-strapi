@@ -1,0 +1,229 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse FOOTER COMPONENT CSS (Tailwind @apply format) ── */
+
+.zuse-footer {
+  @apply relative w-full overflow-hidden;
+  min-height: 900px;
+  background: var(--background-image-gradient-footer);
+}
+
+.zuse-footer-inner {
+  @apply relative z-10 w-full max-w-[1440px] mx-auto px-[5%] box-border;
+
+  @variant xl {
+    @apply px-[150px];
+  }
+}
+
+.zuse-footer-cta-row {
+  @apply flex flex-col items-start justify-between pt-12 pb-12;
+
+  @variant md {
+    @apply flex-row items-center pt-[107px] pb-[200px];
+  }
+}
+
+.zuse-footer-cta-title {
+  @apply mb-8 max-w-[560px] font-display font-medium text-h2-mob leading-[1.05] tracking-tight text-ink-900;
+
+  @variant md {
+    @apply mb-0 text-display;
+  }
+}
+
+
+.zuse-footer-cta-btn.zuse-ihb {
+  @apply relative z-10 flex w-[210px] h-[52px] items-center justify-between gap-[10px] pl-6 pr-5 py-3.5 rounded-btn bg-brand-700 font-display font-semibold text-btn leading-tight tracking-normal box-border text-surface-0 no-underline;
+  box-shadow: var(--shadow-btn-glow);
+
+  @variant md {
+    @apply inline-flex w-[233px] h-[58px] pl-6 pr-[25px] py-4 rounded-[10px];
+  }
+}
+
+.zuse-footer-cta-btn.zuse-ihb:hover,
+.zuse-footer-cta-btn.zuse-ihb:focus-visible {
+  opacity: 1 !important;
+}
+
+.zuse-footer-nav {
+  @apply pb-[350px];
+
+  @variant md {
+    @apply pb-[480px];
+  }
+
+  @variant 3xl {
+    @apply pb-[600px];
+  }
+}
+
+/* Desktop layout */
+.zuse-footer-desktop {
+  @apply hidden;
+
+  @variant lg {
+    @apply flex justify-between w-full;
+  }
+}
+
+.zuse-footer-brand {
+  @apply flex flex-col shrink-0 basis-[260px] mr-5;
+}
+
+.zuse-footer-logo {
+  @apply block h-11 w-auto mb-6 object-contain object-left;
+}
+
+.zuse-footer-cols {
+  @apply flex gap-8;
+
+  @variant lg {
+    @apply gap-[60px];
+  }
+
+  @variant 2xl {
+    @apply gap-[100px];
+  }
+}
+
+.zuse-footer-col {
+  @apply flex flex-col min-w-max;
+}
+
+.zuse-footer-company {
+  @apply relative;
+}
+
+.zuse-footer-social-block {
+  @apply pt-12;
+}
+
+.zuse-footer-heading {
+  @apply font-display font-semibold text-caption leading-[30px] uppercase;
+  color: var(--color-footer-heading);
+}
+
+.zuse-footer-text {
+  @apply font-display font-medium text-btn leading-6 text-ink-800;
+}
+
+.zuse-footer-brand .zuse-footer-text {
+  @apply max-w-[260px];
+}
+
+.zuse-footer-list {
+  @apply list-none mt-4 p-0 flex flex-col gap-3 whitespace-nowrap;
+}
+
+.zuse-footer-link {
+  @apply text-ink-800 no-underline transition-colors duration-200;
+}
+
+.zuse-footer-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.zuse-footer-socials {
+  @apply flex items-center gap-5 mt-4;
+}
+
+.zuse-footer-socials a {
+  @apply inline-flex transition-opacity duration-200 hover:opacity-70;
+}
+
+.zuse-footer-socials img {
+  @apply w-[18px] h-[18px] block;
+}
+
+/* Mobile layout */
+.zuse-footer-mobile {
+  @apply flex flex-col gap-10;
+
+  @variant lg {
+    @apply hidden;
+  }
+}
+
+.zuse-footer-mobile-logo {
+  @apply block h-[34px] w-auto mb-[18px] object-contain object-left;
+}
+
+.zuse-footer-mobile-brand .zuse-footer-text {
+  @apply max-w-[330px];
+}
+
+.zuse-footer-mobile-grid {
+  @apply grid grid-cols-2 gap-x-4 gap-y-16;
+
+  @variant md {
+    @apply gap-x-8;
+  }
+}
+
+.zuse-footer-mobile-col {
+  @apply flex flex-col gap-22 lg:gap-16;
+}
+
+.zuse-footer-mobile .zuse-footer-list {
+  @apply gap-5 whitespace-normal;
+
+  @variant max-md {
+    @apply gap-3.5;
+  }
+}
+
+.zuse-footer-mobile .zuse-footer-list .zuse-footer-link {
+  @apply whitespace-nowrap;
+}
+
+.zuse-footer-legal {
+  @apply relative z-10 font-display text-[16px] font-medium leading-6 text-ink-800;
+}
+
+.zuse-footer-legal-desktop {
+  @apply hidden;
+
+  @variant lg {
+    @apply absolute left-0 block w-max text-left;
+    top: calc(100% + 64px);
+  }
+}
+
+.zuse-footer-legal-mobile {
+  @apply mt-16 text-center;
+
+  @variant lg {
+    @apply hidden;
+  }
+}
+
+.zuse-footer-legal-mobile .zuse-footer-legal-separator {
+  @apply hidden;
+}
+
+.zuse-footer-legal-mobile .zuse-footer-legal-links {
+  @apply block;
+}
+
+.zuse-footer-legal a {
+  @apply text-ink-800 no-underline transition-colors duration-200;
+}
+
+.zuse-footer-legal a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Wave illustration */
+.zuse-footer-wave {
+  @apply absolute bottom-0 left-0 z-0 w-full pointer-events-none mix-blend-multiply opacity-90;
+}
+
+.zuse-footer-wave-img,
+.zuse-footer-wave img {
+  @apply block w-full object-cover object-bottom;
+  height: 600px;
+  -webkit-mask-image: var(--background-image-gradient-footer-mask);
+  mask-image: var(--background-image-gradient-footer-mask);
+}

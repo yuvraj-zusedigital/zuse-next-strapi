@@ -1,0 +1,599 @@
+@reference "../globals.css";
+
+/* ── Blog + Stripe FullWidthCarousel / ProductFeatureCard motion ── */
+
+.zuse-blog-section {
+  /* Stripe FullWidthCarousel tokens */
+  --windowWidth: 100vw;
+  --zuse-blog-layout-max: 1140px;
+  --overflowMargin: 16px;
+  --fullWidthCarouselOverflowPaddingTop: 28px;
+  --fullWidthCarouselOverflowPaddingBottom: 80px;
+  --blogCardGap: 16px;
+
+  @apply relative z-20 w-full overflow-x-clip max-md:pt-[50px] max-md:pb-[80px] bg-surface-0;
+
+  @variant md {
+    --overflowMargin: 32px;
+  }
+
+  @variant md {
+    --overflowMargin: 48px;
+
+    @apply py-[100px];
+  }
+
+  /* Align first/last cards to content column (Stripe ≥1112px) */
+  @media (min-width: 1112px) {
+    --overflowMargin: calc(var(--windowWidth) / 2 - var(--zuse-blog-layout-max) / 2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zuse-blog-section {
+    --blogCardHoverDuration: 0ms;
+  }
+}
+
+.zuse-blog-inner {
+  @apply w-full max-w-[1440px] mx-auto px-4;
+
+  @variant md {
+    @apply px-8;
+  }
+
+  @variant xl {
+    @apply px-[150px];
+  }
+}
+
+.zuse-blog-header {
+  @apply relative flex items-center justify-between mb-12;
+
+  @variant md {
+    @apply mb-16;
+  }
+}
+
+.zuse-blog-title {
+  @apply m-0 font-display font-medium text-[32px] md:text-[40px] leading-[96%] tracking-[-0.02em] text-left text-ink-900;
+}
+
+.zuse-blog-arrows {
+  @apply relative flex shrink-0 gap-1;
+}
+
+/* ── FullWidthCarousel shell (Stripe) ── */
+.zuse-blog-fwc {
+  @apply relative min-w-0 w-full;
+}
+
+.zuse-blog-fwc-layout {
+  display: flex;
+  width: var(--windowWidth);
+  margin-left: calc(50% - 50vw);
+}
+
+.zuse-blog-fwc-track {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding: var(--fullWidthCarouselOverflowPaddingTop) 0 var(--fullWidthCarouselOverflowPaddingBottom);
+  margin: calc(var(--fullWidthCarouselOverflowPaddingTop) * -1) 0 calc(var(--fullWidthCarouselOverflowPaddingBottom) * -1);
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: var(--overflowMargin);
+  scroll-padding-right: var(--overflowMargin);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  /* Allow vertical page scroll; browser picks axis from gesture direction */
+  touch-action: pan-x pan-y;
+  user-select: none;
+}
+
+.zuse-blog-fwc-track:active {
+  cursor: grabbing;
+}
+
+.zuse-blog-fwc-track::-webkit-scrollbar {
+  display: none;
+}
+
+.zuse-blog-fwc-spacer {
+  flex: 0 0 auto;
+  min-width: var(--overflowMargin);
+  height: 1px;
+  scroll-snap-align: none;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* Carousel item widths — 1 / 2 / 4 cards visible */
+.zuse-blog-fwc-item {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  min-width: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: calc(var(--windowWidth) - (var(--overflowMargin) * 2));
+  max-width: var(--zuse-blog-layout-max);
+  padding-right: var(--blogCardGap);
+  padding-bottom: 4px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+.zuse-blog-fwc-item>.zuse-blog-card {
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+@media (min-width: 700px) {
+  .zuse-blog-fwc-item {
+    width: calc(min(100vw - (var(--overflowMargin) * 2), var(--zuse-blog-layout-max)) / 2);
+    max-width: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .zuse-blog-fwc-item {
+    /* Four cards across the content column (gap via padding-right) */
+    width: calc(var(--zuse-blog-layout-max) / 3);
+  }
+}
+
+/* ── ProductFeatureCard-style hover (Stripe) ── */
+.zuse-blog-card {
+  --cardShadow: 0px 14px 40px rgba(1, 11, 57, 0.1),
+    0px 6px 16px rgba(1, 11, 57, 0.05);
+  --productFeatureCardBodyPadding: 24px;
+
+  /* Hover: body overlaps image — image size/position stays fixed */
+  --blogCardHoverDistance: -44px;
+  --blogCardHoverDuration: 520ms;
+  --blogCardHoverEasing: cubic-bezier(0.22, 1, 0.36, 1);
+  --blogCardImageHoverScale: 0.99;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 72px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--cardShadow);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  .zuse-blog-card {
+    --productFeatureCardBodyPadding: 20px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .zuse-blog-card {
+    --productFeatureCardBodyPadding: 18px;
+  }
+}
+
+.zuse-blog-card-graphic {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 4px 4px 0;
+  border-radius: 4px;
+  aspect-ratio: 1.5;
+}
+
+.zuse-blog-card-graphic::after {
+  content: none;
+}
+
+.zuse-blog-card-graphic-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.zuse-blog-card-graphic-wrap img {
+  object-fit: cover;
+  pointer-events: none;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform var(--blogCardHoverDuration) var(--blogCardHoverEasing);
+  will-change: transform;
+}
+
+/* Title panel — lifts over the image on hover */
+.zuse-blog-card-body {
+  position: relative;
+  z-index: 5;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  margin-top: -1px;
+  padding: var(--productFeatureCardBodyPadding);
+  background: #fff;
+  transition: transform var(--blogCardHoverDuration) var(--blogCardHoverEasing);
+  will-change: transform;
+}
+
+.zuse-blog-card-title {
+  margin: 0;
+  font-family: var(--font-display), "degular", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-ink-900, #010b39);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  min-height: calc(1.3em * 3);
+}
+
+@media (min-width: 768px) {
+  .zuse-blog-card-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .zuse-blog-card-title {
+    font-size: 20px;
+  }
+}
+
+.zuse-blog-card-cta {
+  position: absolute;
+  bottom: var(--productFeatureCardBodyPadding);
+  left: var(--productFeatureCardBodyPadding);
+  z-index: 1; /* Ensures it sits underneath the body (which is z-index: 5) when not hovered */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 20px;
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-brand-700, #1f2996);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition:
+    opacity var(--blogCardHoverDuration) var(--blogCardHoverEasing),
+    transform var(--blogCardHoverDuration) var(--blogCardHoverEasing);
+  will-change: transform, opacity;
+}
+
+.zuse-blog-card-cta-arrow {
+  display: block;
+  flex-shrink: 0;
+  transform: translateX(0);
+  transition: transform var(--blogCardHoverDuration) var(--blogCardHoverEasing);
+}
+
+/* Title lifts + image shrinks + CTA animates */
+.zuse-blog-card:hover .zuse-blog-card-body,
+.zuse-blog-card:focus-visible .zuse-blog-card-body {
+  transform: translateY(var(--blogCardHoverDistance));
+}
+
+.zuse-blog-card:hover .zuse-blog-card-graphic-wrap img,
+.zuse-blog-card:focus-visible .zuse-blog-card-graphic-wrap img {
+  transform: scale(var(--blogCardImageHoverScale));
+}
+
+.zuse-blog-card:hover .zuse-blog-card-cta,
+.zuse-blog-card:focus-visible .zuse-blog-card-cta {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 60ms;
+}
+
+.zuse-blog-card:hover .zuse-blog-card-cta-arrow,
+.zuse-blog-card:focus-visible .zuse-blog-card-cta-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .zuse-blog-card-body,
+  .zuse-blog-card-graphic-wrap img,
+  .zuse-blog-card-cta,
+  .zuse-blog-card-cta-arrow {
+    transition: none;
+  }
+
+  .zuse-blog-card:hover .zuse-blog-card-body,
+  .zuse-blog-card:focus-visible .zuse-blog-card-body,
+  .zuse-blog-card:hover .zuse-blog-card-graphic-wrap img,
+  .zuse-blog-card:focus-visible .zuse-blog-card-graphic-wrap img,
+  .zuse-blog-card:hover .zuse-blog-card-cta-arrow,
+  .zuse-blog-card:focus-visible .zuse-blog-card-cta-arrow {
+    transform: none;
+  }
+}
+
+/* ── Nav arrows (absolute in header, title stays centered) ── */
+
+.zuse-blog-nav {
+  @apply relative flex w-8 h-8 items-center justify-center rounded-[6px] border border-transparent bg-transparent cursor-pointer text-brand-700;
+  transition:
+    border-color 0.15s cubic-bezier(0.65, 0, 0.35, 1),
+    background-color 0.15s cubic-bezier(0.65, 0, 0.35, 1),
+    color 0.15s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.zuse-blog-nav::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: var(--color-brand-600);
+  opacity: 0.12;
+  transition: background-color 0.15s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.zuse-blog-nav:hover:not(:disabled)::after {
+  opacity: 0.18;
+}
+
+.zuse-blog-nav svg {
+  position: relative;
+  z-index: 1;
+}
+
+.zuse-blog-nav.is-inactive,
+.zuse-blog-nav:disabled {
+  @apply cursor-default text-ink-400;
+  pointer-events: none;
+  border-color: var(--color-border-100);
+  background: transparent;
+}
+
+.zuse-blog-nav.is-inactive::after,
+.zuse-blog-nav:disabled::after {
+  background: transparent;
+  opacity: 0;
+}
+
+.zuse-blog-pagination {
+  @apply md:mt-20 mt-10 flex items-center justify-center gap-2;
+}
+
+.zuse-blog-pagination-dot {
+  @apply block h-[6px] w-[6px] cursor-pointer rounded-full border-0 bg-ink-400 p-0;
+  transition: background-color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.zuse-blog-pagination-dot:hover {
+  @apply bg-brand-400;
+}
+
+.zuse-blog-pagination-dot.is-active {
+  @apply bg-brand-700;
+}
+
+.zuse-blog-pagination-dot:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 3px;
+}
+
+/* ── Blog index ── */
+.zuse-blog-index {
+  @apply relative isolate min-h-screen overflow-hidden pt-32 md:pt-[190px] pb-20 bg-[#e9f1f4];
+}
+
+.zuse-blog-index-inner {
+  @apply relative z-10 max-w-[844px] md:px-0 mx-auto;
+}
+
+.zuse-blog-index-title {
+  @apply mx-auto mb-10 w-full text-left font-display text-[28px] font-medium leading-[1.1] tracking-[-0.02em] text-white;
+  --background-image-gradient-sweep: linear-gradient(90deg, #ffffff 0, #ffffff 33.33%, #060a6a 36%, #060a6a 42%, #131aca 46%, #75baff 50%, #131aca 54%, #060a6a 58%, #060a6a 61%, #131aca 64%, #75baff 66%, transparent 66.67%, transparent);
+
+  @variant md {
+    @apply mb-[60px] text-[36px];
+  }
+}
+
+.zuse-blog-index-grid {
+  @apply mx-auto grid w-full grid-cols-1 justify-center gap-4;
+
+  @variant md {
+    grid-template-columns: repeat(2, minmax(0, 400px));
+    @apply gap-[35px];
+  }
+}
+
+
+
+.zuse-blog-index-pagination {
+  @apply col-[1/-1] mt-5 flex items-center justify-center gap-1.5;
+}
+
+.zuse-blog-index-pagination-page,
+.zuse-blog-index-pagination-nav {
+  @apply inline-flex h-9 cursor-pointer items-center justify-center rounded-[6px] border border-transparent bg-transparent font-sans text-[14px] font-medium text-ink-700;
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.zuse-blog-index-pagination-page {
+  @apply w-9 p-0;
+}
+
+.zuse-blog-index-pagination-nav {
+  @apply px-3;
+}
+
+.zuse-blog-index-pagination-page:hover,
+.zuse-blog-index-pagination-nav:hover:not(:disabled) {
+  @apply border-brand-200 bg-brand-50 text-brand-700;
+}
+
+.zuse-blog-index-pagination-page.is-active {
+  @apply border-brand-700 bg-brand-700 text-white;
+}
+
+.zuse-blog-index-pagination-nav:disabled {
+  @apply cursor-default opacity-35;
+}
+
+.zuse-blog-index-pagination-page:focus-visible,
+.zuse-blog-index-pagination-nav:focus-visible {
+  outline: 2px solid var(--color-brand-700);
+  outline-offset: 3px;
+}
+
+
+
+.zuse-blog-index-empty {
+  @apply max-w-xl font-display text-[18px] leading-relaxed text-white;
+}
+
+.zuse-blog-index-empty a {
+  @apply text-white underline underline-offset-4;
+}
+
+/* ── Blog subscription strip ── */
+.zuse-blog-subscribe {
+  @apply flex min-h-[216px] w-full items-center;
+  background: rgba(68, 165, 255, 0.102);
+}
+
+.zuse-blog-subscribe-inner {
+  @apply mx-auto flex w-[calc(100%-32px)] max-w-[1144px] flex-col justify-between gap-8 py-10;
+
+  @variant lg {
+    @apply flex-row items-center gap-2 py-0;
+  }
+}
+
+.zuse-blog-subscribe-copy {
+  @apply flex w-full flex-col items-start gap-2;
+
+  @variant lg {
+    @apply w-[540px];
+  }
+}
+
+.zuse-blog-subscribe-copy h2 {
+  @apply m-0 font-display text-[28px] font-medium leading-[0.96] tracking-[-0.02em] text-ink-800;
+}
+
+.zuse-blog-subscribe-copy p {
+  @apply m-0 text-[16px] font-normal leading-[1.55] text-ink-400;
+  font-family: var(--font-geist-sans);
+  hanging-punctuation: first last;
+}
+
+.zuse-blog-subscribe-form {
+  @apply flex w-full flex-col gap-4;
+
+  @variant sm {
+    @apply flex-row;
+  }
+
+  @variant lg {
+    @apply w-[594px];
+  }
+}
+
+.zuse-blog-subscribe-form-wrap {
+  @apply w-full;
+
+  @variant lg {
+    @apply w-[594px];
+  }
+}
+
+.zuse-blog-subscribe-success {
+  @apply mx-auto w-full text-center;
+}
+
+.zuse-blog-subscribe-form-wrap .zuse-blog-subscribe-form {
+  @variant lg {
+    @apply w-full;
+  }
+}
+
+.zuse-blog-subscribe-form input {
+  @apply h-12 w-full min-w-0 flex-none sm:flex-1 rounded-[4px] border border-transparent bg-white/80 px-4 font-sans text-[16px] font-normal leading-none text-[#727F96] outline-none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.zuse-blog-subscribe-form input::placeholder {
+  @apply text-ink-500;
+}
+
+.zuse-blog-subscribe-form input:focus {
+  @apply border-brand-500 bg-white;
+}
+
+.zuse-blog-subscribe-form .zuse-blog-subscribe-button {
+  @apply order-1 h-12 w-[108px] flex-none box-border cursor-pointer ;
+}
+
+.zuse-blog-subscribe-form .zuse-blog-subscribe-button:disabled {
+  @apply cursor-wait opacity-60;
+}
+
+.zuse-blog-subscribe-success {
+  animation: zuse-blog-subscribe-success 500ms cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+.zuse-blog-subscribe-success h3 {
+  @apply m-0 font-display text-[28px] font-medium leading-none text-ink-800;
+}
+
+.zuse-blog-subscribe-success p,
+.zuse-blog-subscribe-error {
+  @apply font-sans text-[15px] font-normal leading-6;
+}
+
+.zuse-blog-subscribe-success p {
+  @apply mt-2 mb-0 text-ink-500;
+}
+
+.zuse-blog-subscribe-error {
+  @apply mt-2 mb-0 text-red-700;
+}
+
+@keyframes zuse-blog-subscribe-success {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zuse-blog-subscribe-success {
+    animation: none;
+  }
+}

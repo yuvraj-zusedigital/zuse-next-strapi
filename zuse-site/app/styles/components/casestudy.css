@@ -1,0 +1,232 @@
+@reference "../globals.css";
+
+@layer components {
+  .case-study-page {
+    @apply bg-surface-0 text-ink-800;
+  }
+
+  .case-study-container {
+    @apply w-full mx-auto px-[15px] max-w-[1114px];
+  }
+
+  .case-study-banner {
+    @apply  pb-[64px] flex items-center pt-20  md:pb-[80px] bg-cover bg-no-repeat bg-center md:min-h-[400px] lg:min-h-[490px];
+  }
+
+  @variant max-md {
+    .case-study-banner {
+      background-position: 100% 0 !important;
+      background-size: auto 270px !important;
+      padding-bottom: 5px !important;
+      padding-top: 270px !important;
+      min-height: auto;
+    }
+  }
+
+  .case-study-banner-title {
+    @apply text-ink-900 font-display font-medium text-[32px] md:text-[48px] lg:text-[60px] not-italic leading-[1.1] lg:leading-[1.05] mb-8 md:mb-10 lg:mb-0 tracking-[-0.02em] lg:tracking-[-0.03em] max-w-full md:max-w-[500px] lg:max-w-[650px];
+  }
+
+  .case-study-textual {
+    @apply pt-8 md:pt-[95px] pb-5 md:pb-[92px] lg:pt-[130px] lg:pb-[65px];
+  }
+
+  .case-about-parent {
+    @apply bg-surface-100 rounded-xl p-5 md:p-6 lg:p-[50px] flex items-start justify-start flex-col md:flex-row;
+  }
+
+  .case-about {
+    @apply w-full md:w-[55%] pr-0 md:pr-3 lg:pr-[25px] mb-8 md:mb-0;
+  }
+
+  .case-about h2 {
+    @apply font-display font-semibold text-2xl lg:text-[48px] leading-normal text-ink-800 mb-2.5 md:mb-[22px] lg:mb-7;
+  }
+
+  .case-study-textual-desc {
+    @apply font-sans text-lg lg:text-xl leading-normal text-ink-800 max-w-[673px] opacity-80;
+  }
+
+  .case-points {
+    @apply w-full md:w-[45%] flex items-start justify-start flex-wrap pl-0 md:pl-3 lg:pl-[25px];
+  }
+
+  .case-point {
+    @apply mb-8 w-full last:mb-0;
+  }
+
+  .case-point h4 {
+    @apply font-display font-semibold text-lg leading-[1.5] text-ink-800 mb-[5px];
+  }
+
+  .case-point p,
+  .case-study-meta-link {
+    @apply font-sans text-base leading-normal text-ink-800;
+  }
+
+  .case-study-meta-link {
+    @apply underline underline-offset-2;
+  }
+
+  .case-study-meta-list {
+    @apply space-y-1;
+  }
+
+  .case-study-meta-list li {
+    @apply relative font-sans text-base leading-normal text-ink-800 pl-[30px];
+  }
+
+  .case-study-meta-list li::before {
+    content: "•";
+    @apply absolute top-0 left-2.5 text-xl leading-6;
+  }
+
+  .case-study-section {
+    @apply py-5 md:py-[57px] lg:py-[65px];
+  }
+
+  .case-study-h3 {
+    @apply font-display font-semibold text-[26px] lg:text-[32px] leading-normal text-ink-800 mb-5 lg:mb-[30px];
+  }
+
+  .case-study-p {
+    @apply relative font-sans text-base md:text-xl leading-[26px] lg:leading-[30px] text-ink-800 mb-2.5 opacity-80;
+  }
+
+  .case-study-p + .case-study-p {
+    @apply mt-5;
+  }
+
+  .case-study-bullets {
+    @apply flex items-start justify-between flex-wrap;
+  }
+
+  .case-study-bullets li {
+    @apply relative w-full text-ink-800 font-sans text-base md:text-xl lg:text-2xl not-italic font-normal leading-[30px] lg:leading-9 mb-2.5 md:mb-5 pl-[30px];
+  }
+
+  .case-study-bullets-2 li {
+    @apply lg:w-[47%];
+  }
+
+  .case-study-bullets li::before {
+    content: "•";
+    @apply absolute top-0 left-2.5 text-[30px] leading-none;
+  }
+
+  .case-study-bullets h4 {
+    @apply font-display font-semibold;
+  }
+
+  .case-study-bullet-body {
+    @apply opacity-80 text-base md:text-xl leading-normal md:leading-[30px] mt-0 md:mt-[5px];
+  }
+
+  .case-study-full-width-img,
+  .case-study-grid-imgs {
+    @apply py-5 md:py-[57px] lg:py-[65px];
+  }
+
+  .case-study-img {
+    @apply w-full h-auto rounded-lg;
+  }
+
+  .case-study-grid-imgs-inn {
+    @apply flex items-start justify-between gap-3 md:gap-4;
+  }
+
+  .case-study-grid-imgs-inn-comm {
+    @apply w-[49%] max-md:w-[48.5%];
+  }
+
+  .case-study-testimonial {
+    @apply pt-[50px] pb-[50px] md:pb-[130px];
+  }
+
+  .case-study-testimonial-wrap {
+    @apply p-[2px] rounded-[20px];
+    background: linear-gradient(90deg, rgba(86, 237, 73, 1) 0%, rgba(237, 89, 73, 1) 100%);
+  }
+
+  .case-study-testimonial-inn {
+    @apply bg-surface-0 rounded-[18px] py-[26px] md:py-11 px-[19px] md:px-[50px];
+  }
+
+  .case-study-testimonial-row-1 {
+    @apply flex items-start justify-between flex-col md:flex-row;
+  }
+
+  .case-study-testimonial-avatar {
+    @apply w-full md:w-auto;
+  }
+
+  .case-study-testimonial-avatar-title {
+    @apply font-display font-medium text-xl leading-6 text-ink-800 mt-3.5 md:mt-[17px];
+  }
+
+  .case-study-testimonial-avatar-desg {
+    @apply font-sans text-base leading-6 text-ink-800 opacity-70;
+  }
+
+  .case-study-testimonial-text {
+    @apply w-full md:w-[calc(100%-163px)] lg:w-[calc(100%-196px)] mt-6 md:mt-0;
+  }
+
+  .case-study-testimonial-text-half,
+  .case-study-testimonial-text-full {
+    @apply font-sans text-lg md:text-[26px] lg:text-[32px] leading-6 md:leading-9 lg:leading-[44px] text-ink-800;
+  }
+
+  .case-half-hidden {
+    @apply hidden;
+  }
+
+  .case-full-hidden {
+    @apply overflow-hidden;
+  }
+
+  .case-study-testimonial-full-para {
+    @apply block mb-6 last:mb-0;
+  }
+
+  .case-study-testimonial-text-action {
+    @apply font-sans text-base md:text-lg text-ink-800 underline opacity-60 cursor-pointer mt-[18px] md:mt-5 bg-transparent border-0 p-0 text-left;
+  }
+
+  .case-study-testimonial-row-2 {
+    @apply flex items-center justify-between md:justify-start mt-[29px] md:mt-[42px];
+  }
+
+  .case-study-testimonial-brand-logo {
+    @apply w-auto md:w-[163px] lg:w-[196px];
+  }
+
+  .case-study-testimonial-ratings {
+    @apply flex items-center justify-start;
+  }
+
+  .case-study-star {
+    @apply w-4 h-4 md:w-6 md:h-6 mr-[3px] md:mr-[5px] last:mr-0;
+  }
+
+  .case-study-rating-value {
+    @apply font-sans text-right text-xl md:text-[28px] leading-normal text-ink-800 opacity-80 ml-2.5 md:ml-3.5;
+  }
+
+  .case-study-testimonials-link {
+    @apply flex items-center justify-center mt-8 lg:mt-[35px];
+  }
+
+  .case-study-testimonials-link .home-comm-action {
+    @apply flex items-center justify-center relative pb-[7px] gap-2 font-sans text-lg text-ink-800;
+  }
+
+  .case-study-testimonials-link .home-comm-action span,
+  .case-study-testimonials-link .home-comm-action img {
+    @apply transition-transform duration-300;
+  }
+
+  .case-study-testimonials-link .home-comm-action:hover img {
+    transform: translateX(4px);
+  }
+}

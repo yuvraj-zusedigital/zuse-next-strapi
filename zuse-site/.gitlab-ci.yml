@@ -1,0 +1,87 @@
+# GitLab CI/CD — build the Next.js static export and deploy to S3 + CloudFront.
+# Mirrors DEPLOYMENT.md. Set the secret/config values as CI/CD variables in
+# GitLab: Settings > CI/CD > Variables (mark secrets "Masked", never commit them).
+#
+# Required CI/CD variables:
+#   AWS_ACCESS_KEY_ID       (masked)  - account 104218330943, deploy user
+#   AWS_SECRET_ACCESS_KEY   (masked, protected)
+#   STRAPI_TOKEN            (masked)  - staging CMS token, used at build time only
+#
+# MANUAL-ONLY: both jobs use `when: manual`, so nothing runs on its own. A
+# pipeline is created (on push to main, or via the "Run pipeline" button), but
+# every job waits for you to click it. Run "build" first, then "deploy".
+#
+# NOTE: written for older GitLab (no `workflow:` / `rules:` support). Uses the
+# classic `only` + `when: manual` syntax.
+
+stages:
+  - build
+  - deploy
+
+variables:
+  AWS_DEFAULT_REGION: "ap-southeast-2"
+  S3_BUCKET: "zuse-website-staging-v1"
+  CF_DISTRIBUTION_ID: "E25IZEOPLHDDM2"
+  NEXT_PUBLIC_SITE_URL: "https://staging.zusedigital.com"
+  STRAPI_API_URL: "https://stagingadmin.zusedigital.com"
+  NEXT_PUBLIC_STRAPI_API_URL: "https://stagingadmin.zusedigital.com"
+
+build:
+  stage: build
+  tags:
+    - docker-exec
+  # Runs the Docker CLI, talking to the host Docker daemon via the socket the
+  # runner mounts (see config.toml: /var/run/docker.sock). No npm cache needed.
+  image: docker:27-cli
+  only:
+    - main
+  variables:
+    IMAGE_TAG: "$CI_PROJECT_NAME-build:$CI_COMMIT_SHORT_SHA"
+    DOCKER_BUILDKIT: "1"
+  script:
+    # Build the `builder` stage — this runs npm ci + tailwind + static export.
+    # STRAPI_TOKEN is passed as a BuildKit secret (never baked into the image).
+    - >
+      docker build --target builder -t "$IMAGE_TAG"
+      --build-arg NEXT_PUBLIC_SITE_URL="$NEXT_PUBLIC_SITE_URL"
+      --build-arg STRAPI_API_URL="$STRAPI_API_URL"
+      --build-arg NEXT_PUBLIC_STRAPI_API_URL="$NEXT_PUBLIC_STRAPI_API_URL"
+      --secret id=strapi_token,env=STRAPI_TOKEN
+      .
+    # Copy the generated static site out of the image into the job workspace.
+    - rm -rf out
+    - cid=$(docker create "$IMAGE_TAG")
+    - docker cp "$cid:/app/out" ./out
+    - docker rm "$cid"
+    - docker rmi "$IMAGE_TAG" || true
+    # sanity: staging must be non-indexable
+    - 'grep -q "Disallow: /" out/robots.txt && echo "robots.txt OK (Disallow)"'
+  artifacts:
+    paths:
+      - out/
+    expire_in: 1 day
+
+deploy:
+  stage: deploy
+  tags:
+    - docker-exec
+  image:
+    name: amazon/aws-cli:latest
+    entrypoint: [""]
+  only:
+    - main
+  dependencies:
+    - build
+  script:
+    - aws configure set aws_access_key_id "$ACCESS_PROD_KEY"
+    - aws configure set aws_secret_access_key "$SEC_PROD_KEY"
+    - aws configure set default.region "$AWS_REGION"
+    # 1) hashed, immutable assets - long cache
+    - aws s3 sync out/ "s3://$S3_BUCKET" --delete --exclude "*.html" --exclude "*.txt" --exclude "robots.txt" --exclude "sitemap.xml" --cache-control "public,max-age=31536000,immutable"
+    # 2) HTML + SEO files - always revalidate so redeploys show up
+    - aws s3 sync out/ "s3://$S3_BUCKET" --delete --exclude "*" --include "*.html" --include "*.txt" --include "robots.txt" --include "sitemap.xml" --cache-control "public,max-age=0,must-revalidate"
+    # 3) bust the CloudFront cache
+    - aws cloudfront create-invalidation --distribution-id "$CF_DISTRIBUTION_ID" --paths "/*"
+  environment:
+    name: staging
+    url: https://staging.zusedigital.com

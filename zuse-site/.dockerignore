@@ -1,0 +1,23 @@
+# Keep the build context small and reproducible.
+node_modules
+.next
+out
+build
+*.tsbuildinfo
+
+.git
+.gitlab-ci.yml
+.env
+.env*.local
+.env.development
+.env.production
+
+.DS_Store
+*.log
+npm-debug.log*
+Dockerfile
+.dockerignore
+zusenextsetup.zip
+zuse-seo-status.pdf
+README.md
+DEPLOYMENT.md

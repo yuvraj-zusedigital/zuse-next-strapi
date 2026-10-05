@@ -1,0 +1,44 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse STATS COMPONENT CSS (Tailwind @apply format) ── */
+
+.zuse-stats-section {
+  @apply relative z-10 w-full px-6 py-[50px] pb-11;
+  background: var(--background-image-gradient-stats);
+
+  @variant sm {
+    @apply py-[60px];
+  }
+
+  @variant md {
+    @apply py-[128px] pb-11;
+  }
+
+  @variant lg {
+    @apply pt-[190px] pb-[120px] px-0;
+  }
+}
+
+.zuse-stats-grid {
+  @apply grid grid-cols-2 gap-10 justify-items-center max-w-[1000px] mx-auto p-0;
+
+  @variant md {
+    @apply flex flex-row items-center justify-between gap-5 max-w-[1144px];
+  }
+
+  @variant max-[1366px] {
+    @apply max-w-[1000px];
+  }
+}
+
+.zuse-stat-item {
+  @apply flex items-center justify-center flex-1 min-w-0 max-md:max-w-[180px];
+}
+
+.zuse-stat-item img {
+  @apply w-full max-w-stat-item h-auto object-contain block;
+}
+
+/* .zuse-stat-item:first-child img {
+  @apply -mt-stat-offset;
+} */

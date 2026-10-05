@@ -1,0 +1,70 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse MANIFESTO COMPONENT CSS (Tailwind @apply format) ── */
+
+.zuse-manifesto-section {
+  @apply relative mx-auto flex w-full flex-col items-start justify-center px-[15px] py-12 lg:py-24 text-left max-w-zuse z-20;
+
+  @variant lg {
+    @apply pt-0 pb-[120px] px-0;
+  }
+
+  /*
+  @variant max-[550px] {
+    @apply pb-0;
+  } */
+}
+
+.zuse-manifesto-text-container {
+  @apply relative mx-auto max-md:px-4 flex flex-col items-start max-w-[710px];
+}
+
+.zuse-manifesto-text {
+  @apply text-left font-display font-medium text-[28px] leading-[126%] tracking-[-0.02em] text-ink-800;
+
+  @variant md {
+    @apply text-[40px];
+  }
+}
+
+.manifesto-word {
+  /* Readable by default (no-JS / GSAP failure / reduced-motion). */
+  @apply inline opacity-100;
+}
+
+/* Dim baseline only after JS arms the scrub timeline. */
+.zuse-manifesto-section[data-motion="scrub"] .manifesto-word {
+  @apply opacity-20;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .zuse-manifesto-section[data-motion="scrub"] .manifesto-word,
+  .manifesto-word {
+    opacity: 1 !important;
+  }
+}
+
+.zuse-manifesto-img {
+  @apply inline-flex items-center justify-center object-cover align-middle mx-1;
+
+  @variant md {
+    @apply w-[34px] h-[34px];
+  }
+}
+
+.zuse-manifesto-img-group {
+  @apply inline-block align-middle h-auto max-w-[40px] m-0;
+
+  @variant md {
+    @apply h-[45px] max-w-none w-auto;
+  }
+}
+
+.zuse-manifesto-img-1 {
+  @apply w-[34px] h-[34px] rounded-[9px] ml-0 mb-1 mr-2;
+}
+
+.zuse-manifesto-btn {
+  @apply flex-none w-auto min-w-[150px] md:mt-14 mt-10;
+}

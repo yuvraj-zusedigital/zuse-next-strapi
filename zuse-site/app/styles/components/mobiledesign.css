@@ -1,0 +1,210 @@
+/* Mobile Design Section */
+.mobile-container {
+    position: relative;
+    width: 273px;
+    height: 324px;
+    font-family: 'Inter', sans-serif;
+}
+
+.mobile-mockup {
+    position: absolute;
+    top: 68px;
+    /* 20.99% of 324 */
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.release-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12.26px;
+    position: absolute;
+    width: 204.58px;
+    height: 116px;
+    left: 34.06px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0.68px 1.36px rgba(20, 22, 40, 0.05), 0px 6.8px 17.7px -9.53px rgba(20, 22, 40, 0.14);
+    border-radius: 10.9px;
+    z-index: 10;
+}
+
+/* Header */
+.release-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.release-title-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.release-title-group .label {
+    font-family: 'Inter', sans-serif;
+    /* Fallback for Geist */
+    font-weight: 600;
+    font-size: 8.44px;
+    color: #1B1B22;
+    letter-spacing: -0.12px;
+}
+
+.release-title-group .version {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 8.44px;
+    color: #1B1B22;
+    letter-spacing: -0.12px;
+}
+
+.release-badges {
+    display: flex;
+    align-items: center;
+    gap: 4.1px;
+}
+
+.commit-badge,
+.branch-badge {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.36px 4.77px 1.36px 3.4px;
+    gap: 2.72px;
+    background: #F6F6F7;
+    border: 0.68px solid rgba(22, 22, 32, 0.06);
+    border-radius: 4.09px;
+}
+
+.commit-badge img,
+.branch-badge img {
+    width: 8.17px;
+    height: 8.17px;
+    object-fit: contain;
+}
+
+.commit-badge span {
+    font-family: monospace;
+    /* Fallback for JetBrains Mono */
+    font-weight: 400;
+    font-size: 7.49px;
+    color: #8A8A95;
+}
+
+.branch-badge span {
+    font-weight: 500;
+    font-size: 7.49px;
+    color: #8A8A95;
+}
+
+/* List Items */
+.release-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.1px;
+    width: 100%;
+}
+
+.release-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4.77px 5.45px;
+    gap: 7.49px;
+    border-radius: 6.8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.release-item .icon-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.15px;
+    height: 23.15px;
+    border-radius: 6.13px;
+    flex: none;
+}
+
+
+
+.release-item .icon-wrapper img {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.release-item .text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    flex-grow: 1;
+}
+
+.release-item .store-name {
+    font-weight: 600;
+    font-size: 8.85px;
+    color: #1B1B22;
+    margin-bottom: 1px;
+}
+
+.release-item .status-text {
+    font-weight: 400;
+    font-size: 7.49px;
+    color: #ABABB4;
+}
+
+.status-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2.72px 5.45px;
+    gap: 3.4px;
+    border-radius: 4.77px;
+    flex: none;
+    font-weight: 600;
+}
+
+.status-label .dot {
+    width: 4.09px;
+    height: 4.09px;
+    border-radius: 50%;
+}
+
+.status-label.in-review {
+    background: #FCF1DA;
+}
+
+.status-label.in-review .dot {
+    background: #9A6311;
+}
+
+.status-label.in-review span {
+    font-weight: 600;
+    font-size: 8.17px;
+    color: #9A6311;
+}
+
+.status-label.live {
+    background: #E6F6ED;
+    font-family: 600;
+}
+
+.status-label.live .dot {
+    background: #138048;
+}
+
+.status-label.live span {
+    font-weight: 600;
+    font-size: 8.17px;
+    color: #138048;
+}

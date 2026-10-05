@@ -1,0 +1,140 @@
+@reference "../globals.css";
+
+.about-zan-banner {
+  @apply relative w-full bg-[#f2f2f2] pb-12 pt-28 md:pb-[50px] md:pt-40;
+}
+
+.about-zan-banner-inn {
+  @apply flex flex-col items-start justify-between md:flex-row;
+}
+
+.about-zan-banner-left {
+  @apply w-full md:max-w-[67%] lg:max-w-[60.35%];
+}
+
+.about-zan-banner-title {
+  @apply font-display text-[34px] md:text-[40px] font-semibold leading-tight tracking-[-0.02em] text-ink-900 mb-1;
+}
+
+.about-zan-banner-role {
+  @apply font-display text-[18px] md:text-[20px] font-medium leading-7 text-brand-500 mb-2 md:mb-[22px];
+}
+
+.about-zan-banner-lead,
+.about-zan-banner-copy {
+  @apply font-sans text-base lg:text-lg leading-[26px] lg:leading-7 text-ink-800 opacity-80 mb-[22px];
+}
+
+.about-zan-banner-heading {
+  @apply font-display text-lg font-semibold leading-7 text-ink-900 mb-1 mt-0;
+}
+
+.about-zan-banner-linkedin {
+  @apply inline-flex items-center gap-2 font-sans text-lg text-ink-900 no-underline pb-1.5 border-b border-ink-900/20 transition-colors duration-200;
+}
+
+.about-zan-banner-linkedin:hover {
+  @apply border-brand-500 text-brand-500;
+}
+
+/* Sticky portrait — desktop right column (matches live about-zan-banner-right) */
+.about-zan-banner-right {
+  @apply mx-auto mb-10 hidden max-w-[220px] static md:mx-0 md:mb-0 md:mt-[115px] md:block md:max-w-[28%] md:sticky md:top-28 lg:max-w-[34.5%];
+}
+
+.about-zan-portrait-mobile {
+  @apply mx-auto my-[30px] block max-w-[220px] md:hidden;
+}
+
+.about-zan-portrait {
+  @apply m-0;
+}
+
+.about-zan-portrait-img {
+  @apply block h-auto w-full border-[7px] border-solid border-white;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+/* ── Collage auto-scroll strip ─────────────────────────────── */
+.about-zan-collage {
+  @apply bg-[#f2f2f2] py-[25px] overflow-hidden;
+}
+
+.about-zan-collage-viewport {
+  @apply overflow-hidden;
+}
+
+.about-zan-collage-track {
+  @apply flex w-max items-center py-[25px];
+  animation: about-zan-collage-scroll 55s linear infinite;
+}
+
+.about-zan-collage:hover .about-zan-collage-track {
+  animation-play-state: paused;
+}
+
+.about-zan-collage-slide {
+  @apply relative mr-7 box-border shrink-0 overflow-hidden w-[206px] h-[180px] md:mr-12 md:w-[344px] md:h-[304px] lg:mr-[150px] lg:w-[300px] lg:h-[340px] border-[7px] border-solid border-white;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.about-zan-collage-img {
+  @apply block h-full w-full object-cover;
+}
+
+@keyframes about-zan-collage-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-zan-collage-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding-inline: 1rem;
+  }
+
+  .about-zan-collage-slide {
+    margin-right: 0;
+  }
+}
+
+/* ── Quote / Digital Prosperity ────────────────────────────── */
+.about-zan-quote {
+  @apply py-[100px] md:py-[200px] text-center bg-no-repeat bg-center;
+  background-image: url("/images/zanyar/about-zan-quote-bg.png");
+  background-size: auto 135%;
+}
+
+@media (min-width: 1024px) {
+  .about-zan-quote {
+    background-size: auto 150%;
+  }
+}
+
+.about-zan-quote-text {
+  @apply relative mx-auto mb-10 max-w-[calc(100%-60px)] lg:max-w-[750px] xl:max-w-[980px] font-display text-[22px] md:text-[26px] lg:text-[32px] font-medium not-italic leading-[1.3] text-ink-900;
+}
+
+.about-zan-quote-mark {
+  @apply absolute opacity-[0.33] w-10 lg:w-[70px] h-auto pointer-events-none;
+}
+
+.about-zan-quote-mark-start {
+  @apply -top-[9px] lg:-top-5 -left-10 lg:-left-16;
+}
+
+.about-zan-quote-mark-end {
+  @apply -bottom-4 lg:-bottom-5 -right-10 lg:-right-[65px];
+}
+
+.about-zan-quote-cite {
+  @apply block not-italic font-display text-[20px] lg:text-[36px] leading-[1.5] text-brand-500 font-semibold;
+}

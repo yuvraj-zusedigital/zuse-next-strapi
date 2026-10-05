@@ -1,0 +1,118 @@
+@reference "../globals.css";
+
+/* ── EXTRACTED zuse LEADERS CSS (Tailwind @apply format) ── */
+
+.zuse-leaders-section {
+  @apply relative z-20 max-lg:pb-0 max-lg:pt-[50px] lg:py-24 bg-surface-0;
+}
+
+.zuse-leaders-track {
+  @apply relative w-full h-auto md:h-[300vh];
+}
+
+.zuse-leaders-sticky {
+  @apply static w-full pb-8 md:sticky md:top-[130px] md:mx-auto;
+}
+
+.zuse-leaders-cards {
+  @apply relative flex flex-col gap-2 w-full max-w-7xl h-auto mx-auto box-border md:block md:h-[626px] md:gap-0 lg:px-0 xl:h-[740px];
+}
+
+.zuse-leader-card {
+  --stack-darken: 0;
+  @apply relative top-auto left-0 z-[1] w-full h-[72px] overflow-hidden rounded-[10px] cursor-pointer transition-[height] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] md:absolute md:top-0 md:h-[380px] md:mb-[50px] md:rounded-[6px] md:cursor-auto xl:h-[480px];
+  will-change: transform;
+}
+
+.zuse-leader-card.is-expanded {
+  @apply h-[420px] xl:h-[490px];
+}
+
+@media (max-width: 767px) {
+  .zuse-leader-card:not(.is-expanded) .zuse-leader-card-overlay {
+    background: linear-gradient(to right, var(--card-color, rgba(3, 8, 33, 0.9)) 65%, rgba(0, 0, 0, 0.4) 100%) !important;
+  }
+}
+
+.zuse-leader-card::after {
+  content: "";
+  @apply absolute inset-0 z-15 pointer-events-none;
+  border-radius: inherit;
+  background: rgba(0, 0, 0, var(--stack-darken, 0));
+}
+
+.zuse-leader-card-bg {
+  @apply absolute inset-0 z-0 w-full h-full object-cover;
+}
+
+.zuse-leader-card-overlay {
+  @apply absolute inset-0 z-10;
+  background: var(--grad-mobile);
+}
+
+@media (min-width: 768px) {
+  .zuse-leader-card-overlay {
+    background: var(--grad-desktop) !important;
+  }
+}
+
+.zuse-leader-card-body {
+  @apply relative z-20 flex flex-col h-full p-6 text-white box-border md:p-[58px_59px_58px];
+}
+
+@media (max-width: 767px) {
+  .zuse-leader-card.is-expanded .zuse-leader-card-body {
+    @apply justify-end pb-[120px];
+  }
+}
+
+.zuse-leader-card-title {
+  @apply m-0 mb-3.5 shrink-0 font-display font-medium text-[26px] leading-none tracking-[-0.02em] [text-shadow:0_2px_8px_rgba(0,0,0,0.4)] md:text-[40px] md:leading-[0.96] md:[text-shadow:none];
+}
+
+@media (max-width: 767px) {
+  .zuse-leader-card:not(.is-expanded) .zuse-leader-card-title {
+    @apply mb-0;
+  }
+}
+
+.zuse-leader-card-copy {
+  @apply opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out md:opacity-100 md:pointer-events-auto;
+}
+
+.zuse-leader-card.is-expanded .zuse-leader-card-copy {
+  @apply opacity-100 pointer-events-auto delay-200;
+}
+
+.zuse-leader-card-copy p {
+  @apply m-0 max-w-[290px] w-full font-sans font-normal text-[14px] leading-[175%] text-white;
+  hanging-punctuation: first last;
+}
+
+.zuse-btn-leader {
+  @apply absolute z-10 bottom-6 left-6 inline-flex items-center justify-between overflow-hidden w-[228px] h-[52px] md:w-[233px] md:h-[58px] px-6 rounded-[7px] border border-white/10 bg-transparent text-white font-display font-semibold text-[16px] leading-none no-underline transition-all duration-300 ease-[cubic-bezier(0,0,0.2,1)] md:bottom-[46px] md:left-[59px] opacity-0 pointer-events-none md:opacity-100 md:pointer-events-auto;
+}
+
+.zuse-leader-card.is-expanded .zuse-btn-leader {
+  @apply opacity-100 pointer-events-auto delay-200 md:opacity-100 md:pointer-events-auto md:delay-0;
+}
+
+.zuse-btn-leader::before {
+  content: "";
+  @apply absolute z-0 top-1/2 left-6 w-2 h-2 -mt-1 rounded-full pointer-events-none transition-transform duration-300 ease-[cubic-bezier(0,0,0.2,1)];
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(0);
+}
+
+.zuse-btn-leader:hover {
+  @apply border-white/30 text-white;
+}
+
+.zuse-btn-leader:hover::before {
+  transform: scale(100);
+}
+
+.zuse-btn-leader span,
+.zuse-btn-leader svg {
+  @apply relative z-10;
+}

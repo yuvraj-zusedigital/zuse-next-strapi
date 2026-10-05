@@ -1,0 +1,110 @@
+import { CDN_URL } from "@/lib/config/cdn";
+export type AwardImage = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+};
+
+export type Award = {
+  id: string;
+  title: string;
+  featuredBy: string;
+  summary: string;
+  about: string;
+  reasons: string[];
+  image: string;
+  imageAlt: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  extraImages?: AwardImage[];
+};
+
+export const AWARDS: Award[] = [
+  {
+    id: "apac-2024",
+    title: "2024 – Best UI/UX Design & Development Agency",
+    featuredBy: "APAC Insider – Australian Enterprise Awards",
+    summary:
+      "For the second consecutive year, recognised for design systems and deep business expertise that deliver digital experiences with real results.",
+    about:
+      "For the second consecutive year, Zuse Digital has been honoured as Best UI/UX Design & Development Agency by APAC Insider. This recognition highlights our design system process and deep business expertise, which enable us to deliver digital experiences that not only look exceptional but drive real business results.",
+    reasons: [
+      "Our data-driven UX strategies ensure that every design decision is based on real user behaviour and market insights.",
+      "We focus on proactive empathy, ensuring that digital products are not just functional but deeply intuitive and engaging.",
+      "Our collaborative approach integrates design, strategy, and technology to create award-winning solutions.",
+    ],
+    image:
+      `${CDN_URL}/images/best-ui-ux-design-and-development-agency-2024-apac-insider.png`,
+    imageAlt: "Best UI/UX Design & Development Agency 2024 by APAC Insider",
+    imageWidth: 250,
+    imageHeight: 250,
+  },
+  {
+    id: "designrush-2024",
+    title: "2024 – Top App Development Agency in Melbourne",
+    featuredBy: "DesignRush",
+    summary:
+      "Recognised for technical excellence, innovative design, and a user-first approach across mobile and web products.",
+    about:
+      "This award recognises Zuse Digital as one of the leading app development agencies in Melbourne, acknowledging our technical excellence, innovative design, and user-first approach.",
+    reasons: [
+      "We build high-performance mobile and web apps that prioritise speed, scalability, and engagement.",
+      "Our team specialises in cross-platform and AI-powered solutions, ensuring that businesses stay ahead of the competition.",
+      "Every app we develop is optimised for seamless user experience, long-term scalability, and market success.",
+    ],
+    image:
+      `${CDN_URL}/images/top-app-development-agency-in-melbourne-2024-designrush.png`,
+    imageAlt: "Top App Development Agency in Melbourne 2024 by DesignRush",
+    imageWidth: 250,
+    imageHeight: 250,
+  },
+  {
+    id: "apac-2023",
+    title: "2023 – Best UI/UX Design & Development Agency",
+    featuredBy: "APAC Insider – Australian Enterprise Awards",
+    summary:
+      "Honoured for exceptional UI/UX craft — intuitive, visually compelling, and conversion-focused digital products.",
+    about:
+      "Zuse Digital was recognised for its exceptional expertise in UI/UX design, reinforcing our commitment to creating digital products that are intuitive, visually compelling, and conversion-focused.",
+    reasons: [
+      "We champion human-centred design, ensuring that every interaction is seamless and engaging.",
+      "Our work blends business strategy, research, and creativity, enabling us to build solutions that drive tangible results.",
+      "We leverage cutting-edge design systems to ensure consistency, efficiency, and scalability.",
+    ],
+    image:
+      `${CDN_URL}/images/best-ui-ux-design-and-development-agency-2023-apac-insider.png`,
+    imageAlt: "Best UI/UX Design & Development Agency 2023 by APAC Insider",
+    imageWidth: 250,
+    imageHeight: 250,
+  },
+  {
+    id: "apple-2016",
+    title: "2016 – Apple AppStore “New Apps We Love” & “#1 Sports App”",
+    featuredBy: "Apple – App Store Recognition",
+    summary:
+      "The AFL Players app earned Apple’s “New Apps We Love” and reached #1 in Sports — thoughtful design with solid engineering.",
+    about:
+      "Zuse Digital’s work on the AFL Players Mobile App was featured as “New Apps We Love” on the Apple App Store and achieved the No. 1 spot in the Sports category.",
+    reasons: [
+      "Our UX design focused on simplicity, vitality, and deep industry understanding, ensuring that AFL fans could engage effortlessly with the app.",
+      "We recognised the unique culture of AFL sports and its passionate fanbase, crafting an experience that resonated with both players and supporters.",
+      "The app introduced an innovative co-creation experience, allowing fans to personalise messages featuring their favourite AFL players and commentators—enhancing engagement like never before.",
+      "This immersive and shareable feature transformed the way AFL fans interacted with their favourite stars, leading to rapid adoption and organic virality.",
+      "Within 48 hours, the app soared to the #1 paid app in Australia, earning a spot in Apple’s “New Apps We Love” and receiving widespread media coverage.",
+    ],
+    image:
+      `${CDN_URL}/images/apple-appstore-new-apps-we-love-and-number-1-sports-app-2016-badge.jpg`,
+    imageAlt: "Apple AppStore New Apps We Love & #1 Sports App 2016 Badge",
+    imageWidth: 250,
+    imageHeight: 250,
+    extraImages: [
+      {
+        src: `${CDN_URL}/images/apple-appstore-new-apps-we-love-and-number-1-sports-app-2016-screens.jpg`,
+        alt: "Apple AppStore New Apps We Love & #1 Sports App 2016 Screens",
+        width: 250,
+        height: 250,
+      },
+    ],
+  },
+];

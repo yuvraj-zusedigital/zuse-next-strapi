@@ -1,0 +1,848 @@
+@reference "../globals.css";
+/* ── EXTRACTED zuse HEADER COMPONENT CSS (Tailwind @apply format) ── */
+
+/* ── HEADER ROOT VARS ── */
+.zuse-header {
+  --zuse-nav-blur: 28px;
+  --zuse-gradient-nav-glass: var(--background-image-gradient-nav-glass);
+  --zuse-gradient-mobile-menu: var(--background-image-gradient-mobile-menu);
+  --zuse-submenu-glass: var(--color-surface-glass);
+  --zuse-submenu-blur: 6.5px;
+}
+
+/* ── NAV SHELL ── */
+.zuse-nav-shell {
+  @apply fixed left-1/2 top-4 z-50 w-[calc(100%-32px)] max-w-[1144px] -translate-x-1/2;
+
+  @variant lg {
+    @apply top-[29px];
+  }
+
+  @variant max-lg {
+    @apply z-[70];
+  }
+}
+
+
+.desk-mega-open .zuse-nav-shell {
+  @variant lg {
+    @apply z-[55];
+  }
+}
+
+/* ── NAV BAR ── */
+.zuse-nav-bar {
+  @apply relative left-auto top-0 z-[1] flex items-center justify-between w-full max-w-none h-[60px] pl-5 pr-4 overflow-visible isolate;
+  border-radius: var(--zuse-radius-nav, 0.75rem);
+  /* backdrop-blur intentionally omitted here — applied via .nav-blur-active toggle in JS */
+  @apply bg-[image:var(--zuse-gradient-nav-glass)] backdrop-saturate-[185%] shadow-[var(--shadow-nav-glass)];
+  @apply transition-all duration-[0.35s] ease-[ease];
+  /* Smooth blur transition when .nav-blur-active is added */
+  transition: backdrop-filter 0.4s ease-out, -webkit-backdrop-filter 0.4s ease-out,
+              box-shadow 0.35s ease, background 0.35s ease;
+
+  @variant lg {
+    @apply h-[67px] pl-[23px] pr-[10px];
+  }
+
+  @variant max-lg {
+    @apply z-[1];
+  }
+}
+
+/* Added by JS after 300ms (setTimeout) or on first scroll — avoids Tailwind JIT
+   failure with backdrop-blur-[var(--css-variable)] arbitrary bracket syntax. */
+.zuse-nav-bar.nav-blur-active {
+  @apply backdrop-blur-[18px] backdrop-saturate-[185%];
+}
+
+.zuse-nav-bar::before {
+  content: "";
+  @apply absolute inset-0 z-0 pointer-events-none rounded-[inherit];
+  @apply bg-[image:var(--background-image-gradient-nav-highlight)];
+}
+
+.zuse-nav-bar > * {
+  @apply relative z-[1];
+}
+
+/* ── LOGO ── */
+.zuse-nav-logo {
+  @apply flex items-center no-underline mt-0.5;
+}
+
+.zuse-nav-logo-img {
+  @apply h-auto max-w-[120px];
+
+  @variant lg {
+    @apply h-[25px];
+  }
+}
+
+/* ── NAV LINKS WRAPPER ── */
+.zuse-nav-links-wrapper {
+  @apply hidden items-center static gap-[34px];
+
+  @variant lg {
+    @apply flex self-stretch h-full;
+  }
+}
+
+.zuse-serv-nav {
+  @apply relative flex items-center;
+
+  @variant lg {
+    @apply self-stretch h-full;
+  }
+}
+
+.zuse-nav-link,
+.zuse-serv-trigger {
+  @variant lg {
+    @apply inline-flex items-center self-stretch h-full;
+  }
+}
+
+.zuse-nav-link {
+  @apply relative bg-transparent border-0 cursor-pointer p-0 font-medium text-nav no-underline text-ink-500 font-sans tracking-normal;
+}
+
+.zuse-nav-link::before,
+.zuse-serv-trigger::before {
+  content: "";
+  @apply hidden absolute h-px right-auto bottom-0 rounded-none opacity-0 pointer-events-none;
+
+  @variant lg {
+    @apply block;
+  }
+
+  width: calc(100% + 30px);
+  left: -15px;
+  background: var(--background-image-gradient-nav-underline);
+  transform: none;
+  transition: opacity 0.3s ease;
+}
+
+a.zuse-nav-link:hover::before,
+a.zuse-nav-link.is-active::before,
+.zuse-serv-nav:hover .zuse-serv-trigger::before,
+.zuse-serv-nav.is-open .zuse-serv-trigger::before,
+.zuse-serv-nav:focus-within .zuse-serv-trigger::before {
+  @variant lg {
+    @apply opacity-100;
+  }
+
+  transform: none;
+}
+
+a.zuse-nav-link:hover,
+.zuse-serv-nav:hover .zuse-serv-trigger,
+.zuse-serv-nav.is-open .zuse-serv-trigger,
+.zuse-serv-nav:focus-within .zuse-serv-trigger {
+  @variant lg {
+    background: var(--background-image-gradient-nav-hover);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply text-transparent opacity-100;
+  }
+}
+
+a.zuse-nav-link.is-active {
+  @variant lg {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: currentColor;
+    @apply text-brand-700 opacity-100;
+  }
+}
+
+/* ── DESKTOP MEGA SCRIM ── */
+.zuse-desk-mega-scrim {
+  @apply hidden;
+
+  @variant lg {
+    @apply block fixed inset-0 z-40 m-0 p-0 border-0 opacity-0 invisible pointer-events-none cursor-default;
+  }
+
+  @apply bg-[var(--color-overlay-scrim)] backdrop-blur-[1px];
+  transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 0.55s;
+}
+
+.zuse-desk-mega-scrim.is-open {
+  @variant lg {
+    @apply opacity-100 visible pointer-events-auto;
+  }
+}
+
+.desk-mega-open .zuse-nav-bar {
+  @variant lg {
+    box-shadow: var(--shadow-nav-scrolled);
+  }
+}
+
+.desk-mega-open .zuse-nav-bar::before {
+  @variant lg {
+    background: var(--background-image-gradient-nav-highlight-scrolled);
+  }
+}
+
+/* ── SERVICES DROPDOWN ── */
+.zuse-serv-dropdown {
+  @apply hidden;
+
+  @variant lg {
+    @apply block absolute z-[60] left-0 right-0 w-full pt-[10px] box-border opacity-0 invisible pointer-events-none;
+  }
+
+  top: calc(100% + 4px);
+  transform: translateY(8px);
+  transform-origin: top center;
+  transition: opacity 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+  transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+  visibility 0.28s;
+}
+
+.zuse-serv-dropdown.is-open {
+  @variant lg {
+    @apply opacity-100 visible pointer-events-auto;
+  }
+
+  transform: translateY(0);
+}
+
+.zuse-serv-dropdown-inner {
+  @apply relative isolate grid gap-2 h-[400px] min-h-[400px] max-h-[400px] w-full box-border overflow-hidden items-stretch bg-transparent rounded-md;
+  grid-template-columns: minmax(0, 1fr) 433px;
+  border: 1px solid var(--color-border-card);
+  box-shadow: var(--shadow-dropdown);
+}
+
+.zuse-serv-dropdown-inner::before {
+  content: "";
+  @apply absolute inset-0 z-0 pointer-events-none rounded-[inherit];
+  @apply bg-[var(--zuse-submenu-glass)] backdrop-blur-[var(--zuse-submenu-blur)];
+}
+
+.zuse-serv-dropdown-list,
+.zuse-serv-dropdown-preview {
+  @apply relative z-[1];
+}
+
+.zuse-serv-dropdown-list {
+  @apply grid grid-cols-2 content-start w-full box-border py-[27px] px-5;
+}
+
+.zuse-serv-dropdown-item {
+  @apply relative z-0 flex flex-col gap-1 rounded-[10px] box-border no-underline bg-transparent opacity-0 py-[22px] px-[18px] border border-transparent;
+  transform: translateY(8px);
+  transition:
+    opacity 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.zuse-serv-dropdown-item::before {
+  content: "";
+  @apply absolute inset-0 opacity-0 pointer-events-none -z-[1] rounded-[inherit];
+  background: var(--background-image-gradient-item-hover-bg);
+  transition: opacity 0.2s ease;
+}
+
+.zuse-serv-dropdown-item::after {
+  content: "";
+  @apply absolute inset-0 opacity-0 pointer-events-none -z-[2] rounded-[inherit] p-px;
+  background: var(--background-image-gradient-item-hover-border);
+  -webkit-mask:
+    linear-gradient(var(--color-surface-0) 0 0) content-box,
+    linear-gradient(var(--color-surface-0) 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(var(--color-surface-0) 0 0) content-box,
+    linear-gradient(var(--color-surface-0) 0 0);
+  mask-composite: exclude;
+  transition: opacity 0.2s ease;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item {
+  @apply opacity-100;
+  transform: translateY(0);
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(1) {
+  transition-delay: 40ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(2) {
+  transition-delay: 70ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(3) {
+  transition-delay: 100ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(4) {
+  transition-delay: 130ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(5) {
+  transition-delay: 160ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-item:nth-child(6) {
+  transition-delay: 190ms;
+}
+
+.zuse-serv-dropdown-title {
+  @apply text-dropdown-title font-semibold text-ink-800 font-display;
+}
+
+.zuse-serv-dropdown-desc {
+  @apply block text-dropdown-desc text-ink-600 font-sans;
+}
+
+.zuse-serv-dropdown-item:hover {
+  @apply bg-transparent border-transparent;
+}
+
+.zuse-serv-dropdown-item:hover::before,
+.zuse-serv-dropdown-item:hover::after {
+  @apply opacity-100;
+}
+
+.zuse-serv-dropdown-item:hover .zuse-serv-dropdown-title {
+  background: var(--background-image-gradient-text-heading);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply text-transparent;
+}
+
+.zuse-serv-dropdown-preview {
+  @apply relative flex items-center justify-center flex-shrink-0 w-[393px] h-[313px] self-center overflow-hidden rounded-[14px] opacity-0 my-10 mr-10 ml-0;
+  background: var(--background-image-gradient-preview-placeholder);
+  transition: opacity 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) 120ms;
+}
+
+.zuse-serv-dropdown.is-open .zuse-serv-dropdown-preview {
+  @apply opacity-100;
+}
+
+.zuse-serv-dropdown-preview img {
+  @apply block max-w-full h-auto object-cover object-center;
+  animation: zuse-serv-preview-in 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes zuse-serv-preview-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.zuse-serv-dropdown-inner {
+  @apply max-[1100px]:grid;
+}
+
+/* ==========================================================
+   MOBILE MENU — ported from home-v3 (home-v3-scope.css)
+   Top-down clip wipe, logo stays in floating nav, hamburger → X
+   ========================================================== */
+
+.zuse-mobile-menu-link {
+  @apply block w-full text-left py-4 bg-transparent border-0 border-b border-border-100 cursor-pointer text-ink-900 font-sans text-[18px] leading-[1.3] font-medium no-underline;
+  -webkit-text-fill-color: var(--color-ink-900);
+}
+
+.zuse-mobile-services-trigger {
+  @apply flex items-center justify-between border-t border-border-100;
+}
+
+.zuse-mobile-services-trigger::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%23061256' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.zuse-mobile-menu-body {
+  @apply relative flex-auto min-h-0 flex flex-col overflow-hidden;
+}
+
+.zuse-mobile-services {
+  @apply absolute inset-0 z-20 flex flex-col pointer-events-none;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0.5rem 1.5rem 1rem;
+  transform: translateX(16px);
+  transition: opacity 0.28s cubic-bezier(0.4, 0, 0.6, 1),
+    transform 0.28s cubic-bezier(0.4, 0, 0.6, 1),
+    visibility 0.28s;
+}
+
+.zuse-mobile-services.is-open {
+  @apply pointer-events-auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateX(0);
+}
+
+/* Hide only main links when submenu is open — footer stays visible */
+.zuse-mobile-menu.services-open .zuse-mobile-menu-links {
+  opacity: 0 !important;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.zuse-mobile-services-back {
+  @apply inline-flex items-center gap-0 mb-2 py-2 border-0 bg-transparent text-ink-400 font-sans text-base font-medium cursor-pointer;
+  margin-left: 0;
+}
+
+.zuse-mobile-services-back img {
+  @apply block w-5 h-5 shrink-0;
+  opacity: 0.55;
+}
+
+.zuse-mobile-services-back span {
+  @apply text-ink-400;
+  margin-left: -4px;
+}
+
+.zuse-mobile-services-links {
+  @apply flex-auto overflow-y-auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.zuse-mobile-menu-link:hover,
+.zuse-mobile-menu-link.is-active {
+  background-image: var(--background-image-gradient-text-heading, linear-gradient(90deg, #060a6a 28.365%, #75baff 55.769%, #131aca 97.115%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  opacity: 1;
+}
+
+.zuse-mobile-services-links .zuse-mobile-menu-link {
+  @apply relative z-0;
+}
+
+.zuse-mobile-services-links .zuse-mobile-menu-link::after {
+  content: "";
+  @apply absolute inset-0 -z-[1] rounded-[10px] opacity-0 pointer-events-none;
+  background: linear-gradient(90deg, rgba(224, 240, 249, 0.59) 0%, rgba(224, 240, 249, 0) 100%);
+  transition: opacity 0.2s ease;
+}
+
+.zuse-mobile-services-links .zuse-mobile-menu-link:hover {
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(115, 168, 240, 0.55) 0%, rgba(115, 168, 240, 0) 70%) border-box;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #061256;
+  color: #061256;
+}
+
+.zuse-mobile-services-links .zuse-mobile-menu-link:hover::after {
+  opacity: 1;
+}
+
+.zuse-mobile-menu-footer {
+  @apply relative z-[25] shrink-0 bg-transparent p-6;
+}
+
+.zuse-mobile-social-label {
+  @apply mb-4 text-caption font-semibold uppercase tracking-wider text-ink-400;
+}
+
+.zuse-mobile-social-icons {
+  @apply mb-8 flex items-center gap-6;
+}
+
+.zuse-mobile-social-icon {
+  @apply text-ink-900 transition-opacity hover:opacity-80 flex items-center justify-center;
+}
+
+.zuse-mobile-cta-row {
+  @apply flex items-center gap-4;
+}
+
+.zuse-mobile-cta-btn {
+  @apply flex-1 h-[54px] bg-brand-700 hover:bg-brand-800 text-surface-0 font-medium text-base rounded-lg flex items-center justify-center transition-colors shadow-sm no-underline;
+}
+
+.zuse-mobile-cta-icon-btn {
+  @apply w-[54px] h-[54px] shrink-0 bg-surface-0 border border-border-100 hover:border-brand-700 rounded-lg flex items-center justify-center text-brand-700 transition-colors shadow-sm;
+}
+
+@media (min-width: 1024px) {
+
+  .zuse-mobile-menu,
+  .zuse-mobile-menu.is-open {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    clip-path: none !important;
+    -webkit-clip-path: none !important;
+  }
+
+  .zuse-menu-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .zuse-nav-shell {
+    @apply z-[70];
+  }
+
+  .menu-open .zuse-nav-shell {
+    @apply z-[80];
+  }
+
+  .menu-open .zuse-nav-bar {
+    @apply bg-[image:var(--zuse-gradient-nav-glass)] px-[15px] backdrop-blur-[var(--zuse-nav-blur)] backdrop-saturate-[185%];
+    box-shadow: none !important;
+  }
+
+  .menu-open .zuse-nav-bar::before {
+    @apply bg-[image:var(--background-image-gradient-nav-highlight)];
+  }
+
+  .menu-open .zuse-nav-cta {
+    display: none !important;
+  }
+
+  /*
+   * Smooth open/close — clip-path wipe matching home-v3 / zusedigital.com
+   * (1s, cubic-bezier(0.19, 1, 0.22, 1)).
+   */
+  .zuse-mobile-menu {
+    @apply fixed inset-0 z-[60] flex flex-col overflow-hidden bg-[image:var(--bg-mobile-menu)] backdrop-blur-[18.3px];
+    height: 100vh;
+    height: 100dvh;
+    padding-top: 74px;
+    visibility: hidden;
+    pointer-events: none;
+    clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: inset(0 0 100% 0);
+    will-change: clip-path;
+    transition: clip-path 1s cubic-bezier(0.19, 1, 0.22, 1),
+      -webkit-clip-path 1s cubic-bezier(0.19, 1, 0.22, 1),
+      visibility 0s linear 1s;
+  }
+
+  .zuse-mobile-menu.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+    transition: clip-path 1s cubic-bezier(0.19, 1, 0.22, 1),
+      -webkit-clip-path 1s cubic-bezier(0.19, 1, 0.22, 1),
+      visibility 0s linear 0s;
+  }
+
+  .zuse-mobile-menu-links {
+    @apply flex-auto overflow-y-auto px-6 pt-8;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Staggered one-by-one menu item reveal — smoother sequential fade/rise */
+  .zuse-mobile-menu-links>.zuse-mobile-menu-link,
+  .zuse-mobile-menu-footer {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+    transition:
+      opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>.zuse-mobile-menu-link,
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-footer {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Start after wipe begins; ~120ms between each item for clear one-by-one feel */
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(1) {
+    transition-delay: 0.28s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(2) {
+    transition-delay: 0.40s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(3) {
+    transition-delay: 0.52s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(4) {
+    transition-delay: 0.64s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(5) {
+    transition-delay: 0.76s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-links>*:nth-child(6) {
+    transition-delay: 0.88s;
+  }
+
+  .zuse-mobile-menu.is-open .zuse-mobile-menu-footer {
+    transition-delay: 1.02s;
+  }
+
+  .zuse-mobile-menu:not(.is-open) .zuse-mobile-menu-links>.zuse-mobile-menu-link,
+  .zuse-mobile-menu:not(.is-open) .zuse-mobile-menu-footer {
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+  }
+
+  /* Services submenu — staggered reveal */
+  .zuse-mobile-services-back,
+  .zuse-mobile-services-links>.zuse-mobile-menu-link {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+    transition:
+      opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-back {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.12s;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>*:nth-child(1) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.24s;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>*:nth-child(2) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.36s;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>*:nth-child(3) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.48s;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>*:nth-child(4) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.60s;
+  }
+
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>*:nth-child(5) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.72s;
+  }
+
+  .zuse-mobile-services:not(.is-open) .zuse-mobile-services-back,
+  .zuse-mobile-services:not(.is-open) .zuse-mobile-services-links>.zuse-mobile-menu-link {
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+  }
+
+  /* Hamburger → cross — home-v3 / live site */
+  .zuse-menu-toggle {
+    @apply relative z-[71] inline-flex items-center justify-center w-10 h-10 p-0 border-none bg-transparent cursor-pointer text-ink-900;
+  }
+
+  .zuse-menu-toggle-bar {
+    @apply relative block w-[22px] h-[1.6px] m-0 bg-transparent rounded-full;
+    transition-delay: 0.2s;
+    transition-duration: 0s;
+  }
+
+  .zuse-menu-toggle-bar::before,
+  .zuse-menu-toggle-bar::after {
+    content: "";
+    @apply absolute right-0 left-auto block h-[1.6px] rounded-full bg-current;
+    transition-property: margin, width, transform, left, right;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s, 0s, 0s, 0.2s, 0.2s;
+  }
+
+  .zuse-menu-toggle-bar::before {
+    @apply w-[22px] top-0;
+    margin-top: -4px;
+  }
+
+  .zuse-menu-toggle-bar::after {
+    @apply w-[13px] top-0;
+    margin-top: 4px;
+  }
+
+  .zuse-menu-toggle.is-open .zuse-menu-toggle-bar {
+    @apply bg-transparent;
+    transition-delay: 0.2s;
+  }
+
+  .zuse-menu-toggle.is-open .zuse-menu-toggle-bar::before,
+  .zuse-menu-toggle.is-open .zuse-menu-toggle-bar::after {
+    @apply w-[22px] left-0 right-auto;
+    margin-top: 0;
+    transition-delay: 0s, 0s, 0.2s, 0s, 0s;
+  }
+
+  .zuse-menu-toggle.is-open .zuse-menu-toggle-bar::before {
+    transform: rotate(45deg);
+  }
+
+  .zuse-menu-toggle.is-open .zuse-menu-toggle-bar::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .zuse-mobile-menu,
+  .zuse-mobile-menu-link,
+  .zuse-mobile-menu-footer,
+  .zuse-mobile-services-back,
+  .zuse-menu-toggle-bar,
+  .zuse-menu-toggle-bar::before,
+  .zuse-menu-toggle-bar::after {
+    transition: none !important;
+  }
+
+  .zuse-mobile-menu-links>.zuse-mobile-menu-link,
+  .zuse-mobile-menu-footer,
+  .zuse-mobile-services.is-open .zuse-mobile-services-back,
+  .zuse-mobile-services.is-open .zuse-mobile-services-links>.zuse-mobile-menu-link {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.menu-open .zuse-nav-bar {
+  @apply bg-[image:var(--zuse-gradient-nav-glass)] backdrop-blur-[var(--zuse-nav-blur)] backdrop-saturate-[185%];
+  box-shadow: none !important;
+
+  @variant max-lg {
+    @apply bg-[image:var(--zuse-gradient-mobile-menu)] backdrop-blur-nav-mobile rounded-nav;
+  }
+}
+
+.menu-open .zuse-nav-bar::before {
+  @apply bg-[image:var(--background-image-gradient-nav-highlight)];
+}
+
+/* ==========================================================
+   INTERACTIVE HOVER BUTTON (zuse-ihb)
+   Blue rest (white text) → white fill + blue text on hover.
+   ========================================================== */
+.zuse-ihb {
+  @apply relative inline-flex items-center justify-center overflow-hidden isolate font-display font-semibold text-surface-0 no-underline rounded-btn border border-brand-600-16 shadow-none;
+}
+
+.zuse-ihb::before {
+  content: none;
+  @apply hidden;
+}
+
+.zuse-ihb-fill {
+  @apply absolute z-0 rounded-full pointer-events-none w-2 h-2 top-1/2 left-6 bg-surface-0 -mt-1;
+  transform: scale(0);
+  transition: transform 600ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.zuse-ihb-default {
+  @apply relative z-[1] flex w-full items-center justify-center gap-[10px] text-surface-0;
+  transform: translateX(0);
+  transition: transform 600ms ease, opacity 600ms ease;
+}
+
+.zuse-ihb-label {
+  @apply inline-block whitespace-nowrap;
+}
+
+.zuse-ihb-hover {
+  @apply absolute inset-0 z-[2] flex h-full w-full items-center justify-center gap-[10px] px-6 opacity-0 pointer-events-none text-brand-700;
+  transform: translateX(3rem);
+  transition: transform 600ms ease, opacity 600ms ease;
+}
+
+.zuse-ihb:hover .zuse-ihb-fill,
+.zuse-ihb:focus-visible .zuse-ihb-fill {
+  transform: scale(100);
+}
+
+.zuse-ihb:hover .zuse-ihb-default,
+.zuse-ihb:focus-visible .zuse-ihb-default {
+  transform: translateX(3rem);
+  opacity: 0;
+}
+
+.zuse-ihb:hover .zuse-ihb-hover,
+.zuse-ihb:focus-visible .zuse-ihb-hover {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Nav CTA variant — responsive size, tighter padding, no arrow */
+.zuse-nav-cta.zuse-ihb {
+  @apply w-[136px] sm:w-[155px] h-[40px] sm:h-[48px] justify-center text-surface-0 font-sans font-medium text-btn-sm sm:text-btn-mob bg-brand-700;
+}
+
+.zuse-nav-cta.zuse-ihb .zuse-ihb-default,
+.zuse-nav-cta.zuse-ihb .zuse-ihb-hover {
+  @apply justify-center gap-0 px-2 sm:px-4 font-sans font-medium;
+}
+
+.menu-open .zuse-nav-cta {
+  display: none !important;
+}
+
+.zuse-nav-cta.zuse-ihb .zuse-ihb-fill {
+  @apply left-4;
+}
+
+/* Mobile CTA variant — full width flex-1, centered label */
+.zuse-mobile-cta-btn.zuse-ihb {
+  @apply flex-1 h-[54px] justify-center text-surface-0 font-sans font-medium text-base rounded-lg bg-brand-700;
+}
+
+.zuse-mobile-cta-btn.zuse-ihb .zuse-ihb-default,
+.zuse-mobile-cta-btn.zuse-ihb .zuse-ihb-hover {
+  @apply justify-center gap-0 px-4 font-sans font-medium;
+}
+
+.zuse-mobile-cta-btn.zuse-ihb .zuse-ihb-fill {
+  @apply left-6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .zuse-ihb-default,
+  .zuse-ihb-fill,
+  .zuse-ihb-hover {
+    transition: none;
+  }
+
+  .zuse-ihb:hover .zuse-ihb-fill {
+    transform: none;
+    inset: 0;
+    @apply w-full h-full top-0 left-0 m-0 rounded-[inherit];
+  }
+}
