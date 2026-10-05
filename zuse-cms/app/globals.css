@@ -1,0 +1,593 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Surfaces and brand colours come from the accent palette below (data-accent). */
+  --background: var(--l-bg);
+  --foreground: var(--l-fg);
+  --card: #ffffff;
+  --card-foreground: var(--l-fg);
+  --popover: #ffffff;
+  --popover-foreground: var(--l-fg);
+  --primary: var(--a-deep);
+  --primary-foreground: #ffffff;
+  --secondary: var(--l-secondary);
+  --secondary-foreground: var(--a-deep);
+  --muted: var(--l-muted);
+  /* A touch darker than the palette's grey, so muted text stays readable on glass. */
+  --muted-foreground: color-mix(in oklab, var(--l-muted-fg) 80%, var(--l-fg));
+  --accent: var(--l-accent);
+  --accent-foreground: var(--a-deep);
+  /* Darker than shadcn's default so red text on its own tint (delete buttons) meets WCAG AA. */
+  --destructive: oklch(0.47 0.2 27);
+  --border: var(--l-border);
+  --input: var(--l-input);
+  --ring: var(--a-bright);
+  --chart-1: var(--a-deep);
+  --chart-2: var(--a-mid);
+  --chart-3: var(--a-bright);
+  --chart-4: var(--a-light);
+  --chart-5: var(--a-soft);
+  --radius: 0.625rem;
+  --sidebar: var(--a-ink1);
+  --sidebar-foreground: color-mix(in oklab, var(--a-soft) 55%, #ffffff);
+  --sidebar-primary: var(--a-soft);
+  --sidebar-primary-foreground: var(--a-ink1);
+  --sidebar-accent: rgb(255 255 255 / 0.08);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(255 255 255 / 0.08);
+  --sidebar-ring: var(--a-bright);
+}
+
+.dark {
+  --background: var(--d-bg);
+  --foreground: var(--d-fg);
+  --card: var(--d-card);
+  --card-foreground: var(--d-fg);
+  --popover: var(--d-popover);
+  --popover-foreground: var(--d-fg);
+  /* Lighter than the palette's dark-mode primary, so links stay readable on glass. */
+  --primary: color-mix(in oklab, var(--d-primary) 65%, var(--a-soft));
+  /* Dark text: white on the light dark-mode primary is under WCAG AA (tests/contrast.test.ts). */
+  --primary-foreground: var(--d-bg);
+  --secondary: var(--d-secondary);
+  --secondary-foreground: var(--d-accent-fg);
+  --muted: var(--d-muted);
+  --muted-foreground: var(--d-muted-fg);
+  --accent: var(--d-accent);
+  --accent-foreground: var(--d-accent-fg);
+  --destructive: oklch(0.75 0.17 22);
+  --border: rgb(255 255 255 / 0.09);
+  --input: rgb(255 255 255 / 0.14);
+  --ring: var(--a-bright);
+  --chart-1: var(--d-primary);
+  --chart-2: var(--a-light);
+  --chart-3: var(--a-soft);
+  --chart-4: var(--a-alt);
+  --chart-5: var(--a-deep);
+  --sidebar: var(--d-sidebar);
+  --sidebar-foreground: var(--d-sidebar-fg);
+  --sidebar-primary: var(--a-soft);
+  --sidebar-primary-foreground: var(--d-sidebar);
+  --sidebar-accent: rgb(255 255 255 / 0.07);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(255 255 255 / 0.07);
+  --sidebar-ring: var(--a-bright);
+}
+
+
+/*
+ * Accent palettes (html[data-accent], chosen in the sidebar; components/theme.tsx).
+ * a-*: brand colours, l-*: light-mode surfaces, d-*: dark-mode surfaces.
+ * Zuse Blue (the default) uses the exact brand values.
+ */
+:root {
+  --a-ink1: #030c3f; --a-ink2: #07145a; --a-ink3: #0b1d73;
+  --a-deep: #1f2996; --a-mid: #124ab9; --a-bright: #4f7be0; --a-light: #8ab8f5; --a-soft: #b0dcff; --a-alt: #c9b8ff;
+  --l-bg: #f3f6fc; --l-fg: #0b1236; --l-secondary: #e9eefa; --l-muted: #eef2f9; --l-muted-fg: #5f6b88; --l-accent: #e6edfb; --l-border: #dfe5f1; --l-input: #d6deee;
+  --d-bg: #050b2a; --d-fg: #e7ecfb; --d-card: #0b1440; --d-popover: #0d1748; --d-secondary: #16204f; --d-muted: #121b47; --d-muted-fg: #95a2c8;
+  --d-accent: #19245c; --d-accent-fg: #dbe5ff; --d-primary: #5b84f0; --d-sidebar: #020722; --d-sidebar-fg: #b9c4e4;
+}
+
+:root[data-accent="emerald"] {
+  --a-ink1: oklch(0.17 0.070 163); --a-ink2: oklch(0.22 0.100 163); --a-ink3: oklch(0.27 0.120 163);
+  --a-deep: oklch(0.42 0.150 163); --a-mid: oklch(0.5 0.160 163); --a-bright: oklch(0.64 0.150 163);
+  --a-light: oklch(0.79 0.100 163); --a-soft: oklch(0.89 0.060 163); --a-alt: oklch(0.83 0.090 203);
+  --l-bg: oklch(0.975 0.008 163); --l-fg: oklch(0.2 0.040 163); --l-secondary: oklch(0.95 0.020 163); --l-muted: oklch(0.96 0.012 163);
+  --l-muted-fg: oklch(0.52 0.040 163); --l-accent: oklch(0.95 0.025 163); --l-border: oklch(0.92 0.015 163); --l-input: oklch(0.89 0.020 163);
+  --d-bg: oklch(0.15 0.040 163); --d-fg: oklch(0.95 0.015 163); --d-card: oklch(0.21 0.060 163); --d-popover: oklch(0.23 0.065 163);
+  --d-secondary: oklch(0.27 0.070 163); --d-muted: oklch(0.25 0.060 163); --d-muted-fg: oklch(0.72 0.040 163);
+  --d-accent: oklch(0.3 0.080 163); --d-accent-fg: oklch(0.92 0.030 163); --d-primary: oklch(0.66 0.150 163);
+  --d-sidebar: oklch(0.13 0.040 163); --d-sidebar-fg: oklch(0.82 0.035 163);
+}
+:root[data-accent="violet"] {
+  --a-ink1: oklch(0.17 0.070 293); --a-ink2: oklch(0.22 0.100 293); --a-ink3: oklch(0.27 0.120 293);
+  --a-deep: oklch(0.42 0.150 293); --a-mid: oklch(0.5 0.160 293); --a-bright: oklch(0.64 0.150 293);
+  --a-light: oklch(0.79 0.100 293); --a-soft: oklch(0.89 0.060 293); --a-alt: oklch(0.83 0.090 333);
+  --l-bg: oklch(0.975 0.008 293); --l-fg: oklch(0.2 0.040 293); --l-secondary: oklch(0.95 0.020 293); --l-muted: oklch(0.96 0.012 293);
+  --l-muted-fg: oklch(0.52 0.040 293); --l-accent: oklch(0.95 0.025 293); --l-border: oklch(0.92 0.015 293); --l-input: oklch(0.89 0.020 293);
+  --d-bg: oklch(0.15 0.040 293); --d-fg: oklch(0.95 0.015 293); --d-card: oklch(0.21 0.060 293); --d-popover: oklch(0.23 0.065 293);
+  --d-secondary: oklch(0.27 0.070 293); --d-muted: oklch(0.25 0.060 293); --d-muted-fg: oklch(0.72 0.040 293);
+  --d-accent: oklch(0.3 0.080 293); --d-accent-fg: oklch(0.92 0.030 293); --d-primary: oklch(0.66 0.150 293);
+  --d-sidebar: oklch(0.13 0.040 293); --d-sidebar-fg: oklch(0.82 0.035 293);
+}
+:root[data-accent="sunset"] {
+  --a-ink1: oklch(0.17 0.070 45); --a-ink2: oklch(0.22 0.100 45); --a-ink3: oklch(0.27 0.120 45);
+  --a-deep: oklch(0.42 0.150 45); --a-mid: oklch(0.5 0.160 45); --a-bright: oklch(0.64 0.150 45);
+  --a-light: oklch(0.79 0.100 45); --a-soft: oklch(0.89 0.060 45); --a-alt: oklch(0.83 0.090 85);
+  --l-bg: oklch(0.975 0.008 45); --l-fg: oklch(0.2 0.040 45); --l-secondary: oklch(0.95 0.020 45); --l-muted: oklch(0.96 0.012 45);
+  --l-muted-fg: oklch(0.52 0.040 45); --l-accent: oklch(0.95 0.025 45); --l-border: oklch(0.92 0.015 45); --l-input: oklch(0.89 0.020 45);
+  --d-bg: oklch(0.15 0.040 45); --d-fg: oklch(0.95 0.015 45); --d-card: oklch(0.21 0.060 45); --d-popover: oklch(0.23 0.065 45);
+  --d-secondary: oklch(0.27 0.070 45); --d-muted: oklch(0.25 0.060 45); --d-muted-fg: oklch(0.72 0.040 45);
+  --d-accent: oklch(0.3 0.080 45); --d-accent-fg: oklch(0.92 0.030 45); --d-primary: oklch(0.66 0.150 45);
+  --d-sidebar: oklch(0.13 0.040 45); --d-sidebar-fg: oklch(0.82 0.035 45);
+}
+:root[data-accent="rose"] {
+  --a-ink1: oklch(0.17 0.070 12); --a-ink2: oklch(0.22 0.100 12); --a-ink3: oklch(0.27 0.120 12);
+  --a-deep: oklch(0.42 0.150 12); --a-mid: oklch(0.5 0.160 12); --a-bright: oklch(0.64 0.150 12);
+  --a-light: oklch(0.79 0.100 12); --a-soft: oklch(0.89 0.060 12); --a-alt: oklch(0.83 0.090 52);
+  --l-bg: oklch(0.975 0.008 12); --l-fg: oklch(0.2 0.040 12); --l-secondary: oklch(0.95 0.020 12); --l-muted: oklch(0.96 0.012 12);
+  --l-muted-fg: oklch(0.52 0.040 12); --l-accent: oklch(0.95 0.025 12); --l-border: oklch(0.92 0.015 12); --l-input: oklch(0.89 0.020 12);
+  --d-bg: oklch(0.15 0.040 12); --d-fg: oklch(0.95 0.015 12); --d-card: oklch(0.21 0.060 12); --d-popover: oklch(0.23 0.065 12);
+  --d-secondary: oklch(0.27 0.070 12); --d-muted: oklch(0.25 0.060 12); --d-muted-fg: oklch(0.72 0.040 12);
+  --d-accent: oklch(0.3 0.080 12); --d-accent-fg: oklch(0.92 0.030 12); --d-primary: oklch(0.66 0.150 12);
+  --d-sidebar: oklch(0.13 0.040 12); --d-sidebar-fg: oklch(0.82 0.035 12);
+}
+:root[data-accent="graphite"] {
+  --a-ink1: oklch(0.17 0.008 260); --a-ink2: oklch(0.22 0.012 260); --a-ink3: oklch(0.27 0.014 260);
+  --a-deep: oklch(0.42 0.018 260); --a-mid: oklch(0.5 0.019 260); --a-bright: oklch(0.64 0.018 260);
+  --a-light: oklch(0.79 0.012 260); --a-soft: oklch(0.89 0.007 260); --a-alt: oklch(0.83 0.011 300);
+  --l-bg: oklch(0.975 0.001 260); --l-fg: oklch(0.2 0.005 260); --l-secondary: oklch(0.95 0.002 260); --l-muted: oklch(0.96 0.001 260);
+  --l-muted-fg: oklch(0.52 0.005 260); --l-accent: oklch(0.95 0.003 260); --l-border: oklch(0.92 0.002 260); --l-input: oklch(0.89 0.002 260);
+  --d-bg: oklch(0.15 0.005 260); --d-fg: oklch(0.95 0.002 260); --d-card: oklch(0.21 0.007 260); --d-popover: oklch(0.23 0.008 260);
+  --d-secondary: oklch(0.27 0.008 260); --d-muted: oklch(0.25 0.007 260); --d-muted-fg: oklch(0.72 0.005 260);
+  --d-accent: oklch(0.3 0.010 260); --d-accent-fg: oklch(0.92 0.004 260); --d-primary: oklch(0.66 0.018 260);
+  --d-sidebar: oklch(0.13 0.005 260); --d-sidebar-fg: oklch(0.82 0.004 260);
+}
+:root[data-accent="ocean"] {
+  --a-ink1: oklch(0.17 0.070 232); --a-ink2: oklch(0.22 0.100 232); --a-ink3: oklch(0.27 0.120 232);
+  --a-deep: oklch(0.42 0.150 232); --a-mid: oklch(0.5 0.160 232); --a-bright: oklch(0.64 0.150 232);
+  --a-light: oklch(0.79 0.100 232); --a-soft: oklch(0.89 0.060 232); --a-alt: oklch(0.83 0.090 272);
+  --l-bg: oklch(0.975 0.008 232); --l-fg: oklch(0.2 0.040 232); --l-secondary: oklch(0.95 0.020 232); --l-muted: oklch(0.96 0.012 232);
+  --l-muted-fg: oklch(0.52 0.040 232); --l-accent: oklch(0.95 0.025 232); --l-border: oklch(0.92 0.015 232); --l-input: oklch(0.89 0.020 232);
+  --d-bg: oklch(0.15 0.040 232); --d-fg: oklch(0.95 0.015 232); --d-card: oklch(0.21 0.060 232); --d-popover: oklch(0.23 0.065 232);
+  --d-secondary: oklch(0.27 0.070 232); --d-muted: oklch(0.25 0.060 232); --d-muted-fg: oklch(0.72 0.040 232);
+  --d-accent: oklch(0.3 0.080 232); --d-accent-fg: oklch(0.92 0.030 232); --d-primary: oklch(0.66 0.150 232);
+  --d-sidebar: oklch(0.13 0.040 232); --d-sidebar-fg: oklch(0.82 0.035 232);
+}
+:root[data-accent="teal"] {
+  --a-ink1: oklch(0.17 0.070 192); --a-ink2: oklch(0.22 0.100 192); --a-ink3: oklch(0.27 0.120 192);
+  --a-deep: oklch(0.4 0.150 192); --a-mid: oklch(0.5 0.160 192); --a-bright: oklch(0.61 0.150 192);
+  --a-light: oklch(0.79 0.100 192); --a-soft: oklch(0.89 0.060 192); --a-alt: oklch(0.83 0.090 232);
+  --l-bg: oklch(0.975 0.008 192); --l-fg: oklch(0.2 0.040 192); --l-secondary: oklch(0.95 0.020 192); --l-muted: oklch(0.96 0.012 192);
+  --l-muted-fg: oklch(0.52 0.040 192); --l-accent: oklch(0.95 0.025 192); --l-border: oklch(0.92 0.015 192); --l-input: oklch(0.89 0.020 192);
+  --d-bg: oklch(0.15 0.040 192); --d-fg: oklch(0.95 0.015 192); --d-card: oklch(0.21 0.060 192); --d-popover: oklch(0.23 0.065 192);
+  --d-secondary: oklch(0.27 0.070 192); --d-muted: oklch(0.25 0.060 192); --d-muted-fg: oklch(0.72 0.040 192);
+  --d-accent: oklch(0.3 0.080 192); --d-accent-fg: oklch(0.92 0.030 192); --d-primary: oklch(0.66 0.150 192);
+  --d-sidebar: oklch(0.13 0.040 192); --d-sidebar-fg: oklch(0.82 0.035 192);
+}
+:root[data-accent="amber"] {
+  --a-ink1: oklch(0.17 0.070 68); --a-ink2: oklch(0.22 0.100 68); --a-ink3: oklch(0.27 0.120 68);
+  --a-deep: oklch(0.42 0.150 68); --a-mid: oklch(0.5 0.160 68); --a-bright: oklch(0.64 0.150 68);
+  --a-light: oklch(0.79 0.100 68); --a-soft: oklch(0.89 0.060 68); --a-alt: oklch(0.83 0.090 108);
+  --l-bg: oklch(0.975 0.008 68); --l-fg: oklch(0.2 0.040 68); --l-secondary: oklch(0.95 0.020 68); --l-muted: oklch(0.96 0.012 68);
+  --l-muted-fg: oklch(0.52 0.040 68); --l-accent: oklch(0.95 0.025 68); --l-border: oklch(0.92 0.015 68); --l-input: oklch(0.89 0.020 68);
+  --d-bg: oklch(0.15 0.040 68); --d-fg: oklch(0.95 0.015 68); --d-card: oklch(0.21 0.060 68); --d-popover: oklch(0.23 0.065 68);
+  --d-secondary: oklch(0.27 0.070 68); --d-muted: oklch(0.25 0.060 68); --d-muted-fg: oklch(0.72 0.040 68);
+  --d-accent: oklch(0.3 0.080 68); --d-accent-fg: oklch(0.92 0.030 68); --d-primary: oklch(0.66 0.150 68);
+  --d-sidebar: oklch(0.13 0.040 68); --d-sidebar-fg: oklch(0.82 0.035 68);
+}
+:root[data-accent="fuchsia"] {
+  --a-ink1: oklch(0.17 0.070 328); --a-ink2: oklch(0.22 0.100 328); --a-ink3: oklch(0.27 0.120 328);
+  --a-deep: oklch(0.42 0.150 328); --a-mid: oklch(0.5 0.160 328); --a-bright: oklch(0.64 0.150 328);
+  --a-light: oklch(0.79 0.100 328); --a-soft: oklch(0.89 0.060 328); --a-alt: oklch(0.83 0.090 8);
+  --l-bg: oklch(0.975 0.008 328); --l-fg: oklch(0.2 0.040 328); --l-secondary: oklch(0.95 0.020 328); --l-muted: oklch(0.96 0.012 328);
+  --l-muted-fg: oklch(0.52 0.040 328); --l-accent: oklch(0.95 0.025 328); --l-border: oklch(0.92 0.015 328); --l-input: oklch(0.89 0.020 328);
+  --d-bg: oklch(0.15 0.040 328); --d-fg: oklch(0.95 0.015 328); --d-card: oklch(0.21 0.060 328); --d-popover: oklch(0.23 0.065 328);
+  --d-secondary: oklch(0.27 0.070 328); --d-muted: oklch(0.25 0.060 328); --d-muted-fg: oklch(0.72 0.040 328);
+  --d-accent: oklch(0.3 0.080 328); --d-accent-fg: oklch(0.92 0.030 328); --d-primary: oklch(0.66 0.150 328);
+  --d-sidebar: oklch(0.13 0.040 328); --d-sidebar-fg: oklch(0.82 0.035 328);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+/*
+ * Site preview (components/preview). Colours and gradients copied from the
+ * nextsetup theme so the preview reads like the real site. Scoped to
+ * .site-preview so none of it leaks into the CMS UI.
+ */
+@theme inline {
+  --color-site-ink: #010b39;
+  --color-site-ink-soft: #444b6b;
+  --color-site-muted: #8792a4;
+  --color-site-brand: #1f2996;
+  --color-site-brand-2: #124ab9;
+  --color-site-sky: #b0dcff;
+  --color-site-hero: #e9f1f5;
+  --color-site-card: #eef3f8;
+  --color-site-line: rgba(14, 23, 76, 0.08);
+}
+
+.site-preview {
+  color: var(--color-site-ink);
+  background: #fff;
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+.site-preview .site-gradient {
+  background-image: linear-gradient(90deg, #060a6a 28%, #75baff 56%, #131aca 97%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.site-preview .site-process-bg {
+  background: linear-gradient(180deg, #030821 0%, #031773 33%, #46a5ff 66%, #d3e4ee 100%);
+}
+
+/*
+ * CMS look: brand backdrop (components/backdrop.tsx) and frosted cards. All motion stops for reduced-motion users.
+ */
+@theme inline {
+  --color-brand-navy: var(--a-ink1);
+  --color-brand-ink2: var(--a-ink2);
+  --color-brand-ink3: var(--a-ink3);
+  --color-brand-royal: var(--a-deep);
+  --color-brand-blue: var(--a-mid);
+  --color-brand-bright: var(--a-bright);
+  --color-brand-light: var(--a-light);
+  --color-brand-sky: var(--a-soft);
+  --color-brand-alt: var(--a-alt);
+}
+
+@keyframes cms-drift-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(6vw, 4vh, 0) scale(1.12); }
+}
+@keyframes cms-drift-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1.05); }
+  50% { transform: translate3d(-5vw, -6vh, 0) scale(0.92); }
+}
+@keyframes cms-drift-c {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-4vw, 5vh, 0); }
+}
+@keyframes cms-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.cms-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(var(--blob-blur));
+  will-change: transform;
+}
+/* Colour and strength of each blob: tokens, so the glass contrast test reads the same values. */
+.cms-blob-a { background: color-mix(in oklab, var(--blob-a-color) var(--blob-a-opacity), transparent); animation: cms-drift-a 22s ease-in-out infinite; }
+.cms-blob-b { background: color-mix(in oklab, var(--blob-b-color) var(--blob-b-opacity), transparent); animation: cms-drift-b 26s ease-in-out infinite; }
+.cms-blob-c { background: color-mix(in oklab, var(--blob-c-color) var(--blob-c-opacity), transparent); animation: cms-drift-c 30s ease-in-out infinite; }
+.cms-blob-d { background: color-mix(in oklab, var(--blob-d-color) var(--blob-d-opacity), transparent); animation: cms-drift-b 34s ease-in-out infinite reverse; }
+
+/* Faint dot grid, fading out towards the bottom. */
+.cms-grid {
+  background-image: radial-gradient(color-mix(in oklab, var(--a-deep) 12%, transparent) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+}
+
+/* Soft light that follows the cursor (position set by components/backdrop.tsx). */
+.cms-spotlight {
+  background: radial-gradient(420px circle at var(--cms-x, -999px) var(--cms-y, -999px), color-mix(in oklab, var(--a-bright) 12%, transparent), transparent 70%);
+}
+
+/* Frosted surface for cards on the backdrop. */
+.cms-glass {
+  background: var(--glass);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Staggered entrance for dashboard items (style="--i: n"). */
+.cms-rise {
+  animation: cms-rise 0.5s ease both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
+.cms-gradient-text {
+  background: linear-gradient(90deg, var(--a-deep), var(--a-mid) 45%, var(--a-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Tables sit on a solid surface over the backdrop. */
+[data-slot="table-container"] {
+  border-radius: inherit;
+}
+
+/* Dark theme versions of the effects. */
+.dark .cms-grid {
+  background-image: radial-gradient(color-mix(in oklab, var(--a-soft) 9%, transparent) 1px, transparent 1px);
+}
+.dark .cms-spotlight {
+  background: radial-gradient(420px circle at var(--cms-x, -999px) var(--cms-y, -999px), color-mix(in oklab, var(--d-primary) 14%, transparent), transparent 70%);
+}
+.dark .cms-gradient-text {
+  background-image: linear-gradient(90deg, var(--a-light), var(--a-soft) 45%, var(--a-alt));
+}
+/* The site preview keeps the site's own light look. */
+.dark .site-preview {
+  color-scheme: light;
+}
+
+/* Digital clock (components/clock.tsx): the colons pulse once a second. */
+@keyframes cms-clock-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.25; }
+}
+.cms-clock-colon {
+  animation: cms-clock-blink 1s steps(1, end) infinite;
+}
+
+/* Theme switch (components/theme.tsx): the new theme is revealed by a growing circle. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+/* Fallback without View Transitions: colours cross-fade briefly. */
+.cms-theme-fade,
+.cms-theme-fade *,
+.cms-theme-fade *::before,
+.cms-theme-fade *::after {
+  transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease, fill 0.45s ease, box-shadow 0.45s ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cms-blob-a, .cms-blob-b, .cms-blob-c, .cms-rise, .cms-clock-colon { animation: none; }
+  .cms-spotlight { display: none; }
+}
+
+/*
+ * Dashboard charts (components/dashboard). Status steps are one hue, light →
+ * dark by how "done" an entry is; validated with the dataviz ordinal checks
+ * for every colour theme, light and dark (contrast ≥ 2:1 vs the card, even
+ * lightness steps).
+ */
+:root {
+  --chart-published: var(--a-deep);
+  --chart-modified: var(--a-bright);
+  --chart-draft: color-mix(in oklab, var(--a-light) 70%, var(--a-bright));
+  --chart-series: var(--a-deep);
+  --chart-grid: var(--l-border);
+}
+.dark {
+  --chart-published: var(--a-soft);
+  --chart-modified: var(--d-primary);
+  --chart-draft: var(--a-mid);
+  --chart-series: var(--d-primary);
+  --chart-grid: rgb(255 255 255 / 0.08);
+}
+
+/*
+ * Glass: every surface on the CMS backdrop is frosted and translucent: cards
+ * and panels (bg-card, tables, .cms-glass), menus and dialogs (bg-popover,
+ * stronger), the sidebar and the top bar. Opacities are tokens so
+ * tests/contrast.test.ts can check text against the worst spot of the
+ * backdrop showing through (WCAG AA). Unlayered, so these beat the Tailwind
+ * utilities of the same name.
+ */
+:root {
+  --glass-tint: #ffffff;
+  --glass-opacity: 50%;
+  --glass-strong-tint: #ffffff;
+  --glass-strong-opacity: 86%;
+  --glass: color-mix(in oklab, var(--glass-tint) var(--glass-opacity), transparent);
+  --glass-strong: color-mix(in oklab, var(--glass-strong-tint) var(--glass-strong-opacity), transparent);
+  --glass-edge: rgb(255 255 255 / 0.75);
+  --glass-filter: blur(18px) saturate(1.5);
+  --sidebar-glass-opacity: 88%;
+}
+.dark {
+  --glass-tint: var(--d-bg);
+  --glass-opacity: 50%;
+  --glass-strong-tint: var(--d-popover);
+  --glass-strong-opacity: 88%;
+  --glass-edge: rgb(255 255 255 / 0.09);
+  --sidebar-glass-opacity: 88%;
+}
+
+/* Panels and cards. Nested ones don't blur again (no extra cost, same look). */
+.bg-card,
+[data-slot="table-container"],
+[data-slot="card"] {
+  background-color: var(--glass);
+  -webkit-backdrop-filter: var(--glass-filter);
+  backdrop-filter: var(--glass-filter);
+}
+.bg-card .bg-card,
+.cms-glass .bg-card,
+.bg-card [data-slot="table-container"],
+.cms-glass [data-slot="table-container"] {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.bg-card.border,
+.bg-card.ring-1,
+[data-slot="table-container"] {
+  box-shadow: var(--glass-shadow);
+}
+.bg-card.border {
+  border-color: var(--glass-edge);
+}
+
+/* Menus, dropdowns, dialogs, popovers: more opaque, so what's behind can't distract. */
+.bg-popover {
+  background-color: var(--glass-strong);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+}
+
+/* Fields: a faint frost so they read as fields on glass. */
+[data-slot="input"],
+[data-slot="textarea"],
+[data-slot="select-trigger"],
+[data-slot="input-group"] {
+  background-color: color-mix(in oklab, var(--glass-tint) 45%, transparent);
+}
+
+/* The sidebar: tinted glass over the backdrop. */
+.cms-sidebar-glass {
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--a-ink1) var(--sidebar-glass-opacity), transparent),
+    color-mix(in oklab, var(--a-ink2) var(--sidebar-glass-opacity), transparent) 55%,
+    color-mix(in oklab, var(--a-ink3) var(--sidebar-glass-opacity), transparent)
+  );
+  -webkit-backdrop-filter: blur(22px) saturate(1.6);
+  backdrop-filter: blur(22px) saturate(1.6);
+  box-shadow: 1px 0 0 rgb(255 255 255 / 0.08), 8px 0 32px -16px rgb(0 0 0 / 0.35);
+}
+
+/* Browsers without backdrop-filter get near-solid surfaces instead of see-through ones. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root, .dark {
+    --glass-opacity: 94%;
+    --glass-strong-opacity: 97%;
+    --sidebar-glass-opacity: 97%;
+  }
+}
+
+/* Backdrop blobs: vivid enough that the glass has colour to frost. */
+:root {
+  --blob-blur: 64px;
+  --blob-a-color: var(--a-soft);
+  --blob-a-opacity: 85%;
+  --blob-b-color: var(--a-light);
+  --blob-b-opacity: 55%;
+  --blob-c-color: var(--a-alt);
+  --blob-c-opacity: 65%;
+  --blob-d-color: var(--a-soft);
+  --blob-d-opacity: 60%;
+}
+.dark {
+  --blob-a-color: var(--a-deep);
+  --blob-a-opacity: 70%;
+  --blob-b-color: var(--a-mid);
+  --blob-b-opacity: 30%;
+  --blob-c-color: var(--a-ink3);
+  --blob-c-opacity: 80%;
+  --blob-d-color: var(--a-alt);
+  --blob-d-opacity: 10%;
+}
+
+/*
+ * Glass cues: a diagonal sheen, a bright edge with a lit top, and depth. The
+ * sheen only lightens, so in dark mode it's counted in the contrast test.
+ */
+:root {
+  --glass-sheen: linear-gradient(135deg, rgb(255 255 255 / 0.55) 0%, rgb(255 255 255 / 0.12) 38%, rgb(255 255 255 / 0) 62%);
+  --glass-sheen-opacity: 0%;
+  /* Frosted grain: fine white speckle, the classic frosted-glass texture (averages out, so contrast is unchanged). */
+  --glass-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --glass-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.65), inset 0 1px 0 rgb(255 255 255 / 0.95), 0 0 0 1px color-mix(in oklab, var(--a-ink1) 7%, transparent),
+    0 18px 40px -18px color-mix(in oklab, var(--a-ink1) 30%, transparent);
+}
+.dark {
+  --glass-sheen: linear-gradient(135deg, rgb(255 255 255 / 0.04) 0%, rgb(255 255 255 / 0.01) 40%, rgb(255 255 255 / 0) 65%);
+  --glass-sheen-opacity: 4%;
+  --glass-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --glass-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.13), inset 0 1px 0 rgb(255 255 255 / 0.32), inset 1px 0 0 rgb(255 255 255 / 0.12),
+    0 20px 44px -18px rgb(0 0 0 / 0.75);
+}
+.cms-glass,
+.bg-card,
+[data-slot="table-container"],
+[data-slot="card"],
+.bg-popover {
+  background-image: var(--glass-grain), var(--glass-sheen);
+}
+.bg-card .bg-card,
+.cms-glass .bg-card,
+.bg-card [data-slot="table-container"],
+.cms-glass [data-slot="table-container"],
+.bg-card .cms-glass,
+.cms-glass .cms-glass {
+  background-image: none;
+}
+.cms-glass,
+.bg-card.border,
+.bg-card.rounded-xl,
+.bg-card.rounded-lg,
+[data-slot="table-container"],
+.bg-popover {
+  box-shadow: var(--glass-shadow);
+}
+
+/* Dropdowns on the navy sidebar (colour theme): a faint light tint, not the white frost fields get. */
+.cms-sidebar-glass [data-slot="select-trigger"].cms-sidebar-select {
+  background-color: rgb(255 255 255 / 0.06);
+}
