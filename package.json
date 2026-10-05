@@ -5,10 +5,18 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "dev:all": "node scripts/dev-all.js",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "postinstall": "npm rebuild better-sqlite3"
+    "cms:create-editor": "node scripts/cms-create-editor.js",
+    "postinstall": "npm rebuild better-sqlite3",
+    "cms:smoke-test": "node scripts/cms-smoke-test.js",
+    "cms:seed-header-footer": "node scripts/cms-seed-header-footer.js",
+    "cms:seed-testimonials-awards": "node scripts/cms-seed-testimonials-awards.js",
+    "cms:seed-pages": "node scripts/cms-seed-pages.js",
+    "cms:localize-cdn-media": "node scripts/cms-localize-cdn-media.js",
+    "cms:seed-case-studies": "node scripts/cms-seed-case-studies.js"
   },
   "dependencies": {
     "@elevenlabs/elevenlabs-js": "^2.43.0",

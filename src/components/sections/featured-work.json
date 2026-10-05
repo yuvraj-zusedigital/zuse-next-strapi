@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_featured_works",
+  "info": {
+    "displayName": "Featured work",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.work-card"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

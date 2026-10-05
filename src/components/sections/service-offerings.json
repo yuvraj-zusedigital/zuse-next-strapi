@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_service_offerings",
+  "info": {
+    "displayName": "Service offerings",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our Services"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.offering"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

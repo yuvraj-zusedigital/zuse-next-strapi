@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_manifestos",
+  "info": {
+    "displayName": "Manifesto",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.manifesto-line"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

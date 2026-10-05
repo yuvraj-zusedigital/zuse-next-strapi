@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_case_study_text_blocks",
+  "info": {
+    "displayName": "Text block",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "bullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.bullet"
+    },
+    "bulletColumns": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two"
+      ],
+      "default": "one"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

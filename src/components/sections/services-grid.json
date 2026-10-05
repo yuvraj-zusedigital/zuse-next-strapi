@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_services_grids",
+  "info": {
+    "displayName": "Services grid",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.service-card"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

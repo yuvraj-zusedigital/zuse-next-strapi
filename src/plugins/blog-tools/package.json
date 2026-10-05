@@ -1,0 +1,11 @@
+{
+  "name": "blog-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Admin-only routes for the blog AI summary and text-to-speech side panels.",
+  "strapi": {
+    "kind": "plugin",
+    "name": "blog-tools",
+    "displayName": "Blog tools"
+  }
+}

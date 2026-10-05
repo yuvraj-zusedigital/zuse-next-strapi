@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_case_study_image_blocks",
+  "info": {
+    "displayName": "Image",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

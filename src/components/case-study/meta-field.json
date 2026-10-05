@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_case_study_meta_fields",
+  "info": {
+    "displayName": "Meta field",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string"
+    },
+    "hrefLabel": {
+      "type": "string"
+    }
+  }
+}

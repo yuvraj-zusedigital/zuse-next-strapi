@@ -29,6 +29,8 @@ COPY --chown=node:node --from=build /app/node_modules ./node_modules
 COPY --chown=node:node --from=build /app/build ./build
 COPY --chown=node:node --from=build /app/config ./config
 COPY --chown=node:node --from=build /app/src ./src
+# CMS maintenance: npm run cms:create-editor / cms:smoke-test
+COPY --chown=node:node --from=build /app/scripts ./scripts
 COPY --chown=node:node --from=build /app/public ./public
 COPY --chown=node:node --from=build /app/database ./database
 COPY --chown=node:node --from=build /app/favicon.png ./favicon.png

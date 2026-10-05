@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_badge_grids",
+  "info": {
+    "displayName": "Badge grid",
+    "icon": "medal"
+  },
+  "options": {},
+  "attributes": {
+    "badges": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

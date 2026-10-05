@@ -1,5 +1,9 @@
 import * as React from 'react';
 import { Badge, Box, Button, Flex, Typography, ProgressBar } from '@strapi/design-system';
+import { useFetchClient } from '@strapi/strapi/admin';
+
+// Admin-only routes (src/plugins/blog-tools); the admin client sends the session token.
+const BASE = '/blog-tools/blogs';
 
 const STATUS_LABELS = {
   idle: 'Not Generated',
@@ -15,13 +19,9 @@ const badgeVariant = (status) => {
   return 'default';
 };
 
-const fetchStatus = async (documentId) => {
+const fetchStatus = async (get, documentId) => {
   try {
-    const res = await fetch(`/api/blogs/${documentId}/audio-status`, {
-      credentials: 'include',
-    });
-    if (!res.ok) return null;
-    const json = await res.json();
+    const { data: json } = await get(`${BASE}/${documentId}/audio-status`);
     const data = json?.data ?? json;
     return { status: data.ttsStatus || 'idle', progress: data.ttsProgress || null };
   } catch (_) {
@@ -40,13 +40,14 @@ const PanelContent = ({ documentId }) => {
   const [state, setState] = React.useState({ status: 'idle', progress: null });
   const [busy, setBusy] = React.useState(false);
   const [error, setError] = React.useState(null);
+  const { get, post } = useFetchClient();
 
   React.useEffect(() => {
     let cancelled = false;
     let timer = null;
 
     const tick = async () => {
-      const result = await fetchStatus(documentId);
+      const result = await fetchStatus(get, documentId);
       if (cancelled || !result) return;
       setState(result);
       if (result.status === 'generating') {
@@ -59,28 +60,17 @@ const PanelContent = ({ documentId }) => {
       cancelled = true;
       if (timer) clearTimeout(timer);
     };
-  }, [documentId]);
+  }, [documentId, get]);
 
   const generate = async () => {
     setBusy(true);
     setError(null);
     setState({ status: 'generating', progress: { message: 'Starting audio generation…' } });
     try {
-      const res = await fetch(`/api/blogs/${documentId}/generate-audio-elevenlabs`, {
-        method: 'POST',
-        credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
-      });
-      if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        const msg = err?.error?.message || `HTTP ${res.status}`;
-        setError(msg);
-        setState({ status: 'failed', progress: { message: msg } });
-        return;
-      }
+      await post(`${BASE}/${documentId}/generate-audio-elevenlabs`);
       // Begin polling for progress.
       const poll = async () => {
-        const result = await fetchStatus(documentId);
+        const result = await fetchStatus(get, documentId);
         if (!result) return;
         setState(result);
         if (result.status === 'generating') {
@@ -89,8 +79,9 @@ const PanelContent = ({ documentId }) => {
       };
       poll();
     } catch (err) {
-      setError(err.message || 'Network error');
-      setState({ status: 'failed', progress: { message: err.message } });
+      const msg = err?.response?.data?.error?.message || err?.message || 'Request failed';
+      setError(msg);
+      setState({ status: 'failed', progress: { message: msg } });
     } finally {
       setBusy(false);
     }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_callouts",
+  "info": {
+    "displayName": "Callout",
+    "icon": "quote",
+    "description": "Highlighted text block with a heading (e.g. \"Our Commitment to Excellence\")."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

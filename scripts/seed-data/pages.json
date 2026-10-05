@@ -1,0 +1,3131 @@
+[
+  {
+    "slug": "home",
+    "path": "/",
+    "name": "Home",
+    "sections": [
+      {
+        "__component": "sections.hero",
+        "label": "Australian Website Design,\n Software Development & AI Agency",
+        "labelIcon": {
+          "url": "/images/au.png",
+          "alt": "",
+          "width": 20,
+          "height": 14
+        },
+        "title": "Design × Intelligence.\n *Built for Growth.*",
+        "description": "We turn complex ideas into websites and digital products people love to use and businesses rely on to grow.",
+        "primaryCta": {
+          "label": "Book a Strategy Call",
+          "href": "/contact",
+          "variant": "primary"
+        },
+        "secondaryCta": {
+          "label": "See our Work",
+          "href": "/work",
+          "variant": "secondary"
+        },
+        "backgroundImage": {
+          "url": "/images/herobg.webp",
+          "alt": "Zuse Digital",
+          "width": 1224,
+          "height": 1400
+        }
+      },
+      {
+        "__component": "sections.logo-strip",
+        "headingBefore": "Working with ambitious",
+        "headingHighlight": "founders",
+        "headingAfter": "and modern companies",
+        "avatarImage": {
+          "url": "/images/zusa-logo-avtar-group.webp",
+          "alt": "zuse-digital-logos-avatar",
+          "width": 46,
+          "height": 20
+        },
+        "logos": [
+          {
+            "url": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh_webapp_by_zusedigital.png",
+            "alt": "Louis Vuitton WebApp by ZuseDigital",
+            "width": 116,
+            "height": 40
+          },
+          {
+            "url": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri_webapp_and_webportal_by_zusedigital.png",
+            "alt": "Jabri WebApp and Web Portal by ZuseDigital",
+            "width": 56,
+            "height": 40
+          },
+          {
+            "url": "https://d13fy5c8tglk2k.cloudfront.net/images/afl_mobileapp_by_zusedigital.png",
+            "alt": "AFL MobileApp by ZuseDigital",
+            "width": 129,
+            "height": 43
+          },
+          {
+            "url": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs_webapp_and_webportal_by_zusedigital.png",
+            "alt": "Viktrs WebApp and WebPortal by ZuseDigital",
+            "width": 84,
+            "height": 48
+          }
+        ]
+      },
+      {
+        "__component": "sections.badge-grid",
+        "badges": [
+          {
+            "url": "/images/awwards/12-building-products-v2.svg",
+            "alt": "12 Building Products",
+            "width": 210,
+            "height": 140
+          },
+          {
+            "url": "/images/awwards/apple-app-recognised-v2.svg",
+            "alt": "Apple App Recognised",
+            "width": 210,
+            "height": 140
+          },
+          {
+            "url": "/images/awwards/lvmh-trusted-by-v2.svg",
+            "alt": "LVMH Trusted by",
+            "width": 210,
+            "height": 140
+          },
+          {
+            "url": "/images/awwards/awwwards-client-awarded-v2.svg",
+            "alt": "Awwwards Client Awarded",
+            "width": 210,
+            "height": 140
+          },
+          {
+            "url": "/images/awwards/5-star-client-reviews-v2.svg",
+            "alt": "5 Star Client Reviews",
+            "width": 210,
+            "height": 140
+          }
+        ]
+      },
+      {
+        "__component": "sections.manifesto",
+        "paragraphs": [
+          {
+            "textBefore": "Founded in 2014 and led by",
+            "inlineImage": {
+              "url": "/images/zeyed.webp",
+              "alt": "Zanyar Outhman",
+              "width": 34,
+              "height": 34
+            },
+            "textAfter": "Zanyar, we've partnered with startups, SMEs and global organisations to create award-winning digital products few others can make, and anyone can use."
+          },
+          {
+            "textBefore": "A great digital product",
+            "inlineImage": {
+              "url": "/images/lv-afl.webp",
+              "alt": "AFL MobileApp by ZuseDigital and Louis Vuitton WebApp by ZuseDigital",
+              "width": 68,
+              "height": 34
+            },
+            "textAfter": "has to do more than work. It has to rank, convert, scale, be easy to use and work with AI and agents only where they genuinely add value."
+          },
+          {
+            "textBefore": "We bring everything together from the start, using our combined experience to spot opportunities others miss."
+          },
+          {
+            "textBefore": "One belief has guided Zuse from the beginning: to inspire and nurture the human spirit."
+          }
+        ],
+        "cta": {
+          "label": "About us",
+          "href": "/about",
+          "variant": "secondary"
+        }
+      },
+      {
+        "__component": "sections.services-grid",
+        "title": "How *Zuse Digital*\nCan Serve You",
+        "description": "We build fast, scalable, and conversion-driven web, mobile, and AI apps as well as websites, all designed to transform businesses and enhance user experiences through product alignment and grounded user journey mapping.",
+        "cards": [
+          {
+            "title": "AI Agents & Automation",
+            "description": "We build framework-agnostic AI agents to streamline operations\nso your team can focus on their most impactful work.",
+            "href": "/services/ai-agents-automation",
+            "backgroundImage": {
+              "url": "/images/service/aigents-bg.svg",
+              "alt": ""
+            },
+            "diagram": "ai-agents"
+          },
+          {
+            "title": "AI Product Development",
+            "description": "We develop AI-powered solutions that\nautomate, optimise, and scale businesses.",
+            "href": "/services/ai-product-development",
+            "backgroundImage": {
+              "url": "/images/service/aiproduct-bg.svg",
+              "alt": ""
+            },
+            "diagram": "ai-product"
+          },
+          {
+            "title": "SEO & AI Search \n Optimisation",
+            "description": "Get found where people search today, from Google\nand AI Overviews to ChatGPT, Gemini and\nPerplexity, with SEO built for both rankings and AI\nvisibility.",
+            "href": "/services/seo-ai-search-optimisation",
+            "backgroundImage": {
+              "url": "/images/seo/seo-bgsvg.svg",
+              "alt": ""
+            },
+            "diagram": "seo"
+          },
+          {
+            "title": "Web Application Development",
+            "description": "We build secure, scalable, and high-performance web apps for business growth.",
+            "href": "/services/web-application-development",
+            "backgroundImage": {
+              "url": "/images/service/webapplication-bg.svg",
+              "alt": ""
+            },
+            "diagram": "web-application"
+          },
+          {
+            "title": "Mobile App\nDevelopment",
+            "description": "We build award-winning, high-performance\nmobile apps with stunning UI/UX at a\ncompetitive investment.",
+            "href": "/services/mobile-app-development",
+            "backgroundImage": {
+              "url": "/images/service/mobile-application-bg.svg",
+              "alt": ""
+            },
+            "diagram": "mobile-app"
+          },
+          {
+            "title": "Webdesign &\nDevelopment",
+            "description": "Automate tools, tasks and team\nworkflows with connected AI systems.",
+            "href": "/services/website-design",
+            "backgroundImage": {
+              "url": "/images/service/webdesign-bg.svg",
+              "alt": ""
+            },
+            "diagram": "web-design"
+          }
+        ]
+      },
+      {
+        "__component": "sections.featured-work",
+        "title": "Explore our premium\n*digital products*",
+        "cards": [
+          {
+            "title": "Komodo",
+            "tags": "Website Design, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/warnie-mojis.jpg",
+              "alt": "Komodo"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/komodo-website-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/websites/komodo-websites/",
+            "size": "small"
+          },
+          {
+            "title": "Louis Vuitton",
+            "tags": "Web App, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/louis-vuitton.jpg",
+              "alt": "Louis Vuitton"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/lvmh-web-app-portal-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/web-apps/louis-vuitton-web-application/",
+            "size": "large"
+          },
+          {
+            "title": "Viktrs",
+            "tags": "Web App, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/vikrs.jpg",
+              "alt": "Viktrs"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/viktrs-web-app-portal-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/web-apps/viktrs-web-application/",
+            "size": "large"
+          },
+          {
+            "title": "Simon West",
+            "tags": "eCommerce, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/simon-west.jpg",
+              "alt": "Simon West"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/simon-west-website-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/e-commerce/simon-west-ecommerce-website/",
+            "size": "small"
+          },
+          {
+            "title": "AFL Players Moji",
+            "tags": "Mobile App, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/afl-players-moji.jpg",
+              "alt": "AFL Players Moji"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/afl-mobile-app-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/mobile-apps/afl-players-moji-mobile-application/",
+            "size": "small"
+          },
+          {
+            "title": "Runway",
+            "tags": "Website Design, UI UX Design",
+            "description": "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+            "image": {
+              "url": "/images/digital-product/runway.jpg",
+              "alt": "Runway"
+            },
+            "video": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/videos/runway-website-design-case-study-by-zusedigital.mp4",
+              "alt": ""
+            },
+            "href": "/casestudies/websites/runway-websites/",
+            "size": "large"
+          }
+        ],
+        "cta": {
+          "label": "Explore all projects",
+          "href": "/work",
+          "variant": "secondary"
+        }
+      },
+      {
+        "__component": "sections.process-stages",
+        "title": "Our Website, App & AI *Development Process*",
+        "stages": [
+          {
+            "title": "AI Discovery & Opportunity Mapping",
+            "shortTitle": "AI Discovery",
+            "body": "We uncover your goals, users and the right digital opportunities."
+          },
+          {
+            "title": "Strategy & Solution Definition",
+            "shortTitle": "Strategy",
+            "body": "We turn discovery into a clear roadmap from idea to outcome."
+          },
+          {
+            "title": "UX/UI Design & Prototyping",
+            "shortTitle": "UX/UI Design",
+            "body": "We prototype experiences that bring your digital product to life early."
+          },
+          {
+            "title": "Development & AI Integration",
+            "shortTitle": "Development",
+            "body": "We build and integrate websites, apps and AI systems ready for real use."
+          },
+          {
+            "title": "Launch, Learn & AI Optimise",
+            "shortTitle": "Optimise",
+            "body": "We test, analyse and improve performance after launch."
+          }
+        ]
+      },
+      {
+        "__component": "sections.industries",
+        "title": "Recognised by *Industry*\n*Leaders* Designed for Impact.",
+        "description": "At the heart of Zuse Digital is a passion for empathetic experiences built with trailblazing technology. Explore the premium websites, apps and digital products we've created for growing brands of all sizes.",
+        "items": [
+          {
+            "title": "Healthcare",
+            "copy": "Work with a top app developer to create custom solutions with the ability to integrate with blockchain and AI.",
+            "imageDesktop": {
+              "url": "/images/leader/healthcare.jpg",
+              "alt": "Healthcare"
+            },
+            "imageMobile": {
+              "url": "/images/leader/healthcare-mobile.webp",
+              "alt": "Healthcare"
+            },
+            "color": "#030821"
+          },
+          {
+            "title": "Retail",
+            "copy": "Empower your retail business with seamless e-commerce integrations and AI-driven customer insights.",
+            "imageDesktop": {
+              "url": "/images/leader/retail.webp",
+              "alt": "Retail"
+            },
+            "imageMobile": {
+              "url": "/images/leader/retail-mobile.webp",
+              "alt": "Retail"
+            },
+            "color": "#124AB9"
+          },
+          {
+            "title": "Property",
+            "copy": "Transform real estate experiences with immersive virtual tours and smart property management systems.",
+            "imageDesktop": {
+              "url": "/images/leader/property.jpg",
+              "alt": "Property"
+            },
+            "imageMobile": {
+              "url": "/images/leader/property-mobile.webp",
+              "alt": "Property"
+            },
+            "color": "#9F54FF"
+          },
+          {
+            "title": "Hospitality",
+            "copy": "Restaurant or cafe, we can build with you a mobile app, digital solution for reservations or another product fit for your business.",
+            "imageDesktop": {
+              "url": "/images/leader/hospitality.jpg",
+              "alt": "Hospitality"
+            },
+            "imageMobile": {
+              "url": "/images/leader/hospitality-mobile.webp",
+              "alt": "Hospitality"
+            },
+            "color": "#46A5FF"
+          }
+        ]
+      },
+      {
+        "__component": "sections.testimonials",
+        "layout": "carousel",
+        "testimonials": []
+      },
+      {
+        "__component": "sections.blog-feed",
+        "title": "From the *Blog*",
+        "limit": 4,
+        "featuredOnly": true
+      }
+    ]
+  },
+  {
+    "slug": "service-mobile-app",
+    "path": "/services/mobile-app-development",
+    "name": "Mobile App Development",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Mobile App Development",
+        "lead": "Scalable, secure, and user-centric mobile apps — for iOS, Android, and the workflows that surround them.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Zuse Digital is a leading mobile app development agency specialising in high-performance, secure, and intuitive mobile applications. We help startups bring innovative ideas to life and assist businesses in transforming existing apps into modern, high-performing products."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.service-offerings",
+        "title": "Our Services",
+        "items": [
+          {
+            "title": "UX Design & User Experience",
+            "description": "Creating an engaging and seamless user experience is crucial for the success of any mobile application. We design intuitive, user-friendly interfaces that ensure smooth navigation and high retention rates.",
+            "points": [
+              {
+                "title": "User-Centric Design",
+                "description": "Intuitive UI that enhances engagement and conversion."
+              },
+              {
+                "title": "Onboarding & User Flows",
+                "description": "Simplified experiences that improve retention."
+              },
+              {
+                "title": "Animations & Microinteractions",
+                "description": "Smooth, engaging transitions for better usability."
+              },
+              {
+                "title": "Dark & Light Mode Compatibility",
+                "description": "Custom UI themes for improved accessibility."
+              },
+              {
+                "title": "Gesture-Based Navigation",
+                "description": "Optimised controls for a fluid mobile experience."
+              },
+              {
+                "title": "Accessibility Compliance",
+                "description": "Ensuring usability for all users, including those with disabilities."
+              }
+            ]
+          },
+          {
+            "title": "Custom Mobile App Development",
+            "description": "We develop custom mobile apps tailored to your business needs, providing scalable and robust solutions for startups and enterprises.",
+            "points": [
+              {
+                "title": "React Native, iOS, and Android Apps",
+                "description": "Cross-platform solutions with native performance."
+              },
+              {
+                "title": "MVP Development",
+                "description": "Validate startup ideas with lean, functional prototypes."
+              },
+              {
+                "title": "Scalable & Secure",
+                "description": "Apps built for long-term growth and enterprise-level security."
+              }
+            ]
+          },
+          {
+            "title": "AI-Powered Mobile Apps",
+            "description": "Leverage the power of AI to enhance user engagement and automate complex processes. Our AI-powered solutions bring intelligence to mobile applications.",
+            "points": [
+              {
+                "title": "Intelligent Automation",
+                "description": "AI-driven chatbots, recommendation engines, and automation tools."
+              },
+              {
+                "title": "Predictive Analytics",
+                "description": "Advanced insights into user behaviour and app performance."
+              },
+              {
+                "title": "Personalised User Experiences",
+                "description": "AI-enhanced features that adapt to user preferences."
+              }
+            ]
+          },
+          {
+            "title": "Mobile Backend Development",
+            "description": "A strong backend is essential for a fast, secure, and scalable mobile application. We build robust backend systems that ensure seamless app performance.",
+            "points": [
+              {
+                "title": "Scalable Infrastructure",
+                "description": "Cloud-native solutions with Firebase, Node.js, .NET Core, and GraphQL."
+              },
+              {
+                "title": "Seamless API Integration",
+                "description": "Secure and efficient connectivity with third-party services."
+              },
+              {
+                "title": "Data Management & Security",
+                "description": "Reliable backend solutions ensuring data integrity."
+              }
+            ]
+          },
+          {
+            "title": "App Deployment & Optimisation",
+            "description": "Launching your app successfully requires strategic planning and execution. We manage the entire deployment process to ensure a smooth launch.",
+            "points": [
+              {
+                "title": "Apple App Store & Google Play Compliance",
+                "description": "Ensuring smooth approval and launch."
+              },
+              {
+                "title": "App Store Optimisation (ASO)",
+                "description": "Strategies to improve visibility and downloads."
+              },
+              {
+                "title": "Performance Monitoring",
+                "description": "Ongoing tracking and improvements to ensure efficiency."
+              }
+            ]
+          },
+          {
+            "title": "Mobile App Maintenance & Growth",
+            "description": "Keeping your mobile app updated and optimised is key to maintaining user engagement and long-term success. We offer ongoing support and improvements.",
+            "points": [
+              {
+                "title": "Continuous Monitoring",
+                "description": "Proactive updates, security patches, and feature enhancements."
+              },
+              {
+                "title": "Scalability Planning",
+                "description": "Helping businesses grow and evolve their mobile apps over time."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.process-steps",
+        "title": "Our Process",
+        "steps": [
+          {
+            "title": "Initial Consultation",
+            "description": "We begin with an in-depth discussion to understand your vision, business goals, and technical requirements.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-start-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 14,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Research & Planning",
+            "description": "We define your target audience, analyse competitors, and determine the best technology stack for your mobile app.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-research-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Wireframing & Prototyping",
+            "description": "Our team creates detailed wireframes and interactive prototypes to map out the app’s user journey and design structure.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-wireframe-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "UX & UI Design",
+            "description": "We craft engaging, accessible, and visually compelling interfaces that align with your brand identity and enhance user engagement.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-ui-ux-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Development & Testing",
+            "description": "Using agile methodologies, we build, test, and refine your mobile application to ensure security, scalability, and optimal performance.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-mobi-app-dev-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Final Design Approval",
+            "description": "We conduct final refinements based on user testing and stakeholder feedback to ensure the app is ready for deployment.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designapprove-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "App Store Deployment & Optimisation",
+            "description": "We publish your app on the Apple App Store and Google Play while implementing ASO strategies for maximum visibility and success.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-deploy-optimize-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/ios-launch-emoji.png",
+              "alt": ""
+            },
+            "iconOverlay": null
+          },
+          {
+            "title": "Support & Maintenance",
+            "description": "Our team provides ongoing updates, performance monitoring, and new feature implementations to keep your app competitive.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-gradient-1x-diff.png",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-diff.png",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Industries We Serve",
+        "lead": "We build tailored mobile applications for startups and enterprises across various industries, including:",
+        "items": [
+          {
+            "title": "FinTech",
+            "description": "Secure & compliant financial apps."
+          },
+          {
+            "title": "HealthTech",
+            "description": "Innovative healthcare solutions."
+          },
+          {
+            "title": "Retail & eCommerce",
+            "description": "Engaging shopping & payment platforms."
+          },
+          {
+            "title": "Education & eLearning",
+            "description": "Interactive and AI-driven learning apps."
+          },
+          {
+            "title": "Entertainment & Streaming",
+            "description": "Seamless media & video streaming experiences."
+          },
+          {
+            "title": "Logistics & Transportation",
+            "description": "Smart tracking and automation solutions."
+          },
+          {
+            "title": "Sports & Fitness",
+            "description": "AI-driven fitness tracking and performance analysis."
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Why Choose Zuse Digital for Mobile App Development?",
+        "items": [
+          {
+            "title": "Expert-Led Development",
+            "description": "A team of experienced engineers ensures high-quality, future-proof mobile applications."
+          },
+          {
+            "title": "React Native Specialists",
+            "description": "Cost-effective, high-performance apps with a native experience."
+          },
+          {
+            "title": "AI-Powered Capabilities",
+            "description": "Intelligent automation, predictive analytics, and personalised experiences."
+          },
+          {
+            "title": "Optimised for Performance",
+            "description": "Fast, scalable, and secure mobile applications."
+          },
+          {
+            "title": "Seamless API Integration",
+            "description": "Connect your app with essential services and platforms."
+          },
+          {
+            "title": "Full-Cycle Development",
+            "description": "From idea validation to launch and long-term maintenance."
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-groups",
+        "title": "Technologies We Use",
+        "groups": [
+          {
+            "title": "Mobile App Development",
+            "items": [
+              {
+                "title": "React Native",
+                "description": "Cross-platform, high-performance development."
+              },
+              {
+                "title": "iOS Development",
+                "description": "Swift, Objective-C"
+              },
+              {
+                "title": "Android Development",
+                "description": "Kotlin, Java"
+              }
+            ]
+          },
+          {
+            "title": "Backend & Cloud Services",
+            "items": [
+              {
+                "title": "Backend",
+                "description": "Node.js, Firebase, GraphQL, .NET Core"
+              },
+              {
+                "title": "Databases",
+                "description": "PostgreSQL, MongoDB, SQLite"
+              },
+              {
+                "title": "Cloud Services",
+                "description": "AWS, Google Cloud, Azure"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-seo-ai-search-optimisation",
+    "path": "/services/seo-ai-search-optimisation",
+    "name": "SEO & AI Search Optimisation",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "SEO & AI Search Optimisation",
+        "lead": "Get Found Everywhere with Award-Winning SEO, AEO & GEO",
+        "body": [
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Be the Answer on Google, ChatGPT & AI Overviews"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Search doesn't stop at Google anymore. Your customers now ask ChatGPT, Perplexity, Gemini and Google's AI Overviews and those engines recommend brands they can read, trust and cite. As an AI-first agency that builds this technology every day, Zuse Digital knows how AI engines crawl, interpret and cite the web. We combine proven SEO with AEO and GEO so your brand becomes the answer, everywhere your customers search."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.service-offerings",
+        "title": "Our Services",
+        "items": [
+          {
+            "title": "Search Engine Optimisation (SEO)",
+            "description": "The proven foundation. We make your website technically flawless, fast and relevant, so Google ranks it and AI engines can read it.",
+            "points": [
+              {
+                "title": "Technical SEO audits & fixes"
+              },
+              {
+                "title": "Core Web Vitals & site speed"
+              },
+              {
+                "title": "Keyword research & on-page optimisation"
+              },
+              {
+                "title": "Site architecture & internal linking"
+              }
+            ]
+          },
+          {
+            "title": "Answer Engine Optimisation (AEO)",
+            "description": "We structure your content so search engines can lift it straight into featured snippets, People Also Ask boxes and voice answers.",
+            "points": [
+              {
+                "title": "Schema markup & structured data (JSON-LD)"
+              },
+              {
+                "title": "Featured snippet & People Also Ask targeting"
+              },
+              {
+                "title": "FAQ, how-to & answer-ready formatting"
+              },
+              {
+                "title": "Entity optimisation & knowledge panels"
+              }
+            ]
+          },
+          {
+            "title": "Generative Engine Optimisation (GEO)",
+            "description": "We get your brand cited and recommended inside AI-generated answers the results your customers increasingly trust first.",
+            "points": [
+              {
+                "title": "AI visibility audits across ChatGPT, Perplexity, Gemini & AI Overviews"
+              },
+              {
+                "title": "AI crawler readiness (GPTBot, PerplexityBot, llms.txt)"
+              },
+              {
+                "title": "Citation-worthy content & source formatting"
+              },
+              {
+                "title": "Brand mention & sentiment tracking in AI answers"
+              }
+            ]
+          },
+          {
+            "title": "Content Creation & Strategy",
+            "description": "AI engines cite originals, not copies. We create unique, expert-led content that earns citations and converts readers into customers.",
+            "points": [
+              {
+                "title": "Original research, data & expert-led content"
+              },
+              {
+                "title": "Pillar & topic-cluster strategy"
+              },
+              {
+                "title": "Human-written, E-E-A-T-driven copy"
+              },
+              {
+                "title": "Content refresh & decay recovery"
+              }
+            ]
+          },
+          {
+            "title": "Local SEO (Melbourne-First)",
+            "description": "From Toorak to greater Melbourne and Sydney, we make sure nearby customers and local AI queries find you first.",
+            "points": [
+              {
+                "title": "Google Business Profile optimisation"
+              },
+              {
+                "title": "Local landing pages & suburb targeting"
+              },
+              {
+                "title": "Citations, NAP consistency & reviews strategy"
+              },
+              {
+                "title": "Local 3-pack & \"near me\" visibility"
+              }
+            ]
+          },
+          {
+            "title": "Digital PR & Authority Building",
+            "description": "Authority is the currency of both Google and AI engines. We earn the links and mentions that make them trust you.",
+            "points": [
+              {
+                "title": "High-authority Australian link building"
+              },
+              {
+                "title": "Digital PR & data-led campaigns"
+              },
+              {
+                "title": "Unlinked brand mention reclamation"
+              },
+              {
+                "title": "Review & reputation signals AI engines read"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.process-steps",
+        "title": "Our SEO & AI Search Process",
+        "steps": [
+          {
+            "title": "Discovery & AI Visibility Audit",
+            "description": "We benchmark where you rank on Google and whether ChatGPT, Perplexity and AI Overviews mention your brand today.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-start-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 14,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Strategy & Roadmap",
+            "description": "We map keyword and AI citation opportunities into a prioritised 90-day roadmap tied to leads and revenue.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-research-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Technical Foundations",
+            "description": "We fix crawlability, speed, Core Web Vitals, schema and AI crawler access so every engine can read your site.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-wireframe-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Content & Answer Optimisation",
+            "description": "We create unique, expert-led content formatted to win featured snippets and earn citations inside AI answers.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designconcept-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Authority & Citations",
+            "description": "We build high-quality Australian links, digital PR and brand mentions that make Google and AI engines trust you.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-feedback-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Measurement & Reporting",
+            "description": "Transparent dashboards across GA4, Search Console and AI visibility tracking show rankings, citations, traffic and leads.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designapprove-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Continuous Refinement",
+            "description": "Algorithms and AI models change constantly. We keep optimising so your visibility compounds month after month.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-deploy-optimize-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/ios-launch-emoji.png",
+              "alt": ""
+            },
+            "iconOverlay": null
+          },
+          {
+            "title": "Reporting & Ongoing Iteration",
+            "description": "Track rankings, traffic, and AI citations then iterate every month for compounding, long-term growth.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-gradient-1x-diff.png",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-diff.png",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Where Your Brand Will Show Up",
+        "items": [
+          {
+            "title": "Google Search & AI Overviews",
+            "description": "Rankings plus citations inside Google's AI answers"
+          },
+          {
+            "title": "ChatGPT & ChatGPT Search",
+            "description": "Brand mentions and recommendations"
+          },
+          {
+            "title": "Perplexity",
+            "description": "Cited sources in research-style answers"
+          },
+          {
+            "title": "Google Gemini",
+            "description": "AI answers grounded in your content"
+          },
+          {
+            "title": "Microsoft Copilot & Bing",
+            "description": "The index behind many AI assistants"
+          },
+          {
+            "title": "Voice & Assistant Search",
+            "description": "Answer-ready content for spoken queries"
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Tools & Tech Stack",
+        "items": [
+          {
+            "title": "Search & Analytics",
+            "description": "Google Search Console, GA4, Looker Studio"
+          },
+          {
+            "title": "SEO Platforms",
+            "description": "SE Ranking, Ahrefs, Semrush, Screaming Frog"
+          },
+          {
+            "title": "AI Visibility & UX",
+            "description": "AI citation tracking across ChatGPT, Perplexity, Gemini & AI Overviews; Microsoft Clarity heatmaps"
+          },
+          {
+            "title": "Structured Data",
+            "description": "Schema.org JSON-LD & Google Rich Results tooling"
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Engagement Models & Pricing",
+        "items": [
+          {
+            "title": "AI Visibility Audit & Roadmap",
+            "description": "Fixed-price starting point: where you stand on Google and AI engines, plus a prioritised 90-day plan"
+          },
+          {
+            "title": "Monthly SEO + GEO Retainer",
+            "description": "Ongoing optimisation, content, authority building and transparent reporting"
+          },
+          {
+            "title": "Project Sprints",
+            "description": "Migrations, schema rollouts, content builds and site launches"
+          },
+          {
+            "title": "Flexible Pricing Models",
+            "description": "Fixed project-based, subscription-based, or custom pricing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-webapp-development",
+    "path": "/services/web-application-development",
+    "name": "Web Application Development",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Web Application Development",
+        "lead": "Build tailored, scalable software solutions with Zuse Digital — SaaS platforms, enterprise tools, and high-performance APIs.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "At Zuse Digital, we specialise in custom web applications and software development that are secure, scalable, and AI-powered. As an Australian- based software development company, we design, build, and deploy bespoke software solutions for businesses of all sizes. Our expertise spans SaaS platforms, cloud-based enterprise software, and high-performance API integrations that drive business efficiency, automation, and digital transformation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.service-offerings",
+        "title": "Our Services",
+        "items": [
+          {
+            "title": "Custom Software & Web Application Development",
+            "points": [
+              {
+                "title": "Scalable custom web applications designed for innovation and performance."
+              },
+              {
+                "title": "Enterprise-grade business applications for internal and external operations."
+              },
+              {
+                "title": "SaaS (Software as a Service) platform development for cloud-based scalability."
+              },
+              {
+                "title": "Progressive Web Apps (PWAs) for seamless cross-device experiences."
+              },
+              {
+                "title": "Business Process Automation & Workflow Management for increased efficiency."
+              },
+              {
+                "title": "Secure, API-driven platforms for third-party integrations & system connectivity."
+              }
+            ]
+          },
+          {
+            "title": "Product Design, UX/UI & Web Portals",
+            "points": [
+              {
+                "title": "Design System Development for scalable and consistent branding."
+              },
+              {
+                "title": "Interactive business intelligence dashboards & client portals."
+              },
+              {
+                "title": "POC & Rapid Prototyping for idea validation and faster development cycles."
+              },
+              {
+                "title": "Accessibility Compliance for inclusive applications."
+              }
+            ]
+          },
+          {
+            "title": "Backend Development & API Integration",
+            "points": [
+              {
+                "title": "Custom API Development for seamless third-party tool integrations."
+              },
+              {
+                "title": "Microservices & modular architecture for high-performance applications."
+              },
+              {
+                "title": "Business Logic Implementation ensuring long-term maintainability."
+              },
+              {
+                "title": "Database Architecture optimised for reliability & performance."
+              },
+              {
+                "title": "RESTful API & GraphQL Development for data-driven applications."
+              },
+              {
+                "title": "DevOps & Continuous Integration for automated deployments & efficiency."
+              }
+            ]
+          },
+          {
+            "title": "SaaS Development & Cloud Solutions",
+            "points": [
+              {
+                "title": "Subscription-based software solutions for B2B and B2C applications."
+              },
+              {
+                "title": "Cloud-native application development using AWS, Google Cloud, and Azure."
+              },
+              {
+                "title": "Secure and high-performance SaaS API integrations with third-party platforms."
+              },
+              {
+                "title": "Enterprise software with automated scaling & cloud-based architecture"
+              }
+            ]
+          },
+          {
+            "title": "Testing, Security & Compliance",
+            "points": [
+              {
+                "title": "End-to-End, Unit, and Performance Testing."
+              },
+              {
+                "title": "Security & Penetration Testing for data protection & compliance with GDPR, ISO 27001, and SOC2 standards."
+              },
+              {
+                "title": "Load testing and API security audits for enterprise resilience."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.process-steps",
+        "title": "Our Process",
+        "steps": [
+          {
+            "title": "Initial Consultation",
+            "description": "We conduct a detailed discovery session to understand your business goals, technical needs, and vision.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-start-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 14,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Research & Planning",
+            "description": "Our team performs in-depth market research, competitor analysis, and technology selection to align your software strategy with the latest trends.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-research-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Wireframing & Prototyping",
+            "description": "We create interactive wireframes and prototypes to define workflows, system interactions, and usability.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-wireframe-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "A user-friendly, conversion-optimised interface ensures seamless customer and internal interactions.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-ui-ux-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Development & Testing",
+            "description": "Using agile methodologies, we build scalable applications with robust backend security, API integrations, and automation.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-support-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Deployment & Optimisation",
+            "description": "Secure cloud deployment with continuous monitoring, performance testing, and compliance verification.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designapprove-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Ongoing Support & Maintenance",
+            "description": "We offer long-term updates, security patches, and feature enhancements to keep your software optimised.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-gradient-1x.png",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon.png",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Web Application Benefits",
+        "items": [
+          {
+            "title": "Scalability",
+            "description": "Ensures long-term growth and usability."
+          },
+          {
+            "title": "Cross-Platform Compatibility",
+            "description": "Seamless functionality across devices and platforms."
+          },
+          {
+            "title": "Enhanced Security",
+            "description": "Robust security measures to protect sensitive data."
+          },
+          {
+            "title": "Cost-Efficiency",
+            "description": "Reduces development and maintenance costs."
+          },
+          {
+            "title": "Ease of Maintenance",
+            "description": "Simplifies updates and management."
+          },
+          {
+            "title": "Customer Engagement",
+            "description": "Provides intuitive and interactive experiences that foster user loyalty."
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Technologies We Use",
+        "items": [
+          {
+            "title": "Frontend",
+            "description": "React, Angular, Vue.js, Tailwind CSS."
+          },
+          {
+            "title": "Backend",
+            "description": "Node.js, Laravel, ASP.NET Core."
+          },
+          {
+            "title": "APIs",
+            "description": "RESTful, GraphQL, OAuth, JWT."
+          },
+          {
+            "title": "Cloud Services",
+            "description": "AWS, Google Cloud, Azure."
+          },
+          {
+            "title": "Database Management",
+            "description": "PostgreSQL, MySQL, MongoDB."
+          },
+          {
+            "title": "Security & Compliance",
+            "description": "GDPR, ISO 27001, SOC2."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-website-design",
+    "path": "/services/website-design",
+    "name": "Webdesign & Development",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Webdesign & Development",
+        "lead": "User-centric, SEO-optimised websites that drive conversions — crafted for startups, SMEs, and global brands.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "At Zuse Digital, we create high-performance, custom website designs tailored to your brand and business model. Our blend of UI/UX, SEO, and data-driven conversion rate optimisation ensures your website not only looks exceptional but drives measurable results."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.service-offerings",
+        "title": "Our Services",
+        "items": [
+          {
+            "title": "Strategy & Research",
+            "points": [
+              {
+                "title": "Information Architecture & User Flow"
+              },
+              {
+                "title": "Brand Messaging & Communication Strategy"
+              },
+              {
+                "title": "Competitor & Market Analysis"
+              },
+              {
+                "title": "Engagement & Customer Acquisition"
+              }
+            ]
+          },
+          {
+            "title": "Website Design & UX/UI",
+            "points": [
+              {
+                "title": "Responsive, Mobile-First Design"
+              },
+              {
+                "title": "UI/UX Optimised for Conversions"
+              },
+              {
+                "title": "Design Systems & Component Libraries"
+              },
+              {
+                "title": "Accessibility Compliance (WCAG AA/AAA)"
+              }
+            ]
+          },
+          {
+            "title": "Development & Performance",
+            "points": [
+              {
+                "title": "High-Speed, SEO-Friendly Development"
+              },
+              {
+                "title": "eCommerce (Shopify, WooCommerce, Custom Builds)"
+              },
+              {
+                "title": "WordPress, Next.js, WebFlow, & Strapi CMS"
+              },
+              {
+                "title": "Core Web Vitals & Page Speed Optimisation"
+              }
+            ]
+          },
+          {
+            "title": "Conversion Rate Optimisation (CRO)",
+            "points": [
+              {
+                "title": "A/B Testing & Multivariate Experiments"
+              },
+              {
+                "title": "Sales Funnel & Landing Page Optimisation"
+              },
+              {
+                "title": "Heatmaps & User Behaviour Analysis"
+              },
+              {
+                "title": "Cart Abandonment Reduction Strategies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.process-steps",
+        "title": "Website Design Process",
+        "steps": [
+          {
+            "title": "Initial Consultation",
+            "description": "Discuss your brand, goals, and project requirements.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-start-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 14,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Research & Planning",
+            "description": "Analyse market trends and competitor strategies to inform our design approach.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-research-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Wireframing",
+            "description": "Develop structured blueprints to map out the website’s layout and user journey.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-wireframe-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Design Concepts",
+            "description": "Create visual mockups that reflect your brand identity.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designconcept-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Feedback & Revisions",
+            "description": "Iterate on the design based on your input to ensure alignment with your vision.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-feedback-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Final Design Approval",
+            "description": "Confirm that the design meets your expectations before development.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv-process-designapprove-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 100,
+            "titleImage": null,
+            "iconOverlay": null
+          },
+          {
+            "title": "Launch",
+            "description": "Deploy a fully optimised, mobile-friendly website with a seamless user experience. We ensure your site is fast, SEO-optimised, and built for growth.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/serv_comm-deploy-optimize-icon.svg",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/ios-launch-emoji.png",
+              "alt": ""
+            },
+            "iconOverlay": null
+          },
+          {
+            "title": "Support & Maintenance",
+            "description": "Offer ongoing support and updates post-launch to ensure optimal performance and security.",
+            "icon": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-gradient-1x-diff.png",
+              "alt": ""
+            },
+            "iconSize": 140,
+            "titleImage": null,
+            "iconOverlay": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/support-and-maintenance-icon-diff.png",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "__component": "sections.bullet-grid",
+        "title": "Tools We Use",
+        "lead": "We leverage industry-leading tools to design, build, and optimise high-performance websites:",
+        "items": [
+          {
+            "title": "Design & Prototyping",
+            "description": "Figma – UI/UX Prototyping & Wireframing"
+          },
+          {
+            "title": "Development Platforms",
+            "description": "WordPress, Next.js, WebFlow, Strapi CMS"
+          },
+          {
+            "title": "eCommerce Solutions",
+            "description": "Shopify & WebFlow – No-Code & Scalable Development"
+          },
+          {
+            "title": "Performance & SEO",
+            "description": "GatsbyJS, Google Core Web Vitals, Optimizely, VWO – A/B Testing & Conversion Optimisation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-ai-agents-automation",
+    "path": "/services/ai-agents-automation",
+    "name": "AI Agents & Automation",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "AI Agents & Automation",
+        "lead": "We build framework-agnostic AI agents to streamline operations so your team can focus on their most impactful work.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Automate decision-making and streamline operations with AI agents that can process complex tasks, provide recommendations, and execute workflows with minimal human intervention — designed around your tools, data, and governance needs."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Where agents create leverage"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Customer support and operations triage"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Self-learning assistants for internal knowledge"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Virtual assistants that coordinate multi-step work"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Scalable workflows across docs, scheduling, and reporting"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "AI-powered business automation"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Beyond chat interfaces, we optimise operations with AI-driven solutions that reduce inefficiencies and maximise productivity — document handling, reporting, scheduling, and risk-aware automation that fits how your organisation already works."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Related services"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Building a full product around intelligence? See "
+              },
+              {
+                "type": "link",
+                "url": "/services/ai-product-development",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI Product Development"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Need visibility in search and AI answers? Pair agents with "
+              },
+              {
+                "type": "link",
+                "url": "/services/seo-ai-search-optimisation",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "SEO & AI Search Optimisation"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-ai-product-development",
+    "path": "/services/ai-product-development",
+    "name": "AI Product Development",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "AI Product Development",
+        "lead": "We develop AI-powered solutions that automate, optimise, and scale businesses — from strategy and prototyping to production products.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Transform your business with award-winning AI solutions embedded in the products your customers and teams use every day. We design, build, and integrate intelligent features with the same craft we bring to websites and software platforms."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "AI applications & use cases"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI-enhanced web and mobile applications"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "eCommerce recommendations and personalisation"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Automated report generation and insights"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Image, video, and voice AI experiences"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Security-aware automation and monitoring helpers"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Integration for business applications"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Seamlessly integrate AI into web apps, CRM, ERP, and internal tools — including Retrieval-Augmented Generation (RAG) systems and predictive analytics that stay grounded in your organisation's data."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Related services"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Need agents and workflow automation first? Visit "
+              },
+              {
+                "type": "link",
+                "url": "/services/ai-agents-automation",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI Agents & Automation"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Building the product shell? Pair with "
+              },
+              {
+                "type": "link",
+                "url": "/services/web-application-development",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Web Application Development"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " or "
+              },
+              {
+                "type": "link",
+                "url": "/services/mobile-app-development",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Mobile App Development"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "service-artificial-intelligence",
+    "path": "/services/artificial-intelligence",
+    "name": "Artificial Intelligence",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Transform Your Business with Award-Winning AI Solutions",
+        "lead": "AI-powered automation, intelligent agents, chatbots, RAG systems, and predictive analytics — built for real operations.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "AI is transforming businesses, driving automation, optimising workflows, and unlocking new opportunities for growth. At Zuse Digital, we deliver practical AI that integrates with your websites, apps, and internal tools — and pairs with "
+              },
+              {
+                "type": "link",
+                "url": "/services/seo-ai-search-optimisation",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "SEO & AI search optimisation"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " so customers can find you across Google and AI answers."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "AI Agents & Automation"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Automate decision-making and streamline operations with AI agents that process complex tasks, provide recommendations, and execute workflows with minimal human intervention. Explore our dedicated "
+              },
+              {
+                "type": "link",
+                "url": "/services/ai-agents-automation",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI Agents & Automation"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " service."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "AI Product Development"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We build AI-powered applications — from intelligent web and mobile products to recommendation engines, voice experiences, and secure integrations with CRM and ERP systems. See "
+              },
+              {
+                "type": "link",
+                "url": "/services/ai-product-development",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI Product Development"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Capabilities"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Retrieval-Augmented Generation (RAG) knowledge systems"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Customer support and operations agents"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Predictive analytics and reporting automation"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "AI features inside websites, SaaS, and mobile apps"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "about",
+    "path": "/about",
+    "name": "About",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Tech-driven, Heart-led",
+        "lead": "We are Zuse Digital — an agency with a decade of experience, rooted in our vision of Digital Prosperity.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We fuse our expertise in design, technology, psychology, and AI to deliver measurable business outcomes for both emerging startups and established companies."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our innovative work has earned industry recognition, including the 2023 and 2024 Best UI/UX Design & Development Agency awards, as well as prestigious accolades from Apple for our exceptional design work. Yet, beyond accolades, we are driven by three core values:"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Proactive Empathy"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "At the heart of our approach is a deep commitment to understanding your world. By stepping into your experience, we translate insights into strategies that accelerate progress and drive meaningful change."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Help Others Succeed"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We believe extraordinary achievements stem from mutual support and trust. In environments where collaboration and kindness flourish, everyone excels, building a foundation for shared success."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Trailblazing"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We boldly explore uncharted territory with courage and innovation, opening new trails where others haven't ventured. Our passion drives us to push boundaries and continuously test our limits, while smart risk checks and fresh ideas unlock new possibilities and lasting change."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Together, these core values form the foundation of our approach. We strive always to excel in virtue and truth, holding ourselves to a consistent work ethos—never doing to others what we would not do to ourselves."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Founded by ![Zanyar Outhman](/images/zeyed.webp)Zanyar Outhman in 2014, Zuse Digital embodies his deep belief in driving growth through innovative technology, exceptional design, and authentic human connections. This commitment shapes how we interact with one another, serve our clients, and develop our products. We are redefining what it means to build meaningful and lasting digital solutions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.awards-list",
+        "title": "Awards & Recognition",
+        "lead": "Industry recognition for human-centred design, craft, and products that drive real outcomes.",
+        "detailed": false,
+        "awards": []
+      },
+      {
+        "__component": "sections.author-card",
+        "author": null
+      }
+    ]
+  },
+  {
+    "slug": "awards",
+    "path": "/awards-recognition",
+    "name": "Awards & Recognition",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Awards & Recognition",
+        "lead": "Zuse Digital is an award-winning digital agency, recognised for our expertise in human-centred design, deep business insight, and cutting-edge technology.",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We are passionate about driving digital innovation, crafting high-performance, scalable, and conversion-driven solutions that not only elevate user experiences but create measurable success for businesses worldwide."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.awards-list",
+        "detailed": true,
+        "awards": []
+      },
+      {
+        "__component": "sections.callout",
+        "title": "Our Commitment to Excellence",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "These awards validate our mission to design, build, and deliver digital products that drive real impact. We take pride in creating solutions that are user-centric, high-performing, and built for long-term success."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "These achievements also reflect our leadership, driven by "
+              },
+              {
+                "type": "link",
+                "url": "/zanyar-outhman",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Zanyar Outhman"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__component": "sections.testimonials",
+        "layout": "carousel",
+        "testimonials": []
+      }
+    ]
+  },
+  {
+    "slug": "privacy-policy",
+    "path": "/privacy-policy",
+    "name": "Privacy Policy",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Privacy Policy"
+      },
+      {
+        "__component": "sections.rich-text",
+        "body": [
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Introduction"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Zuse Digital Pty LTD (“we”, “us”, or “our”) provides website design, mobile app design, web application development, e-commerce design, and related digital services. Our headquarters is located in Victoria, Australia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "This Privacy Policy explains how we collect, use, store, and protect personal information when you use zusedigital.com or engage with our services."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Who is the Data Controller?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "The data controller is Zuse Digital Pty LTD, Victoria, Australia."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Information You Give Us"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We collect personal identification information such as your name, email address, phone number, and any other information you voluntarily provide through forms, email, telephone, or social media."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Information We Collect Automatically"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We may collect information about your visit, including URLs, visit dates and times, pages viewed, response times, download errors, visit duration, and interactions such as scrolling, clicks, and mouse movements."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "How We Collect Your Data"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "When you contact us about business, employment, sponsorship, media, or other enquiries."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "When you submit information through forms on our Website."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Through analytics and other third-party services used to operate and improve the Website."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "How We Use Your Data"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use personal information only for compatible business development, service delivery, employment, communication, security, and analytical purposes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Information submitted in an enquiry may be stored and used to respond to you, prepare proposals, manage client relationships, and improve our services."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Employment Information"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "When considering candidates, we may process information you provide and information obtained from professional sources such as LinkedIn and employment websites."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Cookies and Analytics"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use necessary and performance cookies to operate the Website and understand how it is used. We may use services such as Google Analytics to collect aggregated visitor and usage information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "You can control cookies through your browser settings, although disabling necessary cookies may affect Website functionality."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Data Retention"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We retain personal information only for as long as reasonably necessary for the purposes described in this Policy, to meet legal obligations, and to resolve disputes. You may request deletion by contacting us."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Information Security"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use reasonable physical, technical, and administrative safeguards to protect personal information."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Maintaining and testing security technology."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Restricting personal data access to authorised personnel."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Selecting service providers with appropriate privacy and security practices."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Training team members on data protection responsibilities."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Your Privacy Rights"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Subject to applicable law, you may request access to, correction of, deletion of, restriction of, or portability of your personal data. You may also object to certain processing or withdraw consent where processing relies on consent."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "How to Contact Us"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "For questions, complaints, or requests concerning your personal information, email "
+              },
+              {
+                "type": "link",
+                "url": "mailto:hello@zusedigital.com",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "hello@zusedigital.com"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Changes to This Privacy Policy"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We may update this Privacy Policy to reflect changes to our practices, services, or legal obligations. We encourage you to review it periodically to remain informed about how we handle personal information."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "terms-of-use",
+    "path": "/terms-of-use",
+    "name": "Terms of Use",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Terms of Use"
+      },
+      {
+        "__component": "sections.rich-text",
+        "body": [
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Agreement to Terms"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "These Terms of Use constitute a legally binding agreement between you and Zuse Digital Pty LTD (“Company”, “we”, “us”, or “our”) concerning your access to and use of zusedigital.com and any related services (collectively, the “Site”). By accessing the Site, you confirm that you have read, understood, and agreed to be bound by these Terms."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We may update these Terms from time to time. Changes take effect when posted, and your continued use of the Site constitutes acceptance of the revised Terms."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Intellectual Property Rights"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Unless otherwise indicated, the Site and its source code, functionality, software, designs, text, photographs, graphics, trademarks, and logos are owned by or licensed to us and are protected by applicable intellectual property laws."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "You may access the Site for personal, non-commercial use. No part of the Site may be copied, reproduced, republished, distributed, sold, licensed, or otherwise exploited without our prior written permission."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "User Representations"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "By using the Site, you represent that you have the legal capacity to agree to these Terms, that your use is lawful, and that you will not access the Site through unauthorised automated means."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Prohibited Activities"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "You may use the Site only for the purposes for which it is made available. You agree not to:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Systematically retrieve or compile Site data without written permission."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Circumvent or interfere with security-related features of the Site."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Use automated scripts, robots, scrapers, or data-mining tools without authorisation."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Upload malicious code or material that disrupts the Site."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Impersonate another person, mislead users, or submit false information."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Use the Site in violation of any applicable law or regulation."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Site Management"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We reserve the right, but not the obligation, to monitor the Site for violations, restrict access, remove burdensome or unlawful content, and otherwise manage the Site to protect our rights and ensure its proper operation."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Term and Termination"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "These Terms remain in effect while you use the Site. We may deny access to, suspend, or terminate use of the Site where these Terms or applicable laws are breached."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Modifications and Interruptions"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We may change, suspend, or discontinue any part of the Site without notice. We cannot guarantee uninterrupted availability and are not liable for loss or inconvenience caused by downtime, maintenance, or discontinuance."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Governing Law"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "These Terms are governed by the laws of Victoria, Australia. You and Zuse Digital Pty LTD consent to the jurisdiction of the courts of Victoria for disputes arising in connection with these Terms."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Disclaimer"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "The Site is provided on an “as is” and “as available” basis. To the fullest extent permitted by law, we disclaim warranties relating to accuracy, availability, merchantability, fitness for a particular purpose, and non-infringement."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Limitations of Liability"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "To the fullest extent permitted by law, Zuse Digital Pty LTD and its directors, employees, and agents will not be liable for indirect, consequential, exemplary, incidental, special, or punitive damages arising from use of the Site."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Contact Us"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Questions about these Terms may be sent to "
+              },
+              {
+                "type": "link",
+                "url": "mailto:hello@zusedigital.com",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "hello@zusedigital.com"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "contact",
+    "path": "/contact",
+    "name": "Contact",
+    "sections": [
+      {
+        "__component": "sections.contact-form",
+        "title": "Contact Us",
+        "description": "Share your project details, and we'll reach out \nwithin one business day for a **free estimation call**.",
+        "serviceOptions": "Website\nMobile App\nWeb Application\neCommerce\nAI",
+        "budgetOptions": "$10,000 - $20,000\n$20,000 - $35,000\n$35,000 - $60,000\n$60,000 - $100,000\nOver $100,000",
+        "referralOptions": "Friend or colleague\nGoogle\nLinkedIn\nDirectory listing (Clutch, GoodFirms)\nAI assistant (ChatGPT, Gemini)\nSocial Media\nOther",
+        "successPath": "/thank-you",
+        "thankYouTitle": "Thank you{name}. We’ll get back to you soon.",
+        "thankYouText": "Your email has been sent! We appreciate you reaching out and are stoked about the opportunity to work together. Stay tuned and we'll get back to you soon."
+      },
+      {
+        "__component": "sections.testimonial-slider",
+        "items": [
+          {
+            "name": "Paul Gannon",
+            "company": "Binyan Studio",
+            "role": "Executive Creative Director",
+            "image": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/paul-gannon-binyan-studio.jpg",
+              "alt": ""
+            },
+            "quote": "Binyan Studios has engaged Zuse Digital on multiple occasions to develop custom website applications, and their work has always been exceptional. Their attention to detail, superior design, and enthusiasm for our projects have consistently impressed us. The team takes pride in their work and invests time to understand our business, making even the most complex tasks possible. We highly recommend Zuse Digital."
+          },
+          {
+            "name": "Natalie Khoo",
+            "company": "Avion Communication",
+            "role": "Founder, CEO",
+            "image": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/natalie-khoo-avion-communication.jpg",
+              "alt": ""
+            },
+            "quote": "Collaborating with Zanyar has always been a fantastic experience. His inquisitive and enthusiastic nature, combined with his dedication to his craft, makes him a standout professional. Zanyar’s optimism about the role of technology in business growth is inspiring, and I highly recommend consulting with him if you’re considering app development or other digital projects."
+          },
+          {
+            "name": "Mehmet Ozcan",
+            "company": "Ozcan",
+            "role": "Director",
+            "image": {
+              "url": "https://d13fy5c8tglk2k.cloudfront.net/images/mehmet-ozcan-ozcan-group.jpg",
+              "alt": ""
+            },
+            "quote": "Zuse Digital exceeded our expectations when we decided to refresh our branding and modernise our website. Their professionalism and attention to detail were evident throughout the project. The result was a modern, professional website that serves as a perfect storefront in the virtual world. I highly recommend Zuse Digital for your next project."
+          }
+        ]
+      },
+      {
+        "__component": "sections.faq",
+        "title": "FAQ's",
+        "items": [
+          {
+            "question": "What types of projects do you specialise in?",
+            "answer": "We handle a diverse range of custom digital projects—from high-performance website designs and mobile apps to complex web applications and AI-powered solutions. Our portfolio demonstrates our expertise in delivering scalable and innovative digital experiences."
+          },
+          {
+            "question": "What is your project process from consultation to launch?",
+            "answer": "Our process begins with a discovery workshop and in-depth research to understand your goals, followed by UX/UI design, development, rigorous testing, and launch. We work closely with you at every step."
+          },
+          {
+            "question": "How do you determine project timelines and budgets?",
+            "answer": "Every project is unique. We start with a detailed consultation, then provide a customised timeline and budget proposal. Design complexity, functionality, and integrations all influence the estimate."
+          },
+          {
+            "question": "Can you share examples of past projects similar to mine?",
+            "answer": "Absolutely. We have delivered projects across many industries, from influencer marketing websites to bespoke eCommerce transformations and enterprise platforms. Our work page contains a selection of relevant case studies."
+          },
+          {
+            "question": "How do you ensure quality and performance?",
+            "answer": "We use collaborative delivery, continuous testing, code review, and performance optimisation to ensure every solution meets rigorous UX and technical standards."
+          },
+          {
+            "question": "What role will I play during the project?",
+            "answer": "Collaboration is central to our process. You will be involved from discovery and prototype feedback through revisions, testing, and launch."
+          },
+          {
+            "question": "What post-launch support do you offer?",
+            "answer": "We provide ongoing maintenance, performance monitoring, security updates, and optimisation to keep your digital product current and reliable."
+          },
+          {
+            "question": "How will you handle confidential property rights?",
+            "answer": "Everyone working at Zuse Digital is bound by confidentiality obligations. We understand the value of your strategic insights and intellectual property and treat them accordingly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "blogs",
+    "path": "/blog",
+    "name": "Blog",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Insights from *Zuse Digital*"
+      }
+    ]
+  },
+  {
+    "slug": "testimonials",
+    "path": "/testimonials",
+    "name": "Testimonials",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "title": "Client Testimonials",
+        "lead": "5-star reviews and real results across websites, software and AI."
+      },
+      {
+        "__component": "sections.testimonials",
+        "layout": "grid",
+        "testimonials": []
+      }
+    ]
+  },
+  {
+    "slug": "work",
+    "path": "/work",
+    "name": "Work",
+    "sections": [
+      {
+        "__component": "sections.page-intro",
+        "label": "Our Work",
+        "title": "Website, App\n&  *AI Case Studies*",
+        "lead": "See how we design and build websites, web apps, mobile apps and AI solutions that solve real business problems and drive growth."
+      },
+      {
+        "__component": "sections.work-grid",
+        "showFilter": true
+      },
+      {
+        "__component": "sections.testimonials",
+        "layout": "carousel",
+        "testimonials": []
+      }
+    ]
+  },
+  {
+    "slug": "zanyar-outhman",
+    "path": "/zanyar-outhman",
+    "name": "Zanyar Outhman",
+    "sections": [
+      {
+        "__component": "sections.profile",
+        "name": "Zanyar Outhman",
+        "role": "Founder & Director of Zuse Digital",
+        "lead": "Zanyar Outhman is one of Australia's most innovative tech entrepreneurs, excelling in technology, design, and AI. As the founder and director of Zuse Digital — an award-winning software agency renowned for delivering AI-powered websites, web apps, and mobile apps with world-class design — Zanyar has redefined digital excellence. He is also the visionary behind Jabri, a digital video interviewing platform that transforms the recruitment process through seamless, user-friendly technology. His expertise has enabled successful collaborations with startups, SMEs, and global organisations to develop intuitive, powerful digital products.",
+        "image": {
+          "url": "/images/zanyar/zanyar-outhman-australia-top-50-small-business-leader-2017.webp",
+          "alt": "Zanyar Outhman, recognized as one of Australia’s Top 50 Small Business Leaders in 2017 by Inside Small Business"
+        },
+        "imageCaption": "Australia’s Top 50 Small Business Leaders in 2017 by Inside Small Business",
+        "blocks": [
+          {
+            "title": "Achievements & Innovations",
+            "description": "Zanyar's pioneering work in AI-driven digital innovation is highlighted by prestigious accolades, including the Apple Awards and Best UI/UX Design & Development Agency awards. Recognised as one of Australia's Top 50 Small Business Leaders in 2017 by Inside Small Business, his accomplishments underscore a commitment to ethical, innovative, and high-performance digital solutions. His achievements continue to set industry benchmarks and drive transformative change across the digital landscape."
+          },
+          {
+            "title": "Vision & Impact",
+            "description": "Beyond his entrepreneurial ventures, Zanyar champions design excellence as a respected jury member for the Online Design Awards, inspiring the next generation of creative innovators. His dedication to merging advanced technology with outstanding design drives sustainable growth and digital prosperity for both his companies and clients. Zanyar's leadership and vision consistently push boundaries, redefining what it means to achieve digital excellence in a rapidly evolving tech environment."
+          }
+        ],
+        "link": {
+          "label": "Connect with me on LinkedIn",
+          "href": "https://www.linkedin.com/in/zanyar/",
+          "openInNewTab": true
+        }
+      },
+      {
+        "__component": "sections.photo-strip",
+        "images": [
+          {
+            "url": "/images/zanyar/collage-photo-1.webp",
+            "alt": "Zanyar Outhman collage photo 1"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-2.webp",
+            "alt": "Zanyar Outhman collage photo 2"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-3.webp",
+            "alt": "Zanyar Outhman collage photo 3"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-4.webp",
+            "alt": "Zanyar Outhman collage photo 4"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-6.webp",
+            "alt": "Zanyar Outhman collage photo 6"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-7.webp",
+            "alt": "Zanyar Outhman collage photo 7"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-8.webp",
+            "alt": "Zanyar Outhman collage photo 8"
+          },
+          {
+            "url": "/images/zanyar/collage-photo-9.webp",
+            "alt": "Zanyar Outhman collage photo 9"
+          }
+        ]
+      },
+      {
+        "__component": "sections.quote",
+        "quote": "I believe the human spirit is the greatest force—empowered by meaningful values and purpose-driven work. At Zuse, our vision is to partner with clients to design, build, and deliver exceptional digital products that uplift and empower human potential. We call this Digital Prosperity.",
+        "cite": "Zanyar Outhman",
+        "citeImage": {
+          "url": "/images/zeyed.webp",
+          "alt": "Zanyar Outhman"
+        }
+      }
+    ]
+  }
+]

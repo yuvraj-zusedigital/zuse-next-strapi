@@ -29,15 +29,16 @@ module.exports = ({ strapi }) => ({
       });
     }
 
-    function ensureSendgridConfigured() {
+    // Emails are a best-effort extra: the submission is always saved first, so a
+    // missing key or a SendGrid outage never loses a lead or a subscriber.
+    function canSendEmail() {
       if (hasValidSendgridApiKey) {
         return true;
       }
 
-      const error = new Error('SendGrid API key is missing or invalid.');
-      strapi.log.error(error.message);
+      const error = new Error('SendGrid API key is missing or invalid; saved without sending emails.');
+      strapi.log.warn(error.message);
       captureHandledError(error, 'sendgrid-config');
-      ctx.internalServerError('Email service is temporarily unavailable');
       return false;
     }
 
@@ -93,67 +94,78 @@ module.exports = ({ strapi }) => ({
     });
 
     if (ctx.request.body.formData?.formName == 'sub') {
-      if (!ensureSendgridConfigured()) {
-        return;
-      }
-
+      const formData = ctx.request.body.formData;
       try {
-        await sgMail.send({
-          to: 'hello@zusedigital.com',
-          from: {
-            email: 'hello@zusedigital.com',
-            name: 'Zuse Digital',
-          },
-          bcc: 'zanyar@zusedigital.com',
-          templateId: 'd-b56b3ac032354e4e82e9c12f02ef0750',
-          subject: 'Subscriber From Submit',
-          dynamicTemplateData: {
-            firstName: ctx.request.body.formData.firstName,
-            email: ctx.request.body.formData.email,
-            fromSubmitTime: ctx.request.body.formData.fromSubmitTime,
-            screensize: ctx.request.body.formData.screensize,
-            device: ctx.request.body.formData.device,
-            location: ctx.request.body.formData.location,
-            userTrackingData: filteredUserTrackingData,
-          },
+        const existing = await strapi.query('api::subscriber.subscriber').findOne({
+          where: { email: formData.email, publishedAt: { $notNull: true } },
         });
-        await sgMail.send({
-          to: ctx.request.body.formData.email,
-          from: {
-            email: 'hello@zusedigital.com',
-            name: 'Zuse Digital',
-          },
-          bcc: 'zanyar@zusedigital.com',
-          templateId: 'd-9a676dca8c7b423eac4a0e020602d368',
-          subject: `⚡️ Hi ${getFirstName(ctx.request.body.formData.firstName)}, you have been added to the Zuse Digital subscriber list!`,
-          dynamicTemplateData: {
-            firstName: ctx.request.body.formData.firstName,
-            fname: getFirstName(ctx.request.body.formData.firstName),
-          },
-        });
-        await strapi.query('api::subscriber.subscriber').create({
-          data: {
-            email: ctx.request.body.formData.email,
-            data: ctx.request.body.formData.userTrackingData,
-            FirstName: extractNames(ctx.request.body.formData.firstName).firstName,
-            LastName: extractNames(ctx.request.body.formData.firstName).lastName,
-            Location: ctx.request.body.formData.location,
-            device: ctx.request.body.formData.device,
-            publishedAt: new Date(),
-          },
-        });
-        return (ctx.body = ctx.request.body.formData);
+        if (!existing) {
+          await strapi.query('api::subscriber.subscriber').create({
+            data: {
+              email: formData.email,
+              data: formData.userTrackingData,
+              FirstName: extractNames(formData.firstName).firstName,
+              LastName: extractNames(formData.firstName).lastName,
+              Location: formData.location,
+              device: formData.device,
+              publishedAt: new Date(),
+            },
+          });
+        }
       } catch (e) {
         strapi.log.error(e);
         captureHandledError(e, 'subscription');
         return ctx.internalServerError('A Whoopsie Happened');
       }
+
+      // Saved: respond now, send the emails in the background.
+      ctx.body = formData;
+
+      if (canSendEmail()) {
+        (async () => {
+          try {
+            await sgMail.send({
+              to: 'hello@zusedigital.com',
+              from: {
+                email: 'hello@zusedigital.com',
+                name: 'Zuse Digital',
+              },
+              bcc: 'zanyar@zusedigital.com',
+              templateId: 'd-b56b3ac032354e4e82e9c12f02ef0750',
+              subject: 'Subscriber From Submit',
+              dynamicTemplateData: {
+                firstName: formData.firstName,
+                email: formData.email,
+                fromSubmitTime: formData.fromSubmitTime,
+                screensize: formData.screensize,
+                device: formData.device,
+                location: formData.location,
+                userTrackingData: filteredUserTrackingData,
+              },
+            });
+            await sgMail.send({
+              to: formData.email,
+              from: {
+                email: 'hello@zusedigital.com',
+                name: 'Zuse Digital',
+              },
+              bcc: 'zanyar@zusedigital.com',
+              templateId: 'd-9a676dca8c7b423eac4a0e020602d368',
+              subject: `⚡️ Hi ${getFirstName(formData.firstName)}, you have been added to the Zuse Digital subscriber list!`,
+              dynamicTemplateData: {
+                firstName: formData.firstName,
+                fname: getFirstName(formData.firstName),
+              },
+            });
+          } catch (e) {
+            strapi.log.error('[SendGrid] subscriber emails failed:', e.message);
+            captureHandledError(e, 'sendgrid-subscription');
+          }
+        })();
+      }
+      return;
     } else {
       const isInternalTest = ctx.request.body.formData?.email === 'yuvraj@zusedigital.com';
-
-      if (!ensureSendgridConfigured()) {
-        return;
-      }
 
       let verification = {};
       const formName = strapi.config.get('plugin::ezforms.enableFormName') ? ctx.request.body.formName : 'form';
@@ -212,7 +224,7 @@ module.exports = ({ strapi }) => ({
       }
 
       // DB write is done. Respond to the user now — the rest runs in the
-      // background in strict order: HubSpot → SendGrid → notification provider.
+      // background in strict order: HubSpot → SendGrid (when configured) → notification provider.
       ctx.body = ctx.request.body.formData;
 
       (async () => {
@@ -226,7 +238,9 @@ module.exports = ({ strapi }) => ({
           }
         }
 
-        try {
+        const sendEmails = canSendEmail();
+
+        if (sendEmails) try {
           const [internalResp] = await sgMail.send({
             to: 'hello@zusedigital.com',
             from: {
@@ -258,7 +272,7 @@ module.exports = ({ strapi }) => ({
           captureHandledError(e, 'sendgrid-internal');
         }
 
-        try {
+        if (sendEmails) try {
           const [userResp] = await sgMail.send({
             to: ctx.request.body.formData.email,
             from: {

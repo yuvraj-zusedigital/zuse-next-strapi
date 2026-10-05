@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_page_intros",
+  "info": {
+    "displayName": "Page intro",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "lead": {
+      "type": "text"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

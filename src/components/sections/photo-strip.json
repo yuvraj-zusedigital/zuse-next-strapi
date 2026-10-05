@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_photo_strips",
+  "info": {
+    "displayName": "Photo strip",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_awards_lists",
+  "info": {
+    "displayName": "Awards list",
+    "icon": "medal"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "detailed": {
+      "type": "boolean",
+      "default": false
+    },
+    "awards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::award.award"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_blog_feeds",
+  "info": {
+    "displayName": "Blog feed",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6,
+      "min": 1
+    },
+    "featuredOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

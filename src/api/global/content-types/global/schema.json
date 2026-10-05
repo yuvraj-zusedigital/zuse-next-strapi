@@ -1,0 +1,101 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Header & Footer",
+    "description": "Site-wide navigation, footer content and social links"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "navLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link"
+    },
+    "servicesLabel": {
+      "type": "string",
+      "default": "Services"
+    },
+    "hideServicesMenu": {
+      "type": "boolean",
+      "default": false
+    },
+    "serviceLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.menu-item"
+    },
+    "headerCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "footerHeading": {
+      "type": "text"
+    },
+    "footerCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "hideFooterCallToAction": {
+      "type": "boolean",
+      "default": false
+    },
+    "footerDescription": {
+      "type": "text"
+    },
+    "hideFooterDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "officeTitle": {
+      "type": "string"
+    },
+    "officeAddress": {
+      "type": "text"
+    },
+    "hideOffice": {
+      "type": "boolean",
+      "default": false
+    },
+    "footerColumns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link-group"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.social-link"
+    },
+    "hideSocialLinks": {
+      "type": "boolean",
+      "default": false
+    },
+    "copyrightText": {
+      "type": "string"
+    },
+    "hideCopyright": {
+      "type": "boolean",
+      "default": false
+    },
+    "legalLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link"
+    }
+  }
+}

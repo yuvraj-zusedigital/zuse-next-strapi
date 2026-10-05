@@ -1,4 +1,6 @@
 module.exports = ({ env }) => ({
+  // The Next.js apps (./zuse-cms, ./zuse-site) must not restart `strapi develop`.
+  watchIgnoreFiles: ['**/zuse-cms/**', '**/zuse-site/**'],
   preview: {
     enabled: false,
   },

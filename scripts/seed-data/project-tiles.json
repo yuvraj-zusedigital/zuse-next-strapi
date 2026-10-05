@@ -1,0 +1,126 @@
+{
+  "_source": "Work grid of https://zusedigital.com/work/ (order, tile size, label, poster, video), 2026-09-30",
+  "categories": [
+    {
+      "slug": "websites",
+      "Name": "Websites",
+      "rank": 1
+    },
+    {
+      "slug": "mobile-apps",
+      "Name": "Mobile Apps",
+      "rank": 2
+    },
+    {
+      "slug": "web-apps",
+      "Name": "Web Apps",
+      "rank": 3
+    },
+    {
+      "slug": "e-commerce",
+      "Name": "eCommerce",
+      "rank": 4
+    }
+  ],
+  "tiles": [
+    {
+      "slug": "louis-vuitton-web-application",
+      "rank": 1,
+      "gridStyle": "FullWidth",
+      "label": "Web App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/louis_vuitton_procurement_platform_case_study_web_apps_case_study_louis_vuitton_malletier_sas_by_zuse_digital_image_1c17b9f468.webp",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/louis_vuitton_procurement_platform_case_study_web_apps_case_study_louis_vuitton_malletier_sas_by_zuse_digital_video_9b9458f9eb.mp4",
+      "title": "Louis Vuitton"
+    },
+    {
+      "slug": "viktrs-web-application",
+      "rank": 2,
+      "gridStyle": "FullWidth",
+      "label": "Web App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/viktrs_case_study_web_apps_case_study_viktrs_by_zuse_digital_image_1ad61ea688.webp",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/viktrs_case_study_web_apps_case_study_viktrs_by_zuse_digital_video_6ea6210aef.mp4",
+      "title": "Viktrs"
+    },
+    {
+      "slug": "komodo-websites",
+      "rank": 3,
+      "gridStyle": "HalfWidth",
+      "label": "Website, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/komodo_website_redesign_influencer_marketing_ux_seo_optimisation_websites_case_study_komodo_by_zuse_digital_image_1c693a57cb.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/komodo_website_redesign_influencer_marketing_ux_seo_optimisation_websites_case_study_komodo_by_zuse_digital_video_83fc8c841d.mp4",
+      "title": "Komodo"
+    },
+    {
+      "slug": "simon-west-ecommerce-website",
+      "rank": 4,
+      "gridStyle": "HalfWidth",
+      "label": "eCommerce, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/fine_jewellery_ecommerce_transformation_simon_west_jewellery_e_commerce_case_study_simon_west_fine_jewellery_by_zuse_digital_image_68810850a4.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/fine_jewellery_ecommerce_transformation_simon_west_jewellery_e_commerce_case_study_simon_west_fine_jewellery_by_zuse_digital_video_91b7138cf5.mp4",
+      "title": "Simon West"
+    },
+    {
+      "slug": "warnie-moji-mobile-application",
+      "rank": 5,
+      "gridStyle": "HalfWidth",
+      "label": "Mobile App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/warnie_moji_mobile_app_case_study_mobile_apps_case_study_shane_warne_warnie_moji_by_zuse_digital_image_f4cfaeeea4.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/warnie_moji_mobile_app_case_study_mobile_apps_case_study_shane_warne_warnie_moji_by_zuse_digital_video_672f7a2d6e.mp4",
+      "title": "Warnie Mojis"
+    },
+    {
+      "slug": "afl-players-moji-mobile-application",
+      "rank": 6,
+      "gridStyle": "HalfWidth",
+      "label": "Mobile App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/afl_players_app_viral_sports_messaging_app_by_zuse_mobile_apps_case_study_afl_players_association_aflpa_by_zuse_digital_image_519a4a5ef6.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/afl_players_app_viral_sports_messaging_app_by_zuse_mobile_apps_case_study_afl_players_association_aflpa_by_zuse_digital_video_9e2950b575.mp4",
+      "title": "AFL Players Moji"
+    },
+    {
+      "slug": "albya-web-application",
+      "rank": 7,
+      "gridStyle": "HalfWidth",
+      "label": "Web & Mobile App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/kaloni_case_study_patient_booking_platform_development_web_apps_case_study_kaloni_by_zuse_digital_image_da67cad71a.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/kaloni_case_study_patient_booking_platform_development_web_apps_case_study_kaloni_by_zuse_digital_video_1d641de0de.mp4",
+      "title": "Albya"
+    },
+    {
+      "slug": "runway-websites",
+      "rank": 8,
+      "gridStyle": "HalfWidth",
+      "label": "Website Design - UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/runway_case_study_websites_case_study_runway_by_zuse_digital_image_ae8da1b850.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/runway_case_study_websites_case_study_runway_by_zuse_digital_video_7108b50002.mp4",
+      "title": "Runway"
+    },
+    {
+      "slug": "jabri-web-application",
+      "rank": 9,
+      "gridStyle": "HalfWidth",
+      "label": "Web App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/video_interview_management_platform_jabri_web_apps_case_study_jabri_by_zuse_digital_image_2e7a85c4de.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/video_interview_management_platform_jabri_web_apps_case_study_jabri_by_zuse_digital_video_a75d90da0a.mp4",
+      "title": "Jabri"
+    },
+    {
+      "slug": "rww-web-application",
+      "rank": 10,
+      "gridStyle": "HalfWidth",
+      "label": "Web App, UI UX Design",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/rww_group_case_study_web_apps_case_study_rww_group_by_zuse_digital_image_cee98b414d.jpg",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/rww_group_case_study_web_apps_case_study_rww_group_by_zuse_digital_video_4175245e33.mp4",
+      "title": "RWW"
+    },
+    {
+      "slug": "c19-mobile-application",
+      "rank": 11,
+      "gridStyle": "HalfWidth",
+      "label": "Development, Product",
+      "poster": "https://d13fy5c8tglk2k.cloudfront.net/work_poster_c19_30d4ce0ac1.png",
+      "video": "https://d13fy5c8tglk2k.cloudfront.net/c19_mobile_app_design_case_study_by_zusedigital_e919f4c27c.mp4",
+      "title": "C19"
+    }
+  ]
+}

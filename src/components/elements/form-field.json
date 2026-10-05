@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_form_fields",
+  "info": {
+    "displayName": "Form field",
+    "icon": "pencil",
+    "description": "Label and placeholder of a form field that's always shown and required."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

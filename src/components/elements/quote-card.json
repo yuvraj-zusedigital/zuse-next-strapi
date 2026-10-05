@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_quote_cards",
+  "info": {
+    "displayName": "Quote card",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "quote": {
+      "type": "text"
+    }
+  }
+}

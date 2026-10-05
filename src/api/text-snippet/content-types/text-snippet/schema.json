@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_snippets",
+  "info": {
+    "singularName": "text-snippet",
+    "pluralName": "text-snippets",
+    "displayName": "Text snippet",
+    "description": "A value written once and used in any text on the site as {name} (zuse-site lib/snippets.ts)."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": { "type": "string", "required": true, "unique": true, "regex": "^[A-Za-z][A-Za-z0-9]*$" },
+    "label": { "type": "string" },
+    "value": { "type": "text" },
+    "note": { "type": "string" }
+  }
+}

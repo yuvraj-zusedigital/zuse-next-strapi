@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_bullet_grids",
+  "info": {
+    "displayName": "Bullet grid",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.bullet"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

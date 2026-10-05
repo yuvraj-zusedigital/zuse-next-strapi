@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_process_stages",
+  "info": {
+    "displayName": "Process stages",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "stages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.process-stage"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

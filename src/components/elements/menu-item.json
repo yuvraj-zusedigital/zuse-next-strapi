@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_elements_menu_items",
+  "info": {
+    "displayName": "Menu item",
+    "icon": "bulletList",
+    "description": "An item in the header's services dropdown: a link with a short description and a preview image."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "href": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

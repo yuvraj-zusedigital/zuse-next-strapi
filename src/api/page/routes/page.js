@@ -6,4 +6,11 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::page.page');
+const deepPopulate = { name: 'global::deep-populate', config: { uid: 'api::page.page' } };
+
+module.exports = createCoreRouter('api::page.page', {
+  config: {
+    find: { middlewares: [deepPopulate] },
+    findOne: { middlewares: [deepPopulate] },
+  },
+});

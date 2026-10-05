@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_manifesto_lines",
+  "info": {
+    "displayName": "Manifesto paragraph",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "textBefore": {
+      "type": "text"
+    },
+    "inlineImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "textAfter": {
+      "type": "text"
+    }
+  }
+}

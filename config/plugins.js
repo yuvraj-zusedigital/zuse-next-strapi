@@ -2,7 +2,9 @@ module.exports = ({ env }) => ({
 
   // ...
   upload: {
-    config: {
+    // `strapi develop` without AWS credentials stores uploads in public/uploads,
+    // so media can be tested locally. Any other environment always uses S3.
+    config: !env('AWS_BUCKET') && env('NODE_ENV') === 'development' ? { provider: 'local' } : {
       provider: 'aws-s3',
       providerOptions: {
         baseUrl: env('CDN_URL'),
@@ -41,6 +43,11 @@ module.exports = ({ env }) => ({
         defaultReplyTo: env('DEFAULT_ReplyTo'),
       },
     }
+  },
+
+  'blog-tools': {
+    enabled: true,
+    resolve: './src/plugins/blog-tools',
   },
 
   ezforms: {

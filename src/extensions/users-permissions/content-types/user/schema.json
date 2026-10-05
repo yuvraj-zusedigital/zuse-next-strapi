@@ -67,6 +67,14 @@
     },
     "rank": {
       "type": "integer"
+    },
+    "timezone": {
+      "type": "string",
+      "configurable": false
+    },
+    "accent": {
+      "type": "string",
+      "configurable": false
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_optional_form_fields",
+  "info": {
+    "displayName": "Optional form field",
+    "icon": "pencil",
+    "description": "A form field that can be made optional or hidden."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

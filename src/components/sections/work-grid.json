@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_work_grids",
+  "info": {
+    "displayName": "Work grid",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "showFilter": {
+      "type": "boolean",
+      "default": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

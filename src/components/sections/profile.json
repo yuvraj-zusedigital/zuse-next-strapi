@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_sections_profiles",
+  "info": {
+    "displayName": "Profile",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.bullet"
+    },
+    "imageCaption": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

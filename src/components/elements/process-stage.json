@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_process_stages",
+  "info": {
+    "displayName": "Process stage",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}

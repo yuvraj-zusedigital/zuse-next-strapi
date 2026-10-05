@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_rich_texts",
+  "info": {
+    "displayName": "Rich text",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "blocks",
+      "required": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

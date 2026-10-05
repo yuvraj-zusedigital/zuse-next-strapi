@@ -2,6 +2,7 @@
 
 const Sentry = require('@sentry/node');
 const { registerBlogDocumentMiddleware } = require('./api/blog/middleware/document-middleware');
+const { registerSiteRefresh } = require('./api/cms/utils/site-refresh');
 
 module.exports = {
   /**
@@ -13,6 +14,8 @@ module.exports = {
     // Blog content-type lifecycle (v5 document-service middleware).
     // Replaces the commented-out src/api/blog/content-types/blog/lifecycles.js.
     registerBlogDocumentMiddleware(strapi);
+    // Refresh the Next.js site's cache when content is published/changed.
+    registerSiteRefresh(strapi);
 
     const dsn = process.env.SENTRY_DSN;
     const sendgridApiKey = process.env.SENDGRID_API_KEY;
@@ -60,7 +63,11 @@ module.exports = {
    * Runs after the application is initialised but before it starts
    * accepting requests. Wire up the global error handler here.
    */
-  bootstrap({ strapi }) {
+  async bootstrap({ strapi }) {
+    // Editor role + /api/cms/* permissions for the Next.js CMS (zuse-cms).
+    await strapi.service('api::cms.setup').ensureRoles();
+    await strapi.service('api::cms.activity').prune();
+
     const app = strapi.server.app;
 
     // ── Middleware: catch ALL errors including handled ones (403, 401, etc.) ──

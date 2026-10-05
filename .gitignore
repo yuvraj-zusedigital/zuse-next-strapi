@@ -115,3 +115,11 @@ exports
 dist
 build
 .strapi-updater.json
+
+# ── Zuse CMS project ──
+# The site's original git history (cloned from nextsetup), kept locally only.
+zuse-site/.git-nextsetup/
+# Next.js build output at the root (zuse-cms and zuse-site ignore their own).
+/.next/
+# Personal Claude Code settings.
+.claude/settings.local.json

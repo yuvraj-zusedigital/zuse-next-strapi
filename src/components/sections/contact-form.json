@@ -1,0 +1,87 @@
+{
+  "collectionName": "components_sections_contact_forms",
+  "info": {
+    "displayName": "Contact form",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "nameField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.form-field"
+    },
+    "emailField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.form-field"
+    },
+    "phoneField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.optional-form-field"
+    },
+    "serviceField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.optional-form-field"
+    },
+    "serviceOptions": {
+      "type": "text"
+    },
+    "messageField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.form-field"
+    },
+    "budgetField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.optional-form-field"
+    },
+    "budgetOptions": {
+      "type": "text"
+    },
+    "referralField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.optional-form-field"
+    },
+    "referralOptions": {
+      "type": "text"
+    },
+    "consentText": {
+      "type": "text"
+    },
+    "consentChecked": {
+      "type": "boolean",
+      "default": true
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "text"
+    },
+    "successPath": {
+      "type": "string",
+      "default": "/thank-you"
+    },
+    "thankYouTitle": {
+      "type": "text"
+    },
+    "thankYouText": {
+      "type": "text"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

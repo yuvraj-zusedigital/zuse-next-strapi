@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sections_testimonials",
+  "info": {
+    "displayName": "Testimonials",
+    "icon": "discuss"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "carousel",
+        "grid"
+      ],
+      "default": "carousel"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_quotes",
+  "info": {
+    "displayName": "Quote",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "cite": {
+      "type": "string"
+    },
+    "citeImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

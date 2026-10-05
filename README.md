@@ -55,3 +55,37 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+
+
+
+===========
+
+## Local development (Strapi + Zuse CMS + website)
+
+Start everything from this folder in one terminal:
+
+```
+npm run dev:all
+```
+
+| Service | URL |
+|---|---|
+| Strapi | http://localhost:1338/admin |
+| Zuse CMS | http://localhost:3100 |
+| Website | http://localhost:7100 |
+
+- Output from each is prefixed `[strapi]`, `[cms]`, `[site]`; it prints the URLs once all three answer.
+- Anything already running on its port is left alone, so it's safe to run again.
+- `npm run dev:all -- cms site` starts only those.
+- Ctrl-C stops everything it started.
+
+The website runs on **7100** (its `dev:local` script) because the CMS (`SITE_URL`) and Strapi's page refresh (`SITE_REVALIDATE_URL`) expect it there. `npm run dev` inside `zuse-site` uses 7000, which works but won't refresh when you publish.
+
+Or start them separately:
+
+```
+cd /Users/zusedigital/Downloads/zuse-next-strapi && npm run develop
+cd /Users/zusedigital/Downloads/zuse-next-strapi/zuse-cms && npm run dev
+cd /Users/zusedigital/Downloads/zuse-next-strapi/zuse-site && npm run dev:local
+```

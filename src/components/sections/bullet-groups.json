@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_bullet_groups",
+  "info": {
+    "displayName": "Bullet groups",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.bullet-group"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_testimonial_sliders",
+  "info": {
+    "displayName": "Testimonial slider",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.quote-card"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

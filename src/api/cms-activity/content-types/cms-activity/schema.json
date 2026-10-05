@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cms_activities",
+  "info": {
+    "singularName": "cms-activity",
+    "pluralName": "cms-activities",
+    "displayName": "CMS activity",
+    "description": "Audit log of changes made through the Zuse CMS (who, what, when). Written by src/api/cms; not exposed on the public API."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "create",
+        "update",
+        "publish",
+        "unpublish",
+        "discard",
+        "delete",
+        "upload",
+        "media-update",
+        "media-delete",
+        "user-create",
+        "user-update"
+      ],
+      "required": true
+    },
+    "targetType": {
+      "type": "string",
+      "required": true
+    },
+    "targetId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "userEmail": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

@@ -477,6 +477,40 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAwardAward extends Struct.CollectionTypeSchema {
+  collectionName: 'awards';
+  info: {
+    description: 'Awards shown on the awards & recognition page';
+    displayName: 'Award';
+    pluralName: 'awards';
+    singularName: 'award';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    about: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    extraImages: Schema.Attribute.Media<'images', true>;
+    featuredBy: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::award.award'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    rank: Schema.Attribute.Integer;
+    reasons: Schema.Attribute.Text;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    summary: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   collectionName: 'blogs';
   info: {
@@ -530,6 +564,114 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
         };
       }> &
       Schema.Attribute.DefaultTo<'idle'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCmsActivityCmsActivity extends Struct.CollectionTypeSchema {
+  collectionName: 'cms_activities';
+  info: {
+    description: 'Audit log of changes made through the Zuse CMS (who, what, when). Written by src/api/cms; not exposed on the public API.';
+    displayName: 'CMS activity';
+    pluralName: 'cms-activities';
+    singularName: 'cms-activity';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    action: Schema.Attribute.Enumeration<
+      [
+        'create',
+        'update',
+        'publish',
+        'unpublish',
+        'discard',
+        'delete',
+        'upload',
+        'media-update',
+        'media-delete',
+        'user-create',
+        'user-update',
+      ]
+    > &
+      Schema.Attribute.Required;
+    count: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cms-activity.cms-activity'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    targetId: Schema.Attribute.String;
+    targetType: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    userEmail: Schema.Attribute.String;
+    userId: Schema.Attribute.Integer;
+  };
+}
+
+export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
+  collectionName: 'globals';
+  info: {
+    description: 'Site-wide navigation, footer content and social links';
+    displayName: 'Header & Footer';
+    pluralName: 'globals';
+    singularName: 'global';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    copyrightText: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footerColumns: Schema.Attribute.Component<'elements.link-group', true>;
+    footerCta: Schema.Attribute.Component<'elements.link', false>;
+    footerDescription: Schema.Attribute.Text;
+    footerHeading: Schema.Attribute.Text;
+    headerCta: Schema.Attribute.Component<'elements.link', false>;
+    hideCopyright: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    hideFooterCallToAction: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    hideFooterDescription: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    hideOffice: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    hideServicesMenu: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    hideSocialLinks: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    legalLinks: Schema.Attribute.Component<'elements.link', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::global.global'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    navLinks: Schema.Attribute.Component<'elements.link', true>;
+    officeAddress: Schema.Attribute.Text;
+    officeTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    serviceLinks: Schema.Attribute.Component<'elements.menu-item', true>;
+    servicesLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Services'>;
+    socialLinks: Schema.Attribute.Component<'elements.social-link', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -600,8 +742,41 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     Name: Schema.Attribute.String & Schema.Attribute.Required;
     page_thumbnail: Schema.Attribute.Media<'images'>;
+    path: Schema.Attribute.String & Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
     RelatedBlogs: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'sections.hero',
+        'sections.logo-strip',
+        'sections.badge-grid',
+        'sections.manifesto',
+        'sections.services-grid',
+        'sections.featured-work',
+        'sections.process-stages',
+        'sections.industries',
+        'sections.testimonials',
+        'sections.blog-feed',
+        'sections.page-intro',
+        'sections.service-offerings',
+        'sections.process-steps',
+        'sections.bullet-grid',
+        'sections.bullet-groups',
+        'sections.case-study-cards',
+        'sections.rich-text',
+        'sections.faq',
+        'sections.awards-list',
+        'sections.work-grid',
+        'sections.contact-form',
+        'sections.subscribe-form',
+        'sections.profile',
+        'sections.callout',
+        'sections.author-card',
+        'sections.testimonial-slider',
+        'sections.photo-strip',
+        'sections.quote',
+      ]
+    >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'Name'>;
     updatedAt: Schema.Attribute.DateTime;
@@ -655,6 +830,18 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    CaseStudyAbout: Schema.Attribute.Text;
+    CaseStudyBanner: Schema.Attribute.Media<'images'>;
+    CaseStudyBlocks: Schema.Attribute.DynamicZone<
+      [
+        'case-study.text-block',
+        'case-study.image-block',
+        'case-study.image-pair',
+      ]
+    >;
+    CaseStudyDescription: Schema.Attribute.Text;
+    CaseStudyMeta: Schema.Attribute.Component<'case-study.meta-field', true>;
+    CaseStudyTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -692,7 +879,11 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     Slider: Schema.Attribute.DynamicZone<['slider.slider']> &
       Schema.Attribute.Required;
     slug: Schema.Attribute.UID<'Title'> & Schema.Attribute.Required;
-    sub_title: Schema.Attribute.String & Schema.Attribute.Required;
+    sub_title: Schema.Attribute.String;
+    testimonial: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::testimonial.testimonial'
+    >;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -733,6 +924,99 @@ export interface ApiSubscriberSubscriber extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
+  collectionName: 'testimonials';
+  info: {
+    description: 'Client testimonials used on the home, testimonials, contact and case study pages';
+    displayName: 'Testimonial';
+    pluralName: 'testimonials';
+    singularName: 'testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.String;
+    content: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    excerpt: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    logoWidth: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    logoWidthMobile: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    portrait: Schema.Attribute.Media<'images'>;
+    publishedAt: Schema.Attribute.DateTime;
+    rank: Schema.Attribute.Integer;
+    rating: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+          min: 1;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<5>;
+    role: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTextSnippetTextSnippet extends Struct.CollectionTypeSchema {
+  collectionName: 'text_snippets';
+  info: {
+    description: 'A value written once and used in any text on the site as {name} (zuse-site lib/snippets.ts).';
+    displayName: 'Text snippet';
+    pluralName: 'text-snippets';
+    singularName: 'text-snippet';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::text-snippet.text-snippet'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    note: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.Text;
+  };
+}
+
 export interface ApiUserTrackingUserTracking
   extends Struct.CollectionTypeSchema {
   collectionName: 'user_trackings';
@@ -765,6 +1049,48 @@ export interface ApiUserTrackingUserTracking
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWebVitalWebVital extends Struct.CollectionTypeSchema {
+  collectionName: 'web_vitals';
+  info: {
+    description: "Core Web Vitals reported by visitors' browsers (src/api/cms/services/vitals.js). Anonymous; kept 90 days.";
+    displayName: 'Web vital';
+    pluralName: 'web-vitals';
+    singularName: 'web-vital';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    device: Schema.Attribute.Enumeration<['mobile', 'desktop']>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::web-vital.web-vital'
+    > &
+      Schema.Attribute.Private;
+    metric: Schema.Attribute.Enumeration<['LCP', 'INP', 'CLS', 'FCP', 'TTFB']> &
+      Schema.Attribute.Required;
+    path: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    rating: Schema.Attribute.Enumeration<['good', 'needs-improvement', 'poor']>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.Float & Schema.Attribute.Required;
   };
 }
 
@@ -1357,6 +1683,7 @@ export interface PluginUsersPermissionsUser
     draftAndPublish: false;
   };
   attributes: {
+    accent: Schema.Attribute.String;
     blocked: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     confirmationToken: Schema.Attribute.String & Schema.Attribute.Private;
     confirmed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
@@ -1387,6 +1714,7 @@ export interface PluginUsersPermissionsUser
       'manyToOne',
       'plugin::users-permissions.role'
     >;
+    timezone: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1411,13 +1739,19 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::author.author': ApiAuthorAuthor;
+      'api::award.award': ApiAwardAward;
       'api::blog.blog': ApiBlogBlog;
+      'api::cms-activity.cms-activity': ApiCmsActivityCmsActivity;
+      'api::global.global': ApiGlobalGlobal;
       'api::organization-setting.organization-setting': ApiOrganizationSettingOrganizationSetting;
       'api::page.page': ApiPagePage;
       'api::project-category.project-category': ApiProjectCategoryProjectCategory;
       'api::project.project': ApiProjectProject;
       'api::subscriber.subscriber': ApiSubscriberSubscriber;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::text-snippet.text-snippet': ApiTextSnippetTextSnippet;
       'api::user-tracking.user-tracking': ApiUserTrackingUserTracking;
+      'api::web-vital.web-vital': ApiWebVitalWebVital;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::ezforms.recipient': PluginEzformsRecipient;

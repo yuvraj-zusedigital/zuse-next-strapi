@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_elements_service_cards",
+  "info": {
+    "displayName": "Service card",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "diagram": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "ai-agents",
+        "ai-product",
+        "seo",
+        "web-application",
+        "mobile-app",
+        "web-design"
+      ],
+      "default": "none"
+    }
+  }
+}

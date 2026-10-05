@@ -37,6 +37,43 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::blog.blog"
+    },
+    "path": {
+      "type": "string",
+      "unique": true
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero",
+        "sections.logo-strip",
+        "sections.badge-grid",
+        "sections.manifesto",
+        "sections.services-grid",
+        "sections.featured-work",
+        "sections.process-stages",
+        "sections.industries",
+        "sections.testimonials",
+        "sections.blog-feed",
+        "sections.page-intro",
+        "sections.service-offerings",
+        "sections.process-steps",
+        "sections.bullet-grid",
+        "sections.bullet-groups",
+        "sections.case-study-cards",
+        "sections.rich-text",
+        "sections.faq",
+        "sections.awards-list",
+        "sections.work-grid",
+        "sections.contact-form",
+        "sections.subscribe-form",
+        "sections.profile",
+        "sections.callout",
+        "sections.author-card",
+        "sections.testimonial-slider",
+        "sections.photo-strip",
+        "sections.quote"
+      ]
     }
   }
 }

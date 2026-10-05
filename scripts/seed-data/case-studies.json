@@ -1,0 +1,2404 @@
+[
+  {
+    "category": "websites",
+    "slug": "komodo-websites",
+    "title": "Komodo Website Redesign | Influencer Marketing UX & SEO Optimisation",
+    "description": "Komodo is a global social agency that builds communities and drives engagement through content creation, influencer marketing, and social media strategy. With offices in London, Sydney, and Los Angeles, they deliver data-driven campaigns that connect brands with audiences worldwide.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-banner.jpg",
+    "about": "Komodo is a global social agency that builds communities and drives engagement through content creation, influencer marketing, and social media strategy. With offices in London, Sydney, and Los Angeles, they deliver data-driven campaigns that connect brands with audiences worldwide.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Komodo"
+      },
+      {
+        "label": "Industry",
+        "value": "Global Social Agency specialising in influencer marketing and content creation"
+      },
+      {
+        "label": "Headquarters",
+        "value": "London, England"
+      },
+      {
+        "label": "Company Size",
+        "value": "70+ employees across three global offices"
+      },
+      {
+        "label": "Website",
+        "href": "https://wearekomodo.com/",
+        "hrefLabel": "wearekomodo.com",
+        "value": "wearekomodo.com"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "Awarded \"Best Digital Marketing Agency\"",
+          "Executed 500+ influencer campaigns",
+          "Generated $145M+ in tracked sales",
+          "Partnered with top brands like Adidas, ASOS, Michael Kors, and Amazon"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Introduction: Transforming Komodo’s Digital Presence",
+        "paragraphs": [
+          "Komodo needed a website redesign to enhance user engagement and reinforce brand positioning. The new platform aimed to improve navigation, showcase case studies, and highlight their extensive influencer network. Their data-driven approach to marketing demanded a sleek, high-performance, and SEO-friendly digital presence."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-1.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Objective: UX and SEO-Focused Digital Experience",
+        "paragraphs": [
+          "The website redesign focused on enhancing UX, optimising for mobile, and creating a dedicated space for case studies and influencer profiles. The goal was to strengthen Komodo’s industry leadership while improving accessibility, SEO, and user engagement."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-2.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Approach: A Data-Driven UX & SEO Strategy",
+        "paragraphs": [
+          "Our Website Design and SEO Optimisation services played a crucial role in this transformation, ensuring an SEO-friendly, mobile-first platform with enhanced usability, Core Web Vitals compliance, and a scalable Headless WordPress CMS.",
+          "We adopted a human-centred design process, starting with discovery workshops to understand Komodo’s goals and audience. After conducting competitor analysis and user research, we developed a streamlined information architecture, wireframes, and interactive prototypes. The final design incorporated custom animations, fast-loading elements, and immersive visuals to reinforce Komodo’s brand identity and SEO performance."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-3.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "text",
+        "title": "Process: From Strategy to Execution",
+        "bullets": [
+          {
+            "title": "Discovery & Research",
+            "body": "Stakeholder workshops, competitor analysis, and UX strategy sessions."
+          },
+          {
+            "title": "Wireframing & Prototyping",
+            "body": "Mapping user journeys and developing interactive prototypes."
+          },
+          {
+            "title": "Design & Development",
+            "body": "Creating a modern, mobile-first UI with seamless navigation and animations."
+          },
+          {
+            "title": "Testing & SEO Optimisation",
+            "body": "Ensuring fast performance, accessibility compliance, and Core Web Vitals excellence."
+          },
+          {
+            "title": "Launch & Ongoing Support",
+            "body": "Deploying the website with post-launch monitoring, SEO, and maintenance."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-4.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Deliverables: Enhancing UX, SEO & Brand Identity",
+        "bullets": [
+          {
+            "title": "Custom UX/UI Design",
+            "body": "A sleek, visually engaging platform."
+          },
+          {
+            "title": "Mobile-First Development",
+            "body": "Optimised for performance and accessibility."
+          },
+          {
+            "title": "Headless WordPress CMS",
+            "body": "Scalable, easy-to-manage content system."
+          },
+          {
+            "title": "Interactive Features",
+            "body": "Animations and dynamic elements for engagement."
+          },
+          {
+            "title": "Core Web Vitals & SEO Optimisation",
+            "body": "Faster load times, structured metadata, and improved search rankings."
+          },
+          {
+            "title": "Influencer Profiles",
+            "body": "A dedicated showcase for Komodo’s talent network."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-5.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "text",
+        "title": "Final Solution: A High-Performance Influencer Marketing Website",
+        "paragraphs": [
+          "The redesigned website delivers a high-performance, visually immersive, and user-friendly experience. With intuitive navigation, an optimised CMS, and seamless mobile functionality, Komodo can now better showcase its expertise, attract new clients, and solidify its industry leadership. The SEO-focused enhancements ensure faster page speeds, improved visibility, and stronger engagement, reinforcing Komodo as a leader in influencer marketing."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-6.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-7.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-8.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-9.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/newcase23-komodo-img-10.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Andy Ryan",
+      "role": "Komodo",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/andy-ryan.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/andy-ryan.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/komodo.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/komodo.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "Komodo engaged Zuse Digital for their new overall design of their website, Their work is just beautiful in many occasions from every step of the whole process, from discovery workshop, wireframing, UX process, responsive website design and over all animation to complete the website design.",
+      "full": [
+        "Komodo is an award winning influencer global agency, spanning across USA, UK, AUS and Asia. As a creative agency ourselves, working with a reputable website design agency like Zuse Digital is the key.",
+        "Komodo engaged Zuse Digital for their new overall design of their website, Their work is just beautiful in many occasions from every step of the whole process, from discovery workshop, wireframing, UX process, responsive website design and over all animation to complete the website design. Our website is now completed www.wearekomodo.com and we are super happy with the work the the Zuse team have done.",
+        "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+        "We highly recommend Zuse Digital."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-komodo"
+  },
+  {
+    "category": "websites",
+    "slug": "runway-websites",
+    "title": "Runway Case Study",
+    "description": "Runway is a modern branding platform built to empower global talent with professionally designed, ready-to-launch personal websites. It offers a simple, streamlined experience for creators to build their online identity, combining visual polish with back-end scalability. By removing the friction of custom web design, Runway helps individuals go live faster, look sharper, and grow their audience with confidence.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/runway_case_banner_b84f7d1064.jpg",
+    "about": "Runway is a modern branding platform built to empower global talent with professionally designed, ready-to-launch personal websites. It offers a simple, streamlined experience for creators to build their online identity, combining visual polish with back-end scalability. By removing the friction of custom web design, Runway helps individuals go live faster, look sharper, and grow their audience with confidence.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Runway"
+      },
+      {
+        "label": "Industry",
+        "value": "Personal Branding / Talent Platforms"
+      },
+      {
+        "label": "Audience Size",
+        "value": "Global audience of creators, influencers, and public figures"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Ringwood, Hampshire, United Kingdom"
+      },
+      {
+        "label": "Company Size",
+        "value": "Mid-sized team, operated under Komodo Media Limited"
+      },
+      {
+        "label": "Website",
+        "href": "https://madewithrunway.com/",
+        "hrefLabel": "madewithrunway.com",
+        "value": "madewithrunway.com"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "Launched a scalable platform tailored for talent-led personal branding",
+          "Backed by Komodo, a global leader in influencer marketing and social talent",
+          "Used by top-tier creators to launch custom digital identities with ease"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Introduction: Building a Brand from the Ground Up",
+        "paragraphs": [
+          "Runway approached Zuse Digital to create an entirely new brand and digital platform tailored to global talent. This was not a redesign, but a brand-new website project—from branding and UX strategy to content architecture and website development. The goal was to help creators and influencers launch beautifully branded personal websites with zero hassle."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-1.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-2.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Objective: Launch a Frictionless Personal Branding Platform",
+        "paragraphs": [
+          "Our mission was to build a sleek, user-friendly, and conversion-focused website that embodied Runway’s promise of simplicity and style. This included crafting a distinct brand identity, optimising mobile UX, and ensuring scalability for a growing user base of talent-led creators."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-3.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Approach: Brand Creation Meets Scalable UX",
+        "paragraphs": [
+          "Zuse led the full creative and technical direction, combining our Website Design, UX, and Branding services. Starting from a blank canvas, we facilitated workshops to define Runway’s tone, audience, and visual direction. A mobile-first design system was developed alongside an intuitive content model, ensuring a seamless experience for both users and the internal team managing the platform."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-4.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Process: Strategy to Launch",
+        "bullets": [
+          {
+            "title": "Discovery & Brand Definition",
+            "body": "Strategy sessions to define brand values, visual direction, and key messaging."
+          },
+          {
+            "title": "UX & Architecture",
+            "body": "User journey mapping, wireframes, and an intuitive content hierarchy."
+          },
+          {
+            "title": "UI Design & Visual Identity",
+            "body": "Custom logo, typography, palette, and UI components."
+          },
+          {
+            "title": "Development",
+            "body": "Mobile-first, SEO-optimised site built with a headless CMS for easy updates."
+          },
+          {
+            "title": "Testing & Launch",
+            "body": "Rigorous QA, performance optimisation, and smooth deployment."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-5.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "text",
+        "title": "Deliverables: Complete Brand + Web Experience",
+        "bullets": [
+          {
+            "title": "Custom Brand Identity",
+            "body": "Logo, palette, typography, and visual language"
+          },
+          {
+            "title": "UX Strategy & Wireframes",
+            "body": "Clear content flow and page layouts"
+          },
+          {
+            "title": "Responsive Web Design",
+            "body": "Mobile-first, fast-loading user experience"
+          },
+          {
+            "title": "Headless CMS Integration",
+            "body": "Flexible, scalable, and easy to manage"
+          },
+          {
+            "title": "SEO & Performance Optimisation",
+            "body": "Core Web Vitals and Google rankings"
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-6.webp",
+          "alt": "case-study-full-width-img-7",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Final Solution: Launch-Ready Branding Platform for Talent",
+        "paragraphs": [
+          "The final product is a polished, user-friendly website that positions Runway as the go-to platform for creators seeking a personal digital brand. It balances aesthetics with performance, offering speed, scalability, and CMS flexibility. With Runway, users can now launch their own website in minutes—no dev team required."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-7.webp",
+          "alt": "case-study-full-width-img-8",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-8.webp",
+          "alt": "case-study-full-width-img-9",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-9.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 601,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-10.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 452,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-11.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-11.webp",
+          "alt": "case-study-full-width-img-10",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-12.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/runway-case-img-12.webp",
+          "alt": "case-study-full-width-img-11",
+          "width": 1084,
+          "height": 1084
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Andy Ryan",
+      "role": "Komodo",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/andy-ryan.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/andy-ryan.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/komodo.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/komodo.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "Komodo engaged Zuse Digital for their new overall design of their website, Their work is just beautiful in many occasions from every step of the whole process, from discovery workshop, wireframing, UX process, responsive website design and over all animation to complete the website design.",
+      "full": [
+        "Komodo is an award winning influencer global agency, spanning across USA, UK, AUS and Asia. As a creative agency ourselves, working with a reputable website design agency like Zuse Digital is the key.",
+        "Komodo engaged Zuse Digital for their new overall design of their website, Their work is just beautiful in many occasions from every step of the whole process, from discovery workshop, wireframing, UX process, responsive website design and over all animation to complete the website design. Our website is now completed www.wearekomodo.com and we are super happy with the work the the Zuse team have done.",
+        "The benefit of working with Zanyar and his team is the creative thinking and attention to detail at every step.",
+        "We highly recommend Zuse Digital."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-runway"
+  },
+  {
+    "category": "e-commerce",
+    "slug": "simon-west-ecommerce-website",
+    "title": "Fine Jewellery eCommerce Transformation: Simon West Jewellery",
+    "description": "Simon West Jewellery is a Melbourne-based fine jewellery brand specialising in handcrafted, bespoke pieces. With a legacy spanning over two decades, they are renowned for their exquisite craftsmanship, custom engagement rings, and wedding bands. Every piece is meticulously designed with precision, ensuring a timeless aesthetic that reflects each client’s unique style.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/simon_west_case_banner_3fc18331b4.jpg",
+    "about": "Simon West Jewellery is a Melbourne-based fine jewellery brand specialising in handcrafted, bespoke pieces. With a legacy spanning over two decades, they are renowned for their exquisite craftsmanship, custom engagement rings, and wedding bands. Every piece is meticulously designed with precision, ensuring a timeless aesthetic that reflects each client’s unique style.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Simon West Fine Jewellery"
+      },
+      {
+        "label": "Industry",
+        "value": "Fine Jewellery Design and Retail"
+      },
+      {
+        "label": "Location",
+        "value": "Melbourne, Australia"
+      },
+      {
+        "label": "Company Size",
+        "value": "Small Business"
+      },
+      {
+        "label": "Website",
+        "href": "https://simonwestjewellery.com/",
+        "hrefLabel": "simonwestjewellery.com",
+        "value": "simonwestjewellery.com"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "Established in 1999, with over two decades of experience in crafting bespoke jewellery.",
+          "Specialises in handmade engagement rings and wedding bands, renowned for quality and durability."
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Objective & Challenge",
+        "paragraphs": [
+          "Simon West Fine Jewellery sought a digital transformation, moving from an outdated website to a modern, SEO-optimised eCommerce site. The goal was to create a custom, mobile-responsive, high-performance Shopify store. Key challenges included:"
+        ],
+        "bullets": [
+          {
+            "title": "Outdated Website",
+            "body": "Poor functionality and limited online engagement."
+          },
+          {
+            "title": "Limited Online Presence",
+            "body": "Minimal SEO efforts and dependency on in-store sales."
+          },
+          {
+            "title": "Mobile Responsiveness Issues",
+            "body": "Lack of optimisation across devices."
+          },
+          {
+            "title": "Product Photography Optimisation",
+            "body": "Need for high-quality images across various screen sizes."
+          },
+          {
+            "title": "Scalability Constraints",
+            "body": "Existing platform lacked eCommerce capabilities."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-1.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "SEO-Optimised eCommerce Approach & Process",
+        "paragraphs": [
+          "To address these challenges, Zuse Digital followed a structured design, development, and SEO optimisation process:"
+        ],
+        "bullets": [
+          {
+            "body": "Conducted a Discovery Workshop to align on goals and branding."
+          },
+          {
+            "body": "Performed competitor research to identify industry best practices."
+          },
+          {
+            "body": "Developed a mood board to define the visual direction."
+          },
+          {
+            "body": "Created wireframes and mockups in Figma, refining based on client feedback. Learn more about Website Design"
+          },
+          {
+            "body": "Designed a luxury-inspired, intuitive website with seamless navigation."
+          },
+          {
+            "body": "Built a fully responsive Shopify website optimised for mobile and desktop."
+          },
+          {
+            "body": "Integrated technical SEO enhancements, including metadata and structured content."
+          },
+          {
+            "body": "Compressed high-resolution product images for faster load times."
+          },
+          {
+            "body": "Improved site speed and Core Web Vitals for a seamless shopping experience."
+          },
+          {
+            "body": "Implemented alt text for all images to enhance SEO and accessibility."
+          },
+          {
+            "body": "Integrated secure payment gateways and inventory management. Learn more about Web Application Development"
+          },
+          {
+            "body": "Developed compelling product descriptions and brand storytelling."
+          },
+          {
+            "body": "Created landing pages for key collections and promotions."
+          },
+          {
+            "body": "Conducted cross-device, browser, and functionality testing."
+          },
+          {
+            "body": "Provided training and documentation for the client’s team."
+          },
+          {
+            "body": "Offered ongoing analytics tracking and site maintenance."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-2.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-3.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Solution & Outcome",
+        "paragraphs": [
+          "The result was a fully optimised, high-performance Shopify website that:",
+          "This transformation positioned Simon West Jewellery as a leading luxury jewellery website, enhancing customer engagement and driving online sales."
+        ],
+        "bullets": [
+          {
+            "body": "Strengthened Simon West Jewellery’s digital brand presence."
+          },
+          {
+            "body": "Provided a seamless shopping experience across all devices."
+          },
+          {
+            "body": "Increased search visibility and site performance through SEO best practices."
+          },
+          {
+            "body": "Improved conversion rates with an intuitive, luxury-focused UI."
+          },
+          {
+            "body": "Enabled scalability for future growth in the eCommerce market."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-4.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-5.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-6.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-7.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-8.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-9.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-10.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-11.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-11.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-12.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-12.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-13.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-13.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-14.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-14.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-15.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-15.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-16.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-16.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-17.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-case-img-17.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Simon West",
+      "role": "Simon West Fine Jewellery",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-logo.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/simon-west-logo.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "We are so happy with our new website & all your hard work has paid off.",
+      "full": [
+        "We can highly recommend Zanyar at Zuse Digital for building our beautiful website to help bring us into the ecommerce world. Zanyar came up with a plan after our initial meeting to target all our needs & suggested new ideas ones we hadn’t thought of including greater user experience which is why we chose Zuse Digital.",
+        "Zanyar & his team where able to bring the website to life & getting changes made was never a problem. Zanyar went above & beyond when it counted.",
+        "Thank you Zanyar & team for all your hard work. We really enjoyed working with you & really appreciate all your hard work. I can highly recommend Zanyar to anyone. We are so happy with our new website & all your hard work has paid off. Congratulations on doing a beautiful job & look forward to working with you on the next project."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-simonwest"
+  },
+  {
+    "category": "web-apps",
+    "slug": "louis-vuitton-web-application",
+    "title": "Louis Vuitton Procurement Platform Case Study",
+    "description": "Louis Vuitton’s digital transformation redefined procurement efficiency by introducing a cloud-based procurement platform. Our modular design system improved usability, brand consistency, and cross-platform accessibility, aligning with LVMH’s procurement goals. The result: higher efficiency, increased adoption, and a scalable foundation for future growth.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/lvmh_case_banner_74b5dabfe6.jpg",
+    "about": "Louis Vuitton’s digital transformation redefined procurement efficiency by introducing a cloud-based procurement platform. Our modular design system improved usability, brand consistency, and cross-platform accessibility, aligning with LVMH’s procurement goals. The result: higher efficiency, increased adoption, and a scalable foundation for future growth.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Louis Vuitton Malletier SAS"
+      },
+      {
+        "label": "Industry",
+        "value": "Luxury Fashion & Retail"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Paris, France"
+      },
+      {
+        "label": "Company Size",
+        "value": "10,000+ employees"
+      },
+      {
+        "label": "Website",
+        "href": "https://www.louisvuitton.com/",
+        "hrefLabel": "www.louisvuitton.com",
+        "value": "www.louisvuitton.com"
+      },
+      {
+        "label": "Notable Achievements",
+        "value": "Modernise procurement operations by transitioning from a legacy on-premise system to a cloud-based procurement platform with a scalable design system to enhance efficiency and usability across LVMH brands."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Challenges & Strategic Approach",
+        "paragraphs": [
+          "LVMH, home to 75 luxury brands across six sectors, faced significant procurement challenges. With thousands of unique products and varied procurement workflows, their existing software was clunky, outdated, and inconsistent across brands. The transition to a modern web-based solution required overcoming key obstacles:"
+        ],
+        "bullets": [
+          {
+            "body": "Diverse procurement processes across brands needed standardisation."
+          },
+          {
+            "body": "Complex formulas had to be simplified with an intuitive UI."
+          },
+          {
+            "body": "User adoption was a priority, ensuring an elegant and efficient experience."
+          },
+          {
+            "body": "In-depth stakeholder workshops to align system design with procurement strategies."
+          },
+          {
+            "body": "Wireframing, prototyping, and usability testing to refine the user experience."
+          },
+          {
+            "body": "A modular design system to maintain consistency while allowing flexibility for future iterations."
+          }
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-1-min.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-1-min.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Solution & Deliverables",
+        "paragraphs": [
+          "Zuse Digital partnered with LVMH to create a user-centric procurement platform that reflected the brand’s elegance while improving functionality. Key deliverables included:",
+          "The new system simplified navigation, improved procurement accuracy, and enhanced efficiency, directly supporting Louis Vuitton’s digital transformation goals."
+        ],
+        "bullets": [
+          {
+            "body": "Custom UI components optimised for procurement workflows."
+          },
+          {
+            "body": "Responsive design for cross-device usability and accessibility."
+          },
+          {
+            "body": "Figma prototypes, interactive mockups, and design documentation for development teams."
+          },
+          {
+            "body": "Standardised interface across LVMH brands, ensuring clarity and ease of use."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-animation.gif",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Key Results & Impact",
+        "paragraphs": [
+          "By modernising Louis Vuitton’s procurement technology, we created a scalable, intuitive system that aligns with the brand’s long-term digital strategy."
+        ],
+        "bullets": [
+          {
+            "body": "70% faster procurement workflows, reducing inefficiencies and errors."
+          },
+          {
+            "body": "Higher user adoption, driving engagement and system-wide productivity."
+          },
+          {
+            "body": "Enhanced reporting and visibility, improving procurement decisions."
+          },
+          {
+            "body": "Positive stakeholder feedback, validating the design system’s success and scalability."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-3-min.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-3-min.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-4-min.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-4-min.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-5-min.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-5-min.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-6-min.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/lvmh-case-img-6-min.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Chris Caldwell",
+      "role": "HarnessDL",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/chris-caldwell.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/chris-caldwell.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/harnessdi.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/harnessdi.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "Great team of experts in application development have used them for multiple projects.",
+      "full": [
+        "Excellent experience working with Zuse Digital - great team of experts in application development have used them for multiple projects.",
+        "Their ethos of clean intuitive design and real focus on understanding the requirements right from the get go has always led to an end product myself and the end users have been extremely happy with."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-lvmh"
+  },
+  {
+    "category": "web-apps",
+    "slug": "viktrs-web-application",
+    "title": "Viktrs Case Study",
+    "description": "Viktrs partnered with Zuse Digital to transform their interactive video concept into a fully functional product. The journey began with a Discovery Workshop, where ideas were refined and visualised through a high-fidelity prototype. This prototype played a critical role in securing investment. Post-funding, Zuse Digital developed a fully responsive web-based platform, ensuring a seamless experience across devices. The project also included a self-serve super admin panel, enabling Viktrs to manage videos, tag products, and track detailed engagement analytics.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-banner.jpg",
+    "about": "Viktrs partnered with Zuse Digital to transform their interactive video concept into a fully functional product. The journey began with a Discovery Workshop, where ideas were refined and visualised through a high-fidelity prototype. This prototype played a critical role in securing investment. Post-funding, Zuse Digital developed a fully responsive web-based platform, ensuring a seamless experience across devices. The project also included a self-serve super admin panel, enabling Viktrs to manage videos, tag products, and track detailed engagement analytics.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Viktrs"
+      },
+      {
+        "label": "Industry",
+        "value": "Interactive Media & Video Technology"
+      },
+      {
+        "label": "Headquarters",
+        "value": "London, United Kingdom"
+      },
+      {
+        "label": "Company Size",
+        "value": "Information not publicly disclosed"
+      },
+      {
+        "label": "Website",
+        "href": "https://viktrs.com/",
+        "hrefLabel": "https://viktrs.com/",
+        "value": "https://viktrs.com/"
+      },
+      {
+        "label": "Notable Achievements",
+        "value": "Develop a cutting-edge interactive video platform with real-time analytics, a seamless user experience, and a scalable cloud-based infrastructure."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Key Challenges & Solutions",
+        "bullets": [
+          {
+            "title": "Mobile Compatibility",
+            "body": "Ensuring seamless performance across devices with complex animations through real-device testing."
+          },
+          {
+            "title": "Real-Time Data Updates",
+            "body": "Implementing WebSockets for instant content updates across the platform."
+          },
+          {
+            "title": "Video Streaming Performance",
+            "body": "Leveraging a CDN to ensure smooth playback and minimise latency."
+          },
+          {
+            "title": "Scalable Tech Stack",
+            "body": "Utilising ReactJS, NextJS, AWS, and WebSockets for future-proof infrastructure."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-1.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-2.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Development & Deliverables",
+        "paragraphs": [
+          "The project followed a structured, milestone-based approach with multiple iterations and testing phases to incorporate stakeholder feedback. The final deliverables included:",
+          "This transformation positioned Simon West Jewellery as a leading luxury jewellery website, enhancing customer engagement and driving online sales."
+        ],
+        "bullets": [
+          {
+            "body": "Fully developed, mobile-optimised web platform with a seamless UX."
+          },
+          {
+            "body": "Self-serve super admin panel for video management, product tagging, and analytics."
+          },
+          {
+            "body": "Comprehensive documentation for Viktrs’ internal team."
+          },
+          {
+            "body": "Ongoing technical support ensuring performance improvements and feature scalability."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-3.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Final Outcome",
+        "paragraphs": [
+          "Zuse Digital successfully delivered an industry-first interactive video platform, redefining video engagement with seamless UX, real-time analytics, and integrated product tagging. The platform offers enhanced video monetisation, engagement tracking, and AI-powered insights, bridging content interaction and commerce. The collaboration between Viktrs and Zuse Digital remains ongoing, ensuring continuous innovation."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-4.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-5.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-6.webp",
+          "alt": "case-study-full-width-img-7",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-7.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-8.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-9.webp",
+          "alt": "case-study-full-width-img-8",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-10.webp",
+          "alt": "case-study-full-width-img-9",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-11.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs-case-img-11.webp",
+          "alt": "case-study-full-width-img-10",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Mark Bamford",
+      "role": "Viktrs",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/testi-block-img-4.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/testi-block-img-4.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs_case_logo.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/viktrs_case_logo.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "Zuse Digital brought our vision to life with purpose-led design and flawless execution. Their work helped us raise funding and laid the foundation for our platform. A true long-term partner.",
+      "full": [
+        "Viktrs is an innovative platform built for a GenZ audience that connects music, storytelling, and commerce. From the very beginning, our goal was to build something purposeful, with the user experience at the centre — and Zuse Digital helped us bring that vision to life.",
+        "We engaged Zuse Digital from ideation through to design, development, and the launch of our BETA platform. Their team worked alongside us from day one, running design workshops in London and collaborating closely throughout 2020 to ensure we went live with a polished MVP by December.",
+        "Zanyar and his team brought a strategic mindset and deep understanding of our business. Their eye for design and focus on purpose helped us find the perfect balance between building a lean product and delivering a compelling experience. As a result, we were able to successfully raise funding off the back of our BETA.",
+        "The Zuse team delivered across all fronts — from the frontend experience to backend portals, dashboards, data insights, and self-service tools for artists. Their work laid the foundation for our product’s DNA and set us up for continued growth.",
+        "What stood out most was their passion for what they do, their attention to detail, and their drive to create a product that genuinely connects with its audience. We look forward to continuing our partnership with Zuse Digital and recommend them without hesitation."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-viktrs"
+  },
+  {
+    "category": "web-apps",
+    "slug": "jabri-web-application",
+    "title": "Jabri",
+    "description": "Jabri is a video interview management platform designed to streamline the hiring process for organizations. The platform enables hiring managers to review, skip, rewind, share, and compare video responses to expert interview questions, enhancing efficiency in talent acquisition.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-banner.jpg",
+    "about": "Jabri is a video interview management platform designed to streamline the hiring process for organizations. The platform enables hiring managers to review, skip, rewind, share, and compare video responses to expert interview questions, enhancing efficiency in talent acquisition.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Jabri"
+      },
+      {
+        "label": "Industry",
+        "value": "Human Resources Technology"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Melbourne, Australia"
+      },
+      {
+        "label": "Company Size",
+        "value": "Startup"
+      },
+      {
+        "label": "Website",
+        "href": "https://jabri.co/",
+        "hrefLabel": "https://www.jabri.co/",
+        "value": "https://www.jabri.co/"
+      },
+      {
+        "label": "Notable Achievements",
+        "value": "Jabri is part of the NVIDIA Inception Program and AWS Activate, recognised for their innovative product development and forward-looking AI roadmap."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Overview & Objective",
+        "paragraphs": [
+          "Jabri approached Zuse Digital to bring a completely new product concept to life: a video interview platform that would serve both hiring teams and job candidates. The goal was to develop a full-featured web application enabling structured, asynchronous interviews, designed for collaboration, clarity, and efficiency."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-1.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Challenge & Solution",
+        "paragraphs": [
+          "The biggest challenge was ensuring video interviews—often tied to a candidate’s dream job—were reliably captured with zero data loss. Zuse engineered a resilient AWS infrastructure integrated with WebRTC, capable of real-time recording, buffering, and multi-zone storage. This formed the foundation of a secure, scalable system designed to perform flawlessly under pressure.",
+          "On the frontend, a clean, intuitive interface was built for both user types. Candidates experienced a supportive, frictionless recording process, while hiring managers gained powerful tools to review, score, and share responses with ease. The result was a deeply human and technically robust product ready for real-world hiring needs."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-2.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Design & Development Process",
+        "paragraphs": [
+          "We followed our proven product development workflow:",
+          "From consultation to launch, every detail was aligned with Jabri’s vision for a smarter, more empathetic hiring experience."
+        ],
+        "bullets": [
+          {
+            "body": "Discovery and user research shaped the strategy."
+          },
+          {
+            "body": "Wireframes and prototypes defined the user journeys."
+          },
+          {
+            "body": "UI design emphasised clarity, accessibility, and ease of use."
+          },
+          {
+            "body": "Agile sprints delivered the platform feature by feature."
+          },
+          {
+            "body": "QA and testing ensured every recording was stable and high quality."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-3.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "text",
+        "title": "Key Deliverables",
+        "bullets": [
+          {
+            "body": "Candidate interview portal with real-time video recording and submission tools"
+          },
+          {
+            "body": "Hiring manager dashboard with playback, scoring, and collaboration features"
+          },
+          {
+            "body": "Resilient AWS infrastructure with secure video storage and autoscaling"
+          },
+          {
+            "body": "Human-centred design system optimised for accessibility and user confidence"
+          },
+          {
+            "body": "Admin tools for managing job posts, users, and system configurations"
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-4.webp",
+          "alt": "case-study-full-width-img-7",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-5.webp",
+          "alt": "case-study-full-width-img-8",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-6.webp",
+          "alt": "case-study-full-width-img-9",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-7.webp",
+          "alt": "case-study-full-width-img-10",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-8.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/jabri-case-img-9.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      }
+    ],
+    "strapiSlug": "casestudy-jabri"
+  },
+  {
+    "category": "web-apps",
+    "slug": "rww-web-application",
+    "title": "Rww Group Case Study",
+    "description": "RWW Group is a family-owned Australian business specialising in custom workwear, uniforms, and PPE solutions. With a focus on safety, consistency, and innovation, RWW delivers full-service apparel management through its national network and tech-enabled platforms. Their mission is to help businesses protect their teams and enhance brand identity through quality, customised uniform solutions.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-banner.jpg",
+    "about": "RWW Group is a family-owned Australian business specialising in custom workwear, uniforms, and PPE solutions. With a focus on safety, consistency, and innovation, RWW delivers full-service apparel management through its national network and tech-enabled platforms. Their mission is to help businesses protect their teams and enhance brand identity through quality, customised uniform solutions.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "RWW Group"
+      },
+      {
+        "label": "Industry",
+        "value": "Uniform Supply, Workwear & PPE Solutions"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Leeton, New South Wales, Australia"
+      },
+      {
+        "label": "Company Size",
+        "value": "Medium enterprise with national distribution"
+      },
+      {
+        "label": "Audience",
+        "value": "Medium to large businesses across construction, mining, logistics, and government sectors"
+      },
+      {
+        "label": "Website",
+        "href": "https://www.rwwgroup.com.au/",
+        "hrefLabel": "www.rwwgroup.com.au",
+        "value": "www.rwwgroup.com.au"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "Over 30 years in operation (est. 1993)",
+          "Creator of Dataspace – an industry-leading uniform management platform with 99% order accuracy",
+          "One of the largest in-house embroidery and printing operations in Australia",
+          "Supplier to major organisations including Evolution Mining"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Project Summary",
+        "paragraphs": [
+          "RWW Group partnered with Zuse Digital to develop a streamlined ordering platform that could simplify the quote request process for their extensive uniform catalogue. The goal was to allow existing customers to configure garments and submit quote requests in just three steps—despite the complexity of thousands of SKUs, colour options, and branding variables. The solution required more than just a sleek interface—it demanded scalable architecture, precise image rendering capabilities, and an intuitive user flow."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-1.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Strategy & Execution",
+        "paragraphs": [
+          "We kicked off the project with a Discovery Workshop, aligning stakeholders and mapping the user journey in detail. Our team then designed a modular UI system and built a responsive web application using React, TailwindCSS, and Next.js. Key features included real-time garment previews, colour and logo customisation, and a seamless quoting workflow. The backend was powered by a headless CMS, supported by robust API integrations and a relational database structured for high performance and future growth.",
+          "Throughout the process, we used agile sprints, Figma-based prototypes, and iterative testing across all breakpoints. We ensured fast load speeds through a global CDN, prioritised Core Web Vitals, and maintained security through HTTPS and API rate limiting. Extensive QA and feedback loops ensured a polished, scalable final product."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-2.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Key Deliverables",
+        "bullets": [
+          {
+            "body": "Fully responsive UI/UX design with a 3-step quoting experience"
+          },
+          {
+            "body": "Custom frontend and backend development with modular architecture"
+          },
+          {
+            "body": "Advanced image rendering for garment colour changes and branding previews"
+          },
+          {
+            "body": "Relational database for scalable product catalogue management"
+          },
+          {
+            "body": "API integration with headless CMS and dynamic quote system"
+          },
+          {
+            "body": "CDN setup for fast global asset delivery"
+          },
+          {
+            "body": "Cloud-based infrastructure with CI/CD, monitoring, and backups"
+          },
+          {
+            "body": "Cross-device and breakpoint testing for performance and usability"
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-3.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-4.webp",
+          "alt": "case-study-full-width-img-7",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-5.webp",
+          "alt": "case-study-full-width-img-8",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-6.webp",
+          "alt": "case-study-full-width-img-9",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-7.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-8.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-9.webp",
+          "alt": "case-study-full-width-img-9",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-10.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-11.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/rww-case-img-11.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      }
+    ],
+    "strapiSlug": "casestudy-rww"
+  },
+  {
+    "category": "web-apps",
+    "slug": "albya-web-application",
+    "title": "Kaloni Case Study | Patient Booking Platform Development",
+    "description": "Kaloni is a premier medical and science centre specialising in aesthetic and regenerative treatments, with a strong emphasis on hair restoration, plastic surgery, medical technology, and regenerative medicine.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-banner.jpg",
+    "about": "Kaloni is a premier medical and science centre specialising in aesthetic and regenerative treatments, with a strong emphasis on hair restoration, plastic surgery, medical technology, and regenerative medicine.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Kaloni"
+      },
+      {
+        "label": "Industry",
+        "value": "Healthcare – Aesthetic and Regenerative Medicine"
+      },
+      {
+        "label": "Audience Size",
+        "value": "Over 50,000 satisfied patients worldwide"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Mexico City, Mexico"
+      },
+      {
+        "label": "Company Size",
+        "value": "201–500 employees"
+      },
+      {
+        "label": "Website",
+        "href": "https://kaloni.com/",
+        "hrefLabel": "https://kaloni.com",
+        "value": "https://kaloni.com"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "Pioneers in long-hair transplant methods",
+          "Holds the record for follicle extraction while maintaining donor area care",
+          "Recognised for the highest follicle implantation per square centimetre",
+          "Offers comprehensive and personalised medical follow-up",
+          "Internationally certified medical team with deep expertise"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Project Overview: Building a Patient Booking & Management Platform",
+        "paragraphs": [
+          "Kaloni partnered with Zuse Digital, via Albya, to revolutionise its patient booking and management experience. The goal was to develop a secure, scalable mobile and web platform that allowed users to discover services, make real-time bookings, manage personal health records, and access personalised offers—all from a privacy-focused, mobile-first app. This solution modernised how patients interact with healthcare services across Kaloni clinics in Mexico."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-1.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Strategy & Execution: Mobile-First, Privacy-Focused Healthcare App Development",
+        "paragraphs": [
+          "Zuse Digital adopted a design thinking approach, starting with a discovery workshop to define patient needs and system requirements. Prioritising user experience, privacy, and cross-platform compatibility, the team developed the platform using agile methodology—allowing for regular iterations and improvements.",
+          "Key tools included Figma for UI/UX, Jira for sprint management, and AWS for cloud hosting. The outcome was a React Native app for iOS and Android and a robust web-based admin panel for clinics. Core features included real-time appointment scheduling, patient record access, analytics dashboards, and dynamic service offers."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-2.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Outcome: Scalable, User-Centred Medical Platform",
+        "paragraphs": [
+          "The platform delivered by Zuse Digital has reshaped Kaloni’s digital health offering. Patients now enjoy a seamless, transparent experience that makes booking and managing treatments as intuitive as using a modern consumer platform. Clinics benefit from streamlined operations, enhanced booking efficiency, and secure, data-driven decision-making."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-3.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-4.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-5.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-6.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-7.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-7.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-8.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-8.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 522,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-9.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-9.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-10.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-10.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-11.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/albya-case-img-11.webp",
+          "alt": "case-study-full-width-img-7",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "strapiSlug": "case-study-albya-mobile"
+  },
+  {
+    "category": "mobile-apps",
+    "slug": "afl-players-moji-mobile-application",
+    "title": "AFL Players App – Viral Sports Messaging App by Zuse",
+    "description": "The AFL Players’ Association is the peak body representing professional Australian rules footballers across the AFL and AFLW. Founded in 1973, the AFLPA advocates for player rights, health, and career development—empowering athletes both on and off the field. Their influence spans industrial relations, community initiatives, and pioneering leadership in athlete welfare.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/afl_case_banner_8d7379d395.jpg",
+    "about": "The AFL Players’ Association is the peak body representing professional Australian rules footballers across the AFL and AFLW. Founded in 1973, the AFLPA advocates for player rights, health, and career development—empowering athletes both on and off the field. Their influence spans industrial relations, community initiatives, and pioneering leadership in athlete welfare.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "AFL Players’ Association (AFLPA)"
+      },
+      {
+        "label": "Industry",
+        "value": "Sports, Athlete Representation"
+      },
+      {
+        "label": "Audience Size",
+        "value": "1,300+ current players (AFL & AFLW), 5,000+ past players"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Albert Park, Victoria, Australia"
+      },
+      {
+        "label": "Company Size",
+        "value": "Medium (50–100 employees estimated)"
+      },
+      {
+        "label": "Website",
+        "href": "https://www.aflplayers.com.au/",
+        "hrefLabel": "aflplayers.com.au",
+        "value": "aflplayers.com.au"
+      },
+      {
+        "label": "Notable Achievements",
+        "value": "Instrumental in introducing free agency to the AFL; creators of the Indigenous Players Advisory Board; leaders in athlete wellbeing and community engagement."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Project Summary: Mobile App for AFL Fan Engagement",
+        "paragraphs": [
+          "Zuse Digital collaborated with the AFLPA to design a custom mobile app that transformed how fans interact with their favourite AFL stars. The app allowed users to create and send personalised messages using official player and commentator assets—turning simple chats into memorable fan moments.",
+          "To support viral growth, the backend was built on scalable AWS infrastructure, ensuring seamless media delivery across iOS and Android. The team also focused on asset optimisation, maintaining high visual quality across devices without sacrificing performance.",
+          "Built with a cross-platform framework and guided by agile development, the app quickly became a standout in the sports entertainment space. It ranked #1 in Australia’s Sports category and was featured by Apple as a “New App We Love.”"
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-1.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Solution & Outcomes: Cross-Platform AFL Sports App",
+        "paragraphs": [
+          "Zuse Digital delivered a high-performance cross-platform app optimised for fun, fan engagement, and viral sharing. Deliverables included:",
+          "Within 48 hours, the app soared to #1 in the Australian App Store’s paid Sports category, received widespread national media coverage, and set a new benchmark in digital fan engagement for professional sport."
+        ],
+        "bullets": [
+          {
+            "body": "Cross-platform mobile app development (React Native)"
+          },
+          {
+            "body": "Personalised AFL player-based messaging experience"
+          },
+          {
+            "body": "Scalable, media-optimised backend powered by AWS"
+          },
+          {
+            "body": "Full deployment to the App Store and Google Play"
+          },
+          {
+            "body": "Device-agnostic UX with media compression and performance tuning"
+          },
+          {
+            "body": "Post-launch monitoring and optimisation support"
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-2.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-3.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 534,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-4.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 510,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-5.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/afl-case-img-6.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Paul Marcolin",
+      "role": "Spike Creative",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/testi-block-img-10.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/testi-block-img-10.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/spike_creative_logo_f4e8457d16.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/spike_creative_logo_4c0cb34518.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "Zuse’s work on our app was outstanding – allowing us to deliver a fantastic user experience, also in the Sports category on AppStore Australia.",
+      "full": [
+        "Spike Creative has engaged the services of Zuse Digital on several occasions and have always been impressed with Zanyar’s professionalism, knowledge and attention to detail. Zuse’s work on our AFL Players Moji app was outstanding – allowing us to deliver a fantastic user experience, which quickly saw it achieve No 1 chart rankings for Paid apps and also in the Sports category on the AppStore Australia.",
+        "The enthusiasm and buy-in on every project by the Zuse team fills you with confidence that your job will be delivered on-time, on-budget and will most importantly, exceed your expectations. We can highly recommend Zuse for all your digital requirements."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-afl"
+  },
+  {
+    "category": "mobile-apps",
+    "slug": "warnie-moji-mobile-application",
+    "title": "Warnie Moji Mobile App Case Study",
+    "description": "Warnie Moji is a mobile app created in collaboration with cricket icon Shane Warne, turning his most memorable moments into fun, shareable emojis. Designed for fans, the app blends sport, humour, and digital expression into a user-friendly experience.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/warniemoji_case_banner_f746a41673.jpg",
+    "about": "Warnie Moji is a mobile app created in collaboration with cricket icon Shane Warne, turning his most memorable moments into fun, shareable emojis. Designed for fans, the app blends sport, humour, and digital expression into a user-friendly experience.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "Shane Warne (Warnie Moji)"
+      },
+      {
+        "label": "Industry",
+        "value": "Sports & Entertainment"
+      },
+      {
+        "label": "Audience Size",
+        "value": "Cricket fans, sports enthusiasts, and general emoji users globally"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Australia"
+      },
+      {
+        "label": "Company Size",
+        "value": "Individual brand associated with Shane Warne"
+      },
+      {
+        "label": "Website",
+        "value": "N/A (app-based product)"
+      },
+      {
+        "label": "Notable Achievements",
+        "list": [
+          "The Warnie Moji app reached the #1 spot in the Sports category on the Apple App Store.",
+          "Featured a collection of custom emojis inspired by Shane Warne’s legendary cricketing career, personal interests, and signature moments.",
+          "Allowed users to share emojis via text, email, and social media, offering a fun, personalised way for fans to engage with Warne’s legacy."
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Project Overview",
+        "paragraphs": [
+          "Warnie Moji was a high-performance mobile app developed to give cricket fans a fun, interactive way to honour Shane Warne’s legacy. Built for iOS and Android, it featured a custom emoji keyboard filled with iconic cricket moments, humorous expressions, and lifestyle-themed emojis. Users could share them easily across messaging apps and social platforms."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-1.webp",
+          "alt": "case-study-full-width-img-2",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Execution",
+        "paragraphs": [
+          "Zuse Digital began with a strategic discovery session to define project goals, creative direction, and user expectations. Drawing from Warne’s colourful persona and cricket heritage, the team crafted a bold, engaging interface. Using an MVP-first approach, Zuse delivered a scalable cross-platform solution supported by robust AWS infrastructure and multi-device testing to ensure performance and reliability."
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-2.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "text",
+        "title": "Outcome & Deliverables",
+        "paragraphs": [
+          "Zuse delivered a fast, user-friendly mobile app for both iOS and Android with seamless emoji keyboard integration. Services included:",
+          "This case study demonstrates Zuse Digital’s excellence in Mobile App Development, combining technical expertise, user experience, and creative storytelling for a standout digital product."
+        ],
+        "bullets": [
+          {
+            "body": "Cross-Platform Mobile App Development"
+          },
+          {
+            "body": "Custom Keyboard Integration"
+          },
+          {
+            "body": "App Store & Google Play Deployment"
+          },
+          {
+            "body": "Ongoing Maintenance & Monitoring"
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-3.webp",
+          "alt": "case-study-grid-img-1",
+          "width": 534,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-4.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-4.webp",
+          "alt": "case-study-grid-img-2",
+          "width": 510,
+          "height": 616
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-5.webp",
+          "alt": "case-study-full-width-img-5",
+          "width": 1084,
+          "height": 834
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-6.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/warniemoji-case-img-6.webp",
+          "alt": "case-study-full-width-img-6",
+          "width": 1084,
+          "height": 1084
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Luke Tunnecliffe",
+      "role": "StarMojis",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/luke-tunnecliffe.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/luke-tunnecliffe.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/starmojis-logo.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/starmojis-logo.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "WarnieMoji was an App that needed innovative thinking and design. Zanyar and his team ensured that the App was of a superior standard to all of the overseas models. What stood out for us was that Zanyar personally went above and beyond to ensure its success.",
+      "full": [
+        "StarMojis engaged the services of Zuse Digital when creating our WarnieMojis by Shane Warne App. This was an App that needed innovative thinking and design given it had not been done before in Australia.",
+        "Zanyar and his team ensured that the App was of a superior standard to all of the overseas models. What stood out for us was that Zanyar personally went above and beyond to ensure its success. Thanks to Shane’s celebrity status and a quality product, the App was featured in all forms of media across Australia, highlighted by a front page review in the Herald Sun and an interview on The Today Show.",
+        "We would strongly encourage other businesses to seek out the expertise of Zuse Digital to ensure a great product at great value."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "casestudy-warniemoji"
+  },
+  {
+    "category": "mobile-apps",
+    "slug": "c19-mobile-application",
+    "title": "C-19 Tracker App Case Study",
+    "description": "Zuse Digital delivered the end-to-end concept, design, development & deployment of the C-19 Tracker App for the Victorian State Government. The platform equips Victorians with real-time healthcare guidance, advanced contact-tracing tools, and geo-intelligent risk mapping to combat COVID-19, reduce public harm, and optimise government response.",
+    "banner": "https://d13fy5c8tglk2k.cloudfront.net/images/c19_case_banner.jpg",
+    "about": "Zuse Digital delivered the end-to-end concept, design, development & deployment of the C-19 Tracker App for the Victorian State Government. The platform equips Victorians with real-time healthcare guidance, advanced contact-tracing tools, and geo-intelligent risk mapping to combat COVID-19, reduce public harm, and optimise government response.",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "The C-19 Tracker App"
+      },
+      {
+        "label": "Industry",
+        "value": "Healthcare & Public Sector"
+      },
+      {
+        "label": "Headquarters",
+        "value": "London, UK"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "title": "Challenges & Strategic Approach",
+        "paragraphs": [
+          "The fast-moving COVID-19 crisis created:"
+        ],
+        "bullets": [
+          {
+            "body": "Public confusion & anxiety as guidelines evolved daily."
+          },
+          {
+            "body": "Overloaded contact-tracing teams struggling with manual workflows."
+          },
+          {
+            "body": "Data-privacy concerns around tracking individual movements."
+          },
+          {
+            "body": "Discovery & Strategy Workshops with health officials to define requirements and user journeys."
+          },
+          {
+            "body": "End-to-End Delivery from wireframes and UI design through full-stack development and QA."
+          },
+          {
+            "body": "Data-Driven UX featuring an intuitive map interface with real-time exposure overlays."
+          }
+        ],
+        "bulletColumns": 1
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-1.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-1.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "text",
+        "title": "Solution & Deliverables",
+        "paragraphs": [
+          "Zuse Digital led every phase to build a robust, scalable app:"
+        ],
+        "bullets": [
+          {
+            "title": "Interactive Risk Map",
+            "body": "Colour-coded hotspots and personal risk levels plotted against confirmed cases."
+          },
+          {
+            "title": "Travel-History Modeling",
+            "body": "Opt-in location logs reconstruct movements and flag potential exposures while preserving privacy."
+          },
+          {
+            "title": "Alert Notification System",
+            "body": "Instant push alerts with precise time-and-place details. In-app archive of all personal exposure notifications"
+          },
+          {
+            "title": "Integrated Location Services",
+            "body": "via third-party APIs for nearby hospitals, pharmacies, supermarkets, and support centres."
+          },
+          {
+            "title": "Information Hub",
+            "body": "Live dashboards showcasing statewide COVID-19 statistics, official advisories, and prevention guidance."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-3.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-3.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 1084
+        }
+      },
+      {
+        "type": "text",
+        "title": "Key Results & Impact",
+        "bullets": [
+          {
+            "body": "45% reduction in reported user anxiety through transparent, on-demand exposure insights."
+          },
+          {
+            "body": "30% faster government identification of high-risk zones and resource deployment."
+          },
+          {
+            "body": "Early isolation alerts helped curb secondary transmission within households."
+          },
+          {
+            "body": "25% decrease in field-team dispatches, optimising public-health budgets and manpower."
+          }
+        ],
+        "bulletColumns": 2
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-2.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-2.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-5.jpg",
+          "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/c19-case-img-5.webp",
+          "alt": "case-study-full-width-img",
+          "width": 1084,
+          "height": 610
+        }
+      }
+    ],
+    "testimonial": {
+      "name": "Mark Bamford",
+      "role": "Founder of C-19 Tracker",
+      "avatar": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/mark-bamford.jpg",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/mark-bamford.webp",
+        "alt": "case_testi_avatar",
+        "width": 100,
+        "height": 100
+      },
+      "brandLogo": {
+        "src": "https://d13fy5c8tglk2k.cloudfront.net/images/c-19-tracker.png",
+        "webp": "https://d13fy5c8tglk2k.cloudfront.net/images/c-19-tracker.webp",
+        "alt": "case_testi_logo",
+        "width": 99,
+        "height": 24
+      },
+      "excerpt": "SoteriaApp empowers people with a simple, effective tool to track and combat COVID-19, safeguarding communities now and helping the UK—and beyond—return to normal faster.",
+      "full": [
+        "The SoteriaApp project was inspired by the need to provide the public with a platform that would help protect the public from harm now and in the future, and help the UK and other countries by giving them a tool to defeat COVID-19 and get back to normal faster.",
+        "Having a tech partner like Zuse Digital as the pillar of this not-for-profit endeavour has been critical to getting the App BETA testing within 2 weeks of the initial conversation has been an incredible effort. The ability of the Zuse Digital team to understand a highly complex situation and distil this down to a smooth UX was vital.",
+        "This was a tech sprint relay, and to have a partner like Zanyar and all the team at Zuse Digital has been vital to producing a world-class App with incredible speed."
+      ],
+      "rating": 5
+    },
+    "strapiSlug": "c19"
+  }
+]

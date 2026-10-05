@@ -1,16 +1,21 @@
 import * as React from 'react';
 import { Badge, Box, Button, Flex, Typography } from '@strapi/design-system';
+import { useFetchClient } from '@strapi/strapi/admin';
+
+// Admin-only routes (src/plugins/blog-tools); the admin client sends the session token.
+const BASE = '/blog-tools/blogs';
+const errorMessage = (err) => err?.response?.data?.error?.message || err?.message || 'Request failed';
 
 const PanelContent = ({ documentId }) => {
   const [summary, setSummary] = React.useState(null);
   const [status, setStatus] = React.useState('idle');
   const [error, setError] = React.useState(null);
+  const { get, post } = useFetchClient();
 
   React.useEffect(() => {
     let cancelled = false;
-    fetch(`/api/blogs/${documentId}/ai-summary`, { credentials: 'include' })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((json) => {
+    get(`${BASE}/${documentId}/ai-summary`)
+      .then(({ data: json }) => {
         if (cancelled) return;
         const existing = json?.data?.aiSummary || null;
         if (existing) {
@@ -22,28 +27,17 @@ const PanelContent = ({ documentId }) => {
     return () => {
       cancelled = true;
     };
-  }, [documentId]);
+  }, [documentId, get]);
 
   const generate = async () => {
     setStatus('generating');
     setError(null);
     try {
-      const res = await fetch(`/api/blogs/${documentId}/generate-summary`, {
-        method: 'POST',
-        credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
-      });
-      const json = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        const msg = json?.error?.message || `HTTP ${res.status}`;
-        setError(msg);
-        setStatus('failed');
-        return;
-      }
+      const { data: json } = await post(`${BASE}/${documentId}/generate-summary`);
       setSummary(json?.data?.aiSummary || '');
       setStatus('done');
     } catch (err) {
-      setError(err.message || 'Network error');
+      setError(errorMessage(err));
       setStatus('failed');
     }
   };

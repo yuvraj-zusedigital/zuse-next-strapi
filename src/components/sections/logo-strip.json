@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_logo_strips",
+  "info": {
+    "displayName": "Logo strip",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "headingBefore": {
+      "type": "string"
+    },
+    "headingHighlight": {
+      "type": "string"
+    },
+    "headingAfter": {
+      "type": "string"
+    },
+    "avatarImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

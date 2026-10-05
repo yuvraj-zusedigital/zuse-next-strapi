@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_author_cards",
+  "info": {
+    "displayName": "Author card",
+    "icon": "user",
+    "description": "Profile card for an author (photo, role, bio), linking to their profile."
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

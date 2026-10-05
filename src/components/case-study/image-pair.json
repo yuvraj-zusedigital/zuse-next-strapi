@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_case_study_image_pairs",
+  "info": {
+    "displayName": "Image pair",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

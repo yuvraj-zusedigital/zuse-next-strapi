@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sections_subscribe_forms",
+  "info": {
+    "displayName": "Subscribe box",
+    "icon": "envelop",
+    "description": "Newsletter sign-up (name and email); sign-ups appear under Leads → Subscribers."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "namePlaceholder": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "requireFullName": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "successTitle": {
+      "type": "string"
+    },
+    "successText": {
+      "type": "text"
+    },
+    "errorMessage": {
+      "type": "text"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
